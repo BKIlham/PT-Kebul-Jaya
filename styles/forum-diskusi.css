@@ -1,0 +1,801 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.forum-diskusi-nH3 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.forum-diskusi-nH3 .auto-group-buhd-861 {
+  box-sizing: border-box;
+  padding: 3.2rem 10rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #b1b1b1;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-buhd-861 .logo-f5w {
+  margin-right: 44rem;
+  width: 23.2rem;
+  height: 7rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-buhd-861 .login-oT3 {
+  margin-right: 2.3rem;
+  width: 17.4rem;
+  height: 4rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-buhd-861 .login-9mo {
+  margin-right: 2.3rem;
+  width: 17.4rem;
+  height: 4rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-buhd-861 .login-W6Z {
+  width: 17.4rem;
+  height: 4rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR {
+  width: 100%;
+  height: 184.6rem;
+  position: relative;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-rkub-uuP {
+  width: 19.3rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 57.1rem;
+  display: flex;
+  column-gap: 1.7rem;
+  align-items: center;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-rkub-uuP .login-pFf {
+  width: 5.3rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-rkub-uuP .login-xsf {
+  width: 5.3rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-rkub-uuP .login-Yay {
+  width: 5.3rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-kfpf-HoT {
+  width: 19.3rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 85.4rem;
+  display: flex;
+  column-gap: 1.7rem;
+  align-items: center;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-kfpf-HoT .login-cqj {
+  width: 5.3rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-kfpf-HoT .login-Na1 {
+  width: 5.3rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-kfpf-HoT .login-uZw {
+  width: 5.3rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-nc7d-rk5 {
+  width: 19.3rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 113.7rem;
+  display: flex;
+  column-gap: 1.7rem;
+  align-items: center;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-nc7d-rk5 .login-ag5 {
+  width: 5.3rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-nc7d-rk5 .login-9DP {
+  width: 5.3rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-nc7d-rk5 .login-5sj {
+  width: 5.3rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-d787-eA9 {
+  width: 19.3rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 142rem;
+  display: flex;
+  column-gap: 1.7rem;
+  align-items: center;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-d787-eA9 .login-mkZ {
+  width: 5.3rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-d787-eA9 .login-v7f {
+  width: 5.3rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-d787-eA9 .login-U9B {
+  width: 5.3rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-4tbh-dGy {
+  width: 19.3rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 170.3rem;
+  display: flex;
+  column-gap: 1.7rem;
+  align-items: center;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-4tbh-dGy .login-MTs {
+  width: 5.3rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-4tbh-dGy .login-ukH {
+  width: 5.3rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-4tbh-dGy .login-exm {
+  width: 5.3rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-ku7m-CzH {
+  width: 109.2rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 24.8rem;
+  top: 23.4rem;
+  display: flex;
+  align-items: center;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-ku7m-CzH .login-WVB {
+  margin-right: 2.5rem;
+  width: 12.4rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-ku7m-CzH .login-row {
+  margin-right: 2.5rem;
+  width: 12.4rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-ku7m-CzH .login-PJ5 {
+  margin-right: 2.5rem;
+  width: 12.4rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-ku7m-CzH .login-Xv5 {
+  margin-right: 32.7rem;
+  width: 12.4rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-ku7m-CzH .login-UqK {
+  width: 19.4rem;
+  height: 2.8rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-ltqt-qA5 {
+  width: 124.1rem;
+  height: 6rem;
+  position: absolute;
+  left: 9.9rem;
+  top: 11.3rem;
+  display: flex;
+  align-items: center;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-ltqt-qA5 .forum-diskusi-mJd {
+  margin-right: 53rem;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-ltqt-qA5 .master-input-text-sMf {
+  margin: 0.7rem 0;
+  box-sizing: border-box;
+  padding: 1.4rem 2.4rem 1.4rem 2.4rem;
+  width: 41.9rem;
+  height: calc(100% - 1.4rem);
+  background-color: #f2f1f9;
+  border-radius: 5rem;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-ltqt-qA5 .master-input-text-sMf .text-icons-yfb {
+  box-sizing: border-box;
+  padding-right: 0.15rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-ltqt-qA5 .master-input-text-sMf .text-icons-yfb .input-content-it5 {
+  margin-right: 31.05rem;
+  width: 4.4rem;
+  height: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.125;
+  color: #767393;
+  font-family: DM Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-ltqt-qA5 .master-input-text-sMf .text-icons-yfb .line-rounded-search-ciZ {
+  margin-bottom: 0.0541rem;
+  width: 1.5001rem;
+  height: 1.5rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .lorem-ipsum-L8m {
+  width: 16.1rem;
+  height: 3.6rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 39.2rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .lorem-ipsum-qbK {
+  width: 16.1rem;
+  height: 3.6rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 67.5rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .lorem-ipsum-Vvm {
+  width: 16.1rem;
+  height: 3.6rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 95.8rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .lorem-ipsum-PmF {
+  width: 16.1rem;
+  height: 3.6rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 124.1rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .lorem-ipsum-uDo {
+  width: 16.1rem;
+  height: 3.6rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 152.4rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-bguj-23X {
+  width: 16.1rem;
+  height: 3.5rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 35.4rem;
+  display: flex;
+  align-items: center;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-bguj-23X .rectangle-32-kER {
+  margin-right: 0.8rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-bguj-23X .sandya-naufal-gtm {
+  margin-top: 0.1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-xpxz-pk5 {
+  width: 16.1rem;
+  height: 3.5rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 63.7rem;
+  display: flex;
+  align-items: center;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-xpxz-pk5 .rectangle-33-LiR {
+  margin-right: 0.8rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-xpxz-pk5 .sandya-naufal-tV3 {
+  margin-top: 0.1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-ouud-DnD {
+  width: 16.1rem;
+  height: 3.5rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 92rem;
+  display: flex;
+  align-items: center;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-ouud-DnD .rectangle-34-kn9 {
+  margin-right: 0.8rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-ouud-DnD .sandya-naufal-5pR {
+  margin-top: 0.1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-a3tw-nyj {
+  width: 16.1rem;
+  height: 3.5rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 120.3rem;
+  display: flex;
+  align-items: center;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-a3tw-nyj .rectangle-35-8Gu {
+  margin-right: 0.8rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-a3tw-nyj .sandya-naufal-qx1 {
+  margin-top: 0.1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-uacb-n6Z {
+  width: 16.1rem;
+  height: 3.5rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 148.6rem;
+  display: flex;
+  align-items: center;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-uacb-n6Z .rectangle-36-iW1 {
+  margin-right: 0.8rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .auto-group-uacb-n6Z .sandya-naufal-4Zs {
+  margin-top: 0.1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .lorem-ipsum-dolor-sit-amet-consectetur-ipsum-at-convallis-cras-netus-pellentesque-morbi-magna-malesuada-aenean-phasellus-in-auctor-vitae-aliquam-justo-felis-libero-id-facilisis-viverra-velit-integer-mauris-sed-enim-venenatis-neque-pharetra-sodales-cras-ut-ac-consectetur-integer-est-metus-suspendisse-iaculis-laoreet-adipiscing-egestas-nibh-vulputate-integer-non-risus-vel-quam-in-egestas-ut-Ps3 {
+  width: 104.9rem;
+  height: 12rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 43.1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .lorem-ipsum-dolor-sit-amet-consectetur-ipsum-at-convallis-cras-netus-pellentesque-morbi-magna-malesuada-aenean-phasellus-in-auctor-vitae-aliquam-justo-felis-libero-id-facilisis-viverra-velit-integer-mauris-sed-enim-venenatis-neque-pharetra-sodales-cras-ut-ac-consectetur-integer-est-metus-suspendisse-iaculis-laoreet-adipiscing-egestas-nibh-vulputate-integer-non-risus-vel-quam-in-egestas-ut-MSV {
+  width: 104.9rem;
+  height: 12rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 71.4rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .lorem-ipsum-dolor-sit-amet-consectetur-ipsum-at-convallis-cras-netus-pellentesque-morbi-magna-malesuada-aenean-phasellus-in-auctor-vitae-aliquam-justo-felis-libero-id-facilisis-viverra-velit-integer-mauris-sed-enim-venenatis-neque-pharetra-sodales-cras-ut-ac-consectetur-integer-est-metus-suspendisse-iaculis-laoreet-adipiscing-egestas-nibh-vulputate-integer-non-risus-vel-quam-in-egestas-ut-igM {
+  width: 104.9rem;
+  height: 12rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 99.7rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .lorem-ipsum-dolor-sit-amet-consectetur-ipsum-at-convallis-cras-netus-pellentesque-morbi-magna-malesuada-aenean-phasellus-in-auctor-vitae-aliquam-justo-felis-libero-id-facilisis-viverra-velit-integer-mauris-sed-enim-venenatis-neque-pharetra-sodales-cras-ut-ac-consectetur-integer-est-metus-suspendisse-iaculis-laoreet-adipiscing-egestas-nibh-vulputate-integer-non-risus-vel-quam-in-egestas-ut-3MF {
+  width: 104.9rem;
+  height: 12rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 128rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .lorem-ipsum-dolor-sit-amet-consectetur-ipsum-at-convallis-cras-netus-pellentesque-morbi-magna-malesuada-aenean-phasellus-in-auctor-vitae-aliquam-justo-felis-libero-id-facilisis-viverra-velit-integer-mauris-sed-enim-venenatis-neque-pharetra-sodales-cras-ut-ac-consectetur-integer-est-metus-suspendisse-iaculis-laoreet-adipiscing-egestas-nibh-vulputate-integer-non-risus-vel-quam-in-egestas-ut-DQ9 {
+  width: 104.9rem;
+  height: 12rem;
+  position: absolute;
+  left: 10.9rem;
+  top: 156.3rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .line-2-M8y {
+  width: 124.1rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 9.9rem;
+  top: 61.8rem;
+  background-color: #000000;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .line-3-sND {
+  width: 124.1rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 9.9rem;
+  top: 90.1rem;
+  background-color: #000000;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .line-4-p2Z {
+  width: 124.1rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 9.9rem;
+  top: 118.4rem;
+  background-color: #000000;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .line-5-YUM {
+  width: 124.1rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 9.9rem;
+  top: 146.7rem;
+  background-color: #000000;
+}
+.forum-diskusi-nH3 .auto-group-tedy-rAR .line-6-5jB {
+  width: 124.1rem;
+  height: 0.1rem;
+  position: absolute;
+  left: 9.9rem;
+  top: 175rem;
+  background-color: #000000;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX {
+  box-sizing: border-box;
+  padding: 2.9rem 5.6rem 2.6rem 5.5rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #d9d9d9;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-qe3v-uy7 {
+  margin-right: 24.4rem;
+  height: 10.3rem;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-qe3v-uy7 .rectangle-19-TDw {
+  margin: 0.1rem 27.1rem 0rem 0rem;
+  width: 23.2rem;
+  height: 7rem;
+  background-color: #6e6e6e;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-qe3v-uy7 .auto-group-k8jm-yxy {
+  width: 11.8rem;
+  height: 100%;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-qe3v-uy7 .auto-group-k8jm-yxy .follow-us-LYd {
+  margin-bottom: 1.6rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-qe3v-uy7 .auto-group-k8jm-yxy .auto-group-r58o-Gx5 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-qe3v-uy7 .auto-group-k8jm-yxy .auto-group-r58o-Gx5 .rectangle-15-Ee1 {
+  margin-right: 2rem;
+  width: 4.9rem;
+  height: 4.9rem;
+  background-color: #6e6e6e;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-qe3v-uy7 .auto-group-k8jm-yxy .auto-group-r58o-Gx5 .rectangle-16-uk9 {
+  width: 4.9rem;
+  height: 4.9rem;
+  background-color: #6e6e6e;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-qe3v-uy7 .auto-group-5ibm-rQV {
+  box-sizing: border-box;
+  padding-left: 2rem;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-qe3v-uy7 .auto-group-5ibm-rQV .rectangle-17-QS1 {
+  margin-right: 19.2rem;
+  width: 4.9rem;
+  height: 4.9rem;
+  background-color: #6e6e6e;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-qe3v-uy7 .auto-group-5ibm-rQV .auto-group-gyzs-Z41 {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-qe3v-uy7 .auto-group-5ibm-rQV .auto-group-gyzs-Z41 .about-us-75X {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-qe3v-uy7 .auto-group-5ibm-rQV .auto-group-gyzs-Z41 .faq-FBj {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-vld9-z9K {
+  margin: 0rem 21.7rem 2.9rem 0rem;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-vld9-z9K .lorem-ipsum-dolor-sit-amet-consectetur-6TF {
+  margin-right: 15.7rem;
+  max-width: 34.6rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-vld9-z9K .auto-group-xezx-pPF {
+  margin: 2rem 19.2rem 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-vld9-z9K .auto-group-xezx-pPF .call-us-Mty {
+  margin-bottom: 1.6rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-vld9-z9K .auto-group-xezx-pPF .item-085762382649-77T {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-vld9-z9K .auto-group-f1kh-cpu {
+  margin-top: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-vld9-z9K .auto-group-f1kh-cpu .privacy-mSu {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-vld9-z9K .auto-group-f1kh-cpu .contact-us-i7F {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .line-1-EbP {
+  margin-bottom: 2.1rem;
+  width: 100%;
+  height: 0.1rem;
+  background-color: #000000;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-jvvm-BmX {
+  margin: 0rem 7.6rem 0rem 7.8rem;
+  width: calc(100% - 15.4rem);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-jvvm-BmX .lorem-ipsum-dolor-sit-amet-vDK {
+  margin-right: 48.3rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.forum-diskusi-nH3 .auto-group-zhak-bhX .auto-group-jvvm-BmX .lorem-ipsum-dolor-sit-amet-SxM {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
