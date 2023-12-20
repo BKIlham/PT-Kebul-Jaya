@@ -123,6 +123,31 @@ a:hover {
   }
 }
 
+form label{
+  font-size: 20px;
+}
+
+form input{
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #2979ff;
+    color: #fff;
+    font-size: 20px;
+}
+
+form button{
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    margin-bottom: 15px;
+    background-color:#2979ff;
+    font-size: 18px;
+    color: #fafafa;
+}
+
 .login-cVs {
   width: 100%;
   overflow: hidden;
