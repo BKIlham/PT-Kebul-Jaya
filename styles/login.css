@@ -437,19 +437,19 @@ form button{
   align-items: flex-start;
   flex-shrink: 0;
 }
-.content .footer-content .footer-line1 .rectangle-19-bQy {
+.content .footer-content .footer-line1 .line1-col1 {
   margin: 0.1rem 27.1rem 0rem 0rem;
   width: 23.2rem;
   height: 7rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
 }
-.content .footer-content .footer-line1 .auto-group-eiew-vi9 {
+.content .footer-content .footer-line1 .line1-col2  {
   width: 11.8rem;
   height: 100%;
   flex-shrink: 0;
 }
-.content .footer-content .footer-line1 .auto-group-eiew-vi9 .follow-us-HHo {
+.content .footer-content .footer-line1 .line1-col2  .follow-us-HHo {
   margin-bottom: 1.6rem;
   font-size: 2.5rem;
   font-weight: 500;
@@ -458,25 +458,25 @@ form button{
   font-family: Poppins, 'Source Sans Pro';
   white-space: nowrap;
 }
-.content .footer-content .footer-line1 .auto-group-eiew-vi9 .auto-group-1rwf-nkM {
+.content .footer-content .footer-line1 .line1-col2  .auto-group-1rwf-nkM {
   width: 100%;
   display: flex;
   align-items: center;
 }
-.content .footer-content .footer-line1 .auto-group-eiew-vi9 .auto-group-1rwf-nkM .rectangle-15-LG5 {
+.content .footer-content .footer-line1 .line1-col2  .auto-group-1rwf-nkM .rectangle-15-LG5 {
   margin-right: 2rem;
   width: 4.9rem;
   height: 4.9rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
 }
-.content .footer-content .footer-line1 .auto-group-eiew-vi9 .auto-group-1rwf-nkM .rectangle-16-yZw {
+.content .footer-content .footer-line1 .line1-col2  .auto-group-1rwf-nkM .rectangle-16-yZw {
   width: 4.9rem;
   height: 4.9rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
 }
-.content .footer-content .footer-line1 .auto-group-jwku-Kdo {
+.content .footer-content .footer-line1 .line1-col3  {
   box-sizing: border-box;
   padding-left: 2rem;
   height: 100%;
@@ -484,20 +484,20 @@ form button{
   align-items: flex-end;
   flex-shrink: 0;
 }
-.content .footer-content .footer-line1 .auto-group-jwku-Kdo .rectangle-17-Gow {
+.content .footer-content .footer-line1 .line1-col3  .rectangle-17-Gow {
   margin-right: 19.2rem;
   width: 4.9rem;
   height: 4.9rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
 }
-.content .footer-content .footer-line1 .auto-group-jwku-Kdo .auto-group-xyky-cso {
+.content .footer-content .footer-line1 .line1-col3  .auto-group-xyky-cso {
   margin-bottom: 1.2rem;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 }
-.content .footer-content .footer-line1 .auto-group-jwku-Kdo .auto-group-xyky-cso .about-us-n1b {
+.content .footer-content .footer-line1 .line1-col3  .auto-group-xyky-cso .about-us-n1b {
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
   font-weight: 500;
@@ -507,7 +507,7 @@ form button{
   white-space: nowrap;
   flex-shrink: 0;
 }
-.content .footer-content .footer-line1 .auto-group-jwku-Kdo .auto-group-xyky-cso .faq-KXK {
+.content .footer-content .footer-line1 .line1-col3  .auto-group-xyky-cso .faq-KXK {
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.5;
@@ -522,7 +522,7 @@ form button{
   align-items: flex-start;
   flex-shrink: 0;
 }
-.content .footer-content .footer-line2  .lorem-ipsum-dolor-sit-amet-consectetur-LxD {
+.content .footer-content .footer-line2  .line2-col1  {
   margin-right: 15.7rem;
   max-width: 34.6rem;
   font-size: 2.5rem;
@@ -532,13 +532,13 @@ form button{
   font-family: Poppins, 'Source Sans Pro';
   flex-shrink: 0;
 }
-.content .footer-content .footer-line2  .auto-group-s5xr-G5B {
+.content .footer-content .footer-line2  .line2-col2 {
   margin: 2rem 19.2rem 0rem 0rem;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 }
-.content .footer-content .footer-line2  .auto-group-s5xr-G5B .call-us-QSH {
+.content .footer-content .footer-line2  .line2-col2 .call-us-QSH {
   margin-bottom: 1.6rem;
   font-size: 2.5rem;
   font-weight: 500;
@@ -548,7 +548,7 @@ form button{
   white-space: nowrap;
   flex-shrink: 0;
 }
-.content .footer-content .footer-line2  .auto-group-s5xr-G5B .item-085762382649-Lqj {
+.content .footer-content .footer-line2  .line2-col2 .item-085762382649-Lqj {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
@@ -557,13 +557,13 @@ form button{
   white-space: nowrap;
   flex-shrink: 0;
 }
-.content .footer-content .footer-line2  .auto-group-edoq-413 {
+.content .footer-content .footer-line2  .line2-col3 {
   margin-top: 0.3rem;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 }
-.content .footer-content .footer-line2  .auto-group-edoq-413 .privacy-1BB {
+.content .footer-content .footer-line2  .line2-col3 .privacy-1BB {
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
   font-weight: 500;
@@ -573,7 +573,7 @@ form button{
   white-space: nowrap;
   flex-shrink: 0;
 }
-.content .footer-content .footer-line2  .auto-group-edoq-413 .contact-us-kPf {
+.content .footer-content .footer-line2  .line2-col3 .contact-us-kPf {
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.5;
@@ -596,7 +596,7 @@ form button{
   align-items: center;
   flex-shrink: 0;
 }
-.content .footer-content .footer-line3  .lorem-ipsum-dolor-sit-amet-X33 {
+.content .footer-content .footer-line3  .line3-col1 {
   margin-right: 48.3rem;
   font-size: 2.5rem;
   font-weight: 500;
@@ -606,7 +606,7 @@ form button{
   white-space: nowrap;
   flex-shrink: 0;
 }
-.content .footer-content .footer-line3  .lorem-ipsum-dolor-sit-amet-r5K {
+.content .footer-content .footer-line3  .line3-col2 {
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.5;
