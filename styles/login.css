@@ -148,6 +148,12 @@ form button{
     color: #fafafa;
 }
 
+img{
+    width: 53.6rem;
+    height: 60.8rem;
+    flex-shrink: 0;
+}
+
 .login-cVs {
   width: 100%;
   overflow: hidden;
