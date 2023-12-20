@@ -154,7 +154,29 @@ form button{
     flex-shrink: 0;
 }
 
-.login-cVs {
+.remember {
+  margin-right: 13.1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.0810200146;
+  color: #000000;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.lupa-pass {
+  margin-right: 16.1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.0810200146;
+  color: #000000;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.content {
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -162,7 +184,7 @@ form button{
   flex-direction: column;
   background-color: #ffffff;
 }
-.login-cVs .auto-group-fqbq-Lgm {
+.content .auto-group-fqbq-Lgm {
   margin-bottom: 11.3rem;
   box-sizing: border-box;
   padding: 3.2rem 10rem;
@@ -172,34 +194,34 @@ form button{
   background-color: #b1b1b1;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-fqbq-Lgm .logo-exM {
+.content .auto-group-fqbq-Lgm .logo-exM {
   margin-right: 44rem;
   width: 23.2rem;
   height: 7rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-fqbq-Lgm .login-zWR {
+.content .auto-group-fqbq-Lgm .login-zWR {
   margin-right: 2.3rem;
   width: 17.4rem;
   height: 4rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-fqbq-Lgm .login-8cd {
+.content .auto-group-fqbq-Lgm .login-8cd {
   margin-right: 2.3rem;
   width: 17.4rem;
   height: 4rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-fqbq-Lgm .login-UwP {
+.content .auto-group-fqbq-Lgm .login-UwP {
   width: 17.4rem;
   height: 4rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.login-cVs .login-2i1 {
+.content .title-content  {
   margin: 5rem 0rem 1rem 9.9rem;
   font-size: 4rem;
   font-weight: 700;
@@ -209,7 +231,7 @@ form button{
   white-space: nowrap;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-c61y-x5s {
+.content .mid-content {
   margin: 0rem 10rem 16.3rem 10rem;
   box-sizing: border-box;
   padding: 4.2rem 3.2rem 5.1rem 5.4rem;
@@ -219,12 +241,12 @@ form button{
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs {
+.content .mid-content .login-layout {
   margin: 0rem 23.9rem 3.5rem 0rem;
   width: 37.9rem;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs .email-N9b {
+.content .mid-content .login-layout .email-N9b {
   margin-bottom: 1.9rem;
   font-size: 2.5rem;
   font-weight: 700;
@@ -233,13 +255,13 @@ form button{
   font-family: Poppins, 'Source Sans Pro';
   white-space: nowrap;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs .rectangle-26-7N5 {
+.content .mid-content .login-layout .rectangle-26-7N5 {
   margin-bottom: 1.8rem;
   width: 100%;
   height: 5.6rem;
   background-color: #929292;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs .password-rqT {
+.content .mid-content .login-layout .password-rqT {
   margin-bottom: 1.8rem;
   font-size: 2.5rem;
   font-weight: 700;
@@ -248,13 +270,13 @@ form button{
   font-family: Poppins, 'Source Sans Pro';
   white-space: nowrap;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs .rectangle-27-QMB {
+.content .mid-content .login-layout .rectangle-27-QMB {
   margin-bottom: 4.1rem;
   width: 100%;
   height: 5.6rem;
   background-color: #929292;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs .frame-2-Lkd {
+.content .mid-content .login-layout .frame-2-Lkd {
   margin: 0rem 8.4rem 2.7rem 8.3rem;
   width: calc(100% - 16.7rem);
   height: 4.9rem;
@@ -271,13 +293,13 @@ form button{
   justify-content: center;
   background-color: #929292;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs .auto-group-lxcb-C29 {
+.content .mid-content .login-layout .remember-layout {
   margin-bottom: 4.3rem;
   width: 100%;
   display: flex;
   align-items: flex-start;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs .auto-group-lxcb-C29 .rectangle-28-8Ah {
+.content .mid-content .login-layout .remember-layout .rectangle-28-8Ah {
   margin-right: 0.5rem;
   width: 1.6rem;
   height: 1.6rem;
@@ -286,7 +308,7 @@ form button{
   background-color: #f5f5f5;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs .auto-group-lxcb-C29 .remember-me-Dhw {
+.content .mid-content .login-layout .remember-layout .remember-me-Dhw {
   margin-right: 16.1rem;
   text-align: center;
   font-size: 1.4rem;
@@ -297,7 +319,7 @@ form button{
   white-space: nowrap;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs .auto-group-lxcb-C29 .forgot-password-Xid {
+.content .mid-content .login-layout .remember-layout .forgot-password-Xid {
   margin-top: 0.4rem;
   text-align: center;
   font-size: 1.4rem;
@@ -308,7 +330,7 @@ form button{
   white-space: nowrap;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs .or-login-with-eoF {
+.content .mid-content .login-layout .or-login-with-eoF {
   width: 100%;
   text-align: center;
   font-size: 1.4rem;
@@ -318,7 +340,7 @@ form button{
   font-family: Source Sans Pro, 'Source Sans Pro';
   white-space: nowrap;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs .auto-group-nr35-C45 {
+.content .mid-content .login-layout .loginwith-layout {
   box-sizing: border-box;
   padding: 2.3rem 7.5rem 0rem 7.4rem;
   width: 100%;
@@ -326,7 +348,7 @@ form button{
   display: flex;
   flex-direction: column;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs .auto-group-nr35-C45 .group-47-8Cd {
+.content .mid-content .login-layout .loginwith-layout .google-layout {
   margin-bottom: 2.3rem;
   box-sizing: border-box;
   padding: 0.2rem 4.3rem 0.3rem 0.3rem;
@@ -337,7 +359,7 @@ form button{
   background-color: #4285f4;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs .auto-group-nr35-C45 .group-47-8Cd .auto-group-4mvj-SUD {
+.content .mid-content .login-layout .loginwith-layout .google-layout .google-set {
   margin-right: 2.5rem;
   box-sizing: border-box;
   padding: 0.7rem 1rem 0.6rem 0.7rem;
@@ -345,13 +367,13 @@ form button{
   background-color: #ffffff;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs .auto-group-nr35-C45 .group-47-8Cd .auto-group-4mvj-SUD .googleglogo-1-Zoj {
+.content .mid-content .login-layout .loginwith-layout .google-layout .google-set .googleglogo-1-Zoj {
   width: 2.6rem;
   height: 2.6rem;
   object-fit: cover;
   vertical-align: top;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs .auto-group-nr35-C45 .group-47-8Cd .sign-in-with-google-5GH {
+.content .mid-content .login-layout .loginwith-layout .google-layout .sign-in-with-google-5GH {
   margin-top: 0.1rem;
   text-align: center;
   font-size: 1.4rem;
@@ -362,7 +384,7 @@ form button{
   white-space: nowrap;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs .auto-group-nr35-C45 .group-48-xay {
+.content .mid-content .login-layout .loginwith-layout .facebook-layout {
   box-sizing: border-box;
   padding: 0.2rem 2.8rem 0.3rem 0.3rem;
   width: 100%;
@@ -372,7 +394,7 @@ form button{
   background-color: #3c5a9a;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs .auto-group-nr35-C45 .group-48-xay .auto-group-otvz-sxq {
+.content .mid-content .login-layout .loginwith-layout .facebook-layout .facebook-set {
   margin-right: 2.5rem;
   box-sizing: border-box;
   padding: 0.5rem 1.4rem 0.4rem 1.4rem;
@@ -380,13 +402,13 @@ form button{
   background-color: #ffffff;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs .auto-group-nr35-C45 .group-48-xay .auto-group-otvz-sxq .facebook-2-logo-png-transparent-1-PwB {
+.content .mid-content .login-layout .loginwith-layout .facebook-layout .facebook-set .facebook-2-logo-png-transparent-1-PwB {
   width: 1.5rem;
   height: 3rem;
   object-fit: cover;
   vertical-align: top;
 }
-.login-cVs .auto-group-c61y-x5s .auto-group-tswq-FKs .auto-group-nr35-C45 .group-48-xay .sign-in-with-facebook-iyT {
+.content .mid-content .login-layout .loginwith-layout .facebook-layout .sign-in-with-facebook-iyT {
   margin-top: 0.1rem;
   text-align: center;
   font-size: 1.4rem;
@@ -397,13 +419,8 @@ form button{
   white-space: nowrap;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-c61y-x5s .rectangle-29-2jF {
-  width: 53.6rem;
-  height: 60.8rem;
-  background-color: #444444;
-  flex-shrink: 0;
-}
-.login-cVs .auto-group-ad3y-9J5 {
+
+.content .footer-content {
   box-sizing: border-box;
   padding: 2.9rem 5.6rem 2.6rem 5.5rem;
   width: 100%;
@@ -413,26 +430,26 @@ form button{
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-t2gk-ryB {
+.content .footer-content .footer-line1 {
   margin-right: 24.4rem;
   height: 10.3rem;
   display: flex;
   align-items: flex-start;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-t2gk-ryB .rectangle-19-bQy {
+.content .footer-content .footer-line1 .rectangle-19-bQy {
   margin: 0.1rem 27.1rem 0rem 0rem;
   width: 23.2rem;
   height: 7rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-t2gk-ryB .auto-group-eiew-vi9 {
+.content .footer-content .footer-line1 .auto-group-eiew-vi9 {
   width: 11.8rem;
   height: 100%;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-t2gk-ryB .auto-group-eiew-vi9 .follow-us-HHo {
+.content .footer-content .footer-line1 .auto-group-eiew-vi9 .follow-us-HHo {
   margin-bottom: 1.6rem;
   font-size: 2.5rem;
   font-weight: 500;
@@ -441,25 +458,25 @@ form button{
   font-family: Poppins, 'Source Sans Pro';
   white-space: nowrap;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-t2gk-ryB .auto-group-eiew-vi9 .auto-group-1rwf-nkM {
+.content .footer-content .footer-line1 .auto-group-eiew-vi9 .auto-group-1rwf-nkM {
   width: 100%;
   display: flex;
   align-items: center;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-t2gk-ryB .auto-group-eiew-vi9 .auto-group-1rwf-nkM .rectangle-15-LG5 {
+.content .footer-content .footer-line1 .auto-group-eiew-vi9 .auto-group-1rwf-nkM .rectangle-15-LG5 {
   margin-right: 2rem;
   width: 4.9rem;
   height: 4.9rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-t2gk-ryB .auto-group-eiew-vi9 .auto-group-1rwf-nkM .rectangle-16-yZw {
+.content .footer-content .footer-line1 .auto-group-eiew-vi9 .auto-group-1rwf-nkM .rectangle-16-yZw {
   width: 4.9rem;
   height: 4.9rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-t2gk-ryB .auto-group-jwku-Kdo {
+.content .footer-content .footer-line1 .auto-group-jwku-Kdo {
   box-sizing: border-box;
   padding-left: 2rem;
   height: 100%;
@@ -467,20 +484,20 @@ form button{
   align-items: flex-end;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-t2gk-ryB .auto-group-jwku-Kdo .rectangle-17-Gow {
+.content .footer-content .footer-line1 .auto-group-jwku-Kdo .rectangle-17-Gow {
   margin-right: 19.2rem;
   width: 4.9rem;
   height: 4.9rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-t2gk-ryB .auto-group-jwku-Kdo .auto-group-xyky-cso {
+.content .footer-content .footer-line1 .auto-group-jwku-Kdo .auto-group-xyky-cso {
   margin-bottom: 1.2rem;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-t2gk-ryB .auto-group-jwku-Kdo .auto-group-xyky-cso .about-us-n1b {
+.content .footer-content .footer-line1 .auto-group-jwku-Kdo .auto-group-xyky-cso .about-us-n1b {
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
   font-weight: 500;
@@ -490,7 +507,7 @@ form button{
   white-space: nowrap;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-t2gk-ryB .auto-group-jwku-Kdo .auto-group-xyky-cso .faq-KXK {
+.content .footer-content .footer-line1 .auto-group-jwku-Kdo .auto-group-xyky-cso .faq-KXK {
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.5;
@@ -499,13 +516,13 @@ form button{
   white-space: nowrap;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-rm5d-r1T {
+.content .footer-content .footer-line2  {
   margin: 0rem 21.7rem 2.9rem 0rem;
   display: flex;
   align-items: flex-start;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-rm5d-r1T .lorem-ipsum-dolor-sit-amet-consectetur-LxD {
+.content .footer-content .footer-line2  .lorem-ipsum-dolor-sit-amet-consectetur-LxD {
   margin-right: 15.7rem;
   max-width: 34.6rem;
   font-size: 2.5rem;
@@ -515,13 +532,13 @@ form button{
   font-family: Poppins, 'Source Sans Pro';
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-rm5d-r1T .auto-group-s5xr-G5B {
+.content .footer-content .footer-line2  .auto-group-s5xr-G5B {
   margin: 2rem 19.2rem 0rem 0rem;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-rm5d-r1T .auto-group-s5xr-G5B .call-us-QSH {
+.content .footer-content .footer-line2  .auto-group-s5xr-G5B .call-us-QSH {
   margin-bottom: 1.6rem;
   font-size: 2.5rem;
   font-weight: 500;
@@ -531,7 +548,7 @@ form button{
   white-space: nowrap;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-rm5d-r1T .auto-group-s5xr-G5B .item-085762382649-Lqj {
+.content .footer-content .footer-line2  .auto-group-s5xr-G5B .item-085762382649-Lqj {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
@@ -540,13 +557,13 @@ form button{
   white-space: nowrap;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-rm5d-r1T .auto-group-edoq-413 {
+.content .footer-content .footer-line2  .auto-group-edoq-413 {
   margin-top: 0.3rem;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-rm5d-r1T .auto-group-edoq-413 .privacy-1BB {
+.content .footer-content .footer-line2  .auto-group-edoq-413 .privacy-1BB {
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
   font-weight: 500;
@@ -556,7 +573,7 @@ form button{
   white-space: nowrap;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-rm5d-r1T .auto-group-edoq-413 .contact-us-kPf {
+.content .footer-content .footer-line2  .auto-group-edoq-413 .contact-us-kPf {
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.5;
@@ -565,21 +582,21 @@ form button{
   white-space: nowrap;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .line-1-UKf {
+.content .footer-content .line-1-UKf {
   margin-bottom: 2.1rem;
   width: 100%;
   height: 0.1rem;
   background-color: #000000;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-cvy3-Qz1 {
+.content .footer-content .footer-line3  {
   margin: 0rem 7.6rem 0rem 7.8rem;
   width: calc(100% - 15.4rem);
   display: flex;
   align-items: center;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-cvy3-Qz1 .lorem-ipsum-dolor-sit-amet-X33 {
+.content .footer-content .footer-line3  .lorem-ipsum-dolor-sit-amet-X33 {
   margin-right: 48.3rem;
   font-size: 2.5rem;
   font-weight: 500;
@@ -589,7 +606,7 @@ form button{
   white-space: nowrap;
   flex-shrink: 0;
 }
-.login-cVs .auto-group-ad3y-9J5 .auto-group-cvy3-Qz1 .lorem-ipsum-dolor-sit-amet-r5K {
+.content .footer-content .footer-line3  .lorem-ipsum-dolor-sit-amet-r5K {
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.5;
