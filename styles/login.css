@@ -148,7 +148,7 @@ form button{
     color: #fafafa;
 }
 
-img{
+.img-side img{
     width: 53.6rem;
     height: 60.8rem;
     flex-shrink: 0;
