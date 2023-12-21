@@ -157,7 +157,7 @@ a:hover {
 .remember-layout {
   margin-bottom: 4.3rem;
   width: 100%;
-  display: flex; /* Menjadikan elemen berada dalam satu baris secara horizontal */
+  display: flex;
 }
 
 .remember {
