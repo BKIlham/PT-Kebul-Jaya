@@ -1,4 +1,3 @@
-
 html {
 	font-size:62.5%;
 }
@@ -12,7 +11,117 @@ ul, li {
 input {
 	border: none;
 }
-.about-us-iD3 {
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: montserrat;
+}
+nav {
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  background: #1b9bff;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
+.content-body {
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -20,45 +129,9 @@ input {
   flex-direction: column;
   background-color: #ffffff;
 }
-.about-us-iD3 .auto-group-nzjb-ESH {
-  margin-bottom: 11.3rem;
-  box-sizing: border-box;
-  padding: 3.2rem 10rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  background-color: #b1b1b1;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-nzjb-ESH .logo-Jww {
-  margin-right: 44rem;
-  width: 23.2rem;
-  height: 7rem;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-nzjb-ESH .login-rCm {
-  margin-right: 2.3rem;
-  width: 17.4rem;
-  height: 4rem;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-nzjb-ESH .login-PiV {
-  margin-right: 2.3rem;
-  width: 17.4rem;
-  height: 4rem;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-nzjb-ESH .login-wED {
-  width: 17.4rem;
-  height: 4rem;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.about-us-iD3 .about-us-Ujw {
-  margin-left: 9.9rem;
+
+.content-body .title-content  {
+  margin: 30px 0px 0px 60px;
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.5;
@@ -67,7 +140,8 @@ input {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.about-us-iD3 .auto-group-hqjx-o1X {
+
+.content-body .content {
   box-sizing: border-box;
   padding: 8rem 10rem 17.2rem 9.9rem;
   width: 100%;
@@ -76,14 +150,15 @@ input {
   flex-direction: column;
   flex-shrink: 0;
 }
-.about-us-iD3 .auto-group-hqjx-o1X .rectangle-25-Jys {
+
+.content-body .content .gambar {
   margin: 0rem 0rem 8rem 0.1rem;
   width: 124rem;
   height: 50rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.about-us-iD3 .auto-group-hqjx-o1X .lorem-ipsum-dolor-sit-amet-consectetur-id-id-venenatis-ultrices-dolor-in-velit-elementum-arcu-sed-iaculis-donec-eleifend-eu-laoreet-netus-mi-sit-posuere-amet-odio-tellus-eget-volutpat-tellus-at-congue-amet-eu-amet-aliquet-eget-suscipit-sollicitudin-molestie-a-proin-nullam-elit-pellentesque-facilisis-auctor-tristique-nibh-eros-suscipit-sed-nullam-eget-odio-nisl-in-est-etiam-parturient-turpis-placerat-non-et-fames-sem-nunc-tortor-id-nulla-faucibus-sed-odio-vestibulum-facilisi-cras-sapien-elit-viverra-feugiat-egestas-erat-ornare-consectetur-nunc-dolor-viverra-eleifend-pulvinar-mi-convallis-malesuada-sollicitudin-sollicitudin-leo-enim-eget-id-ac-aenean-morbi-congue-tortor-neque-interdum-etiam-fringilla-arcu-elementum-molestie-eget-pulvinar-duis-integer-volutpat-mattis-tortor-eget-dolor-dui-cras-habitasse-fermentum-sem-elit-turpis-gravida-donec-velit-visi-consectetur-cursus-sit-in-duis-vel-vitae-convallis-sed-lacus-hendrerit-blandit-et-cras-pellentesque-turpis-rhoncus-felis-senectus-posuere-lobortis-ipsum-pellentesque-et-ac-quam-sed-sapien-auctor-sit-ut-phasellus-consectetur-lectus-scelerisque-facilisi-aliquet-viverra-non-praesent-nisl-pharetra-quisque-enim-ut-sed-nisl-misi-gravida-ac-egestas-eros-euismod-mauris-volutpat-in-quam-vulputate-rutrum-placerat-tristique-vestibulum-elit-vestibulum-montes-nisl-fusce-pulvinar-sed-a-fringilla-eros-massa-nunc-viverra-aenean-et-vitae-non-lacinia-arcu-facilisis-egestas-vitae-mollis-nisi-varius-ac-morbi-sollicitudin-semper-iaculis-dapibus-tellus-tincidunt-erat-posuere-nunc-urna-ornare-nunc-lectus-mauris-et-quis-pellentesque-sem-bxy {
+.content-body .content .p1 {
   margin-right: 0.3rem;
   max-width: 123.8rem;
   font-size: 2.5rem;
@@ -93,212 +168,158 @@ input {
   font-family: Poppins, 'Source Sans Pro';
   flex-shrink: 0;
 }
-.about-us-iD3 .auto-group-hqjx-o1X .lorem-ipsum-dolor-sit-amet-consectetur-id-id-venenatis-ultrices-dolor-in-velit-elementum-arcu-sed-iaculis-donec-eleifend-eu-laoreet-netus-mi-sit-posuere-amet-odio-tellus-eget-volutpat-tellus-at-congue-amet-eu-amet-aliquet-eget-suscipit-sollicitudin-molestie-a-proin-nullam-elit-pellentesque-facilisis-auctor-tristique-nibh-eros-suscipit-sed-nullam-eget-odio-nisl-in-est-etiam-parturient-turpis-placerat-non-et-fames-sem-nunc-tortor-id-nulla-faucibus-sed-odio-vestibulum-facilisi-cras-sapien-elit-viverra-feugiat-egestas-erat-ornare-consectetur-nunc-dolor-viverra-eleifend-pulvinar-mi-convallis-malesuada-sollicitudin-sollicitudin-leo-enim-eget-id-ac-aenean-morbi-congue-tortor-neque-interdum-etiam-fringilla-arcu-elementum-molestie-eget-pulvinar-duis-integer-volutpat-mattis-tortor-eget-dolor-dui-cras-habitasse-fermentum-sem-elit-turpis-gravida-donec-velit-visi-consectetur-cursus-sit-in-duis-vel-vitae-convallis-sed-lacus-hendrerit-blandit-et-cras-pellentesque-turpis-rhoncus-felis-senectus-posuere-lobortis-ipsum-pellentesque-et-ac-quam-sed-sapien-auctor-sit-ut-phasellus-consectetur-lectus-scelerisque-facilisi-aliquet-viverra-non-praesent-nisl-pharetra-quisque-enim-ut-sed-nisl-misi-gravida-ac-egestas-eros-euismod-mauris-volutpat-in-quam-vulputate-rutrum-placerat-tristique-vestibulum-elit-vestibulum-montes-nisl-fusce-pulvinar-sed-a-fringilla-eros-massa-nunc-viverra-aenean-et-vitae-non-lacinia-arcu-facilisis-egestas-vitae-mollis-nisi-varius-ac-morbi-sollicitudin-semper-iaculis-dapibus-tellus-tincidunt-erat-posuere-nunc-urna-ornare-nunc-lectus-mauris-et-quis-pellentesque-sem-bxy .lorem-ipsum-dolor-sit-amet-consectetur-id-id-venenatis-ultrices-dolor-in-velit-elementum-arcu-sed-iaculis-donec-eleifend-eu-laoreet-netus-mi-sit-posuere-amet-odio-tellus-eget-volutpat-tellus-at-congue-amet-eu-amet-aliquet-eget-suscipit-sollicitudin-molestie-a-proin-nullam-elit-pellentesque-facilisis-auctor-tristique-nibh-eros-suscipit-sed-nullam-eget-odio-nisl-in-est-etiam-parturient-turpis-placerat-non-et-fames-sem-nunc-tortor-id-nulla-faucibus-sed-odio-vestibulum-facilisi-cras-sapien-elit-viverra-feugiat-egestas-erat-ornare-consectetur-nunc-dolor-viverra-eleifend-pulvinar-mi-convallis-malesuada-sollicitudin-sollicitudin-leo-enim-eget-id-ac-aenean-morbi-congue-tortor-neque-interdum-etiam-fringilla-arcu-elementum-molestie-eget-pulvinar-duis-integer-volutpat-mattis-tortor-eget-dolor-dui-cras-habitasse-fermentum-sem-elit-turpis-gravida-donec-velit-visi-consectetur-cursus-sit-in-duis-vel-vitae-convallis-sed-lacus-hendrerit-blandit-et-cras-pellentesque-turpis-rhoncus-felis-senectus-posuere-lobortis-ipsum-pellentesque-et-ac-quam-sed-sapien-auctor-sit-ut-phasellus-consectetur-lectus-scelerisque-facilisi-aliquet-viverra-non-praesent-nisl-pharetra-quisque-enim-ut-sed-nisl-misi-gravida-ac-egestas-eros-euismod-mauris-volutpat-in-quam-vulputate-rutrum-placerat-tristique-vestibulum-elit-vestibulum-montes-nisl-fusce-pulvinar-sed-a-fringilla-eros-massa-nunc-viverra-aenean-et-vitae-non-lacinia-arcu-facilisis-egestas-vitae-mollis-nisi-varius-ac-morbi-sollicitudin-semper-iaculis-dapibus-tellus-tincidunt-erat-posuere-nunc-urna-ornare-nunc-lectus-mauris-et-quis-pellentesque-sem-bxy-sub-1 {
+.content-body .content .p1 .p1-sub-1 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.about-us-iD3 .auto-group-hqjx-o1X .lorem-ipsum-dolor-sit-amet-consectetur-id-id-venenatis-ultrices-dolor-in-velit-elementum-arcu-sed-iaculis-donec-eleifend-eu-laoreet-netus-mi-sit-posuere-amet-odio-tellus-eget-volutpat-tellus-at-congue-amet-eu-amet-aliquet-eget-suscipit-sollicitudin-molestie-a-proin-nullam-elit-pellentesque-facilisis-auctor-tristique-nibh-eros-suscipit-sed-nullam-eget-odio-nisl-in-est-etiam-parturient-turpis-placerat-non-et-fames-sem-nunc-tortor-id-nulla-faucibus-sed-odio-vestibulum-facilisi-cras-sapien-elit-viverra-feugiat-egestas-erat-ornare-consectetur-nunc-dolor-viverra-eleifend-pulvinar-mi-convallis-malesuada-sollicitudin-sollicitudin-leo-enim-eget-id-ac-aenean-morbi-congue-tortor-neque-interdum-etiam-fringilla-arcu-elementum-molestie-eget-pulvinar-duis-integer-volutpat-mattis-tortor-eget-dolor-dui-cras-habitasse-fermentum-sem-elit-turpis-gravida-donec-velit-visi-consectetur-cursus-sit-in-duis-vel-vitae-convallis-sed-lacus-hendrerit-blandit-et-cras-pellentesque-turpis-rhoncus-felis-senectus-posuere-lobortis-ipsum-pellentesque-et-ac-quam-sed-sapien-auctor-sit-ut-phasellus-consectetur-lectus-scelerisque-facilisi-aliquet-viverra-non-praesent-nisl-pharetra-quisque-enim-ut-sed-nisl-misi-gravida-ac-egestas-eros-euismod-mauris-volutpat-in-quam-vulputate-rutrum-placerat-tristique-vestibulum-elit-vestibulum-montes-nisl-fusce-pulvinar-sed-a-fringilla-eros-massa-nunc-viverra-aenean-et-vitae-non-lacinia-arcu-facilisis-egestas-vitae-mollis-nisi-varius-ac-morbi-sollicitudin-semper-iaculis-dapibus-tellus-tincidunt-erat-posuere-nunc-urna-ornare-nunc-lectus-mauris-et-quis-pellentesque-sem-bxy .lorem-ipsum-dolor-sit-amet-consectetur-id-id-venenatis-ultrices-dolor-in-velit-elementum-arcu-sed-iaculis-donec-eleifend-eu-laoreet-netus-mi-sit-posuere-amet-odio-tellus-eget-volutpat-tellus-at-congue-amet-eu-amet-aliquet-eget-suscipit-sollicitudin-molestie-a-proin-nullam-elit-pellentesque-facilisis-auctor-tristique-nibh-eros-suscipit-sed-nullam-eget-odio-nisl-in-est-etiam-parturient-turpis-placerat-non-et-fames-sem-nunc-tortor-id-nulla-faucibus-sed-odio-vestibulum-facilisi-cras-sapien-elit-viverra-feugiat-egestas-erat-ornare-consectetur-nunc-dolor-viverra-eleifend-pulvinar-mi-convallis-malesuada-sollicitudin-sollicitudin-leo-enim-eget-id-ac-aenean-morbi-congue-tortor-neque-interdum-etiam-fringilla-arcu-elementum-molestie-eget-pulvinar-duis-integer-volutpat-mattis-tortor-eget-dolor-dui-cras-habitasse-fermentum-sem-elit-turpis-gravida-donec-velit-visi-consectetur-cursus-sit-in-duis-vel-vitae-convallis-sed-lacus-hendrerit-blandit-et-cras-pellentesque-turpis-rhoncus-felis-senectus-posuere-lobortis-ipsum-pellentesque-et-ac-quam-sed-sapien-auctor-sit-ut-phasellus-consectetur-lectus-scelerisque-facilisi-aliquet-viverra-non-praesent-nisl-pharetra-quisque-enim-ut-sed-nisl-misi-gravida-ac-egestas-eros-euismod-mauris-volutpat-in-quam-vulputate-rutrum-placerat-tristique-vestibulum-elit-vestibulum-montes-nisl-fusce-pulvinar-sed-a-fringilla-eros-massa-nunc-viverra-aenean-et-vitae-non-lacinia-arcu-facilisis-egestas-vitae-mollis-nisi-varius-ac-morbi-sollicitudin-semper-iaculis-dapibus-tellus-tincidunt-erat-posuere-nunc-urna-ornare-nunc-lectus-mauris-et-quis-pellentesque-sem-bxy-sub-3 {
+.content-body .content .p1 .p1-sub-3 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.about-us-iD3 .auto-group-lq4k-sCy {
-  box-sizing: border-box;
-  padding: 2.9rem 5.6rem 2.6rem 5.5rem;
+.footer {
+  background-color: #0082e6;
+  padding: 25px;
+  color: #fff;
+  position: relative;
   width: 100%;
-  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-content {
   display: flex;
-  flex-direction: column;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-b2bv-mZF {
-  margin-right: 24.4rem;
-  height: 10.3rem;
-  display: flex;
-  align-items: flex-start;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-b2bv-mZF .rectangle-19-ggD {
-  margin: 0.1rem 27.1rem 0rem 0rem;
-  width: 23.2rem;
-  height: 7rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-b2bv-mZF .auto-group-9jf1-zgu {
-  width: 11.8rem;
-  height: 100%;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-b2bv-mZF .auto-group-9jf1-zgu .follow-us-wc9 {
-  margin-bottom: 1.6rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-b2bv-mZF .auto-group-9jf1-zgu .auto-group-e5js-rUD {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
   width: 100%;
+  margin: 0 auto;
+}
+
+.line1-col {
+  width: 21.2%;
+  margin: 20px;
+}
+
+.line1-col a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo1 .logo{
+  font-size: 50px;
+}
+
+.logo1 .desk p {
+  font-size: 1px;
+}
+
+.tentang ul,
+.Important ul,
+.Useful-Links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tentang ul li,
+.Important ul li,
+.Useful-Links ul li {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.line1-col p,
+.line1-col h3,
+.line1-col .desk {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.line2-col{
   display: flex;
-  align-items: center;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-b2bv-mZF .auto-group-9jf1-zgu .auto-group-e5js-rUD .rectangle-15-oeM {
-  margin-right: 2rem;
-  width: 4.9rem;
-  height: 4.9rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-b2bv-mZF .auto-group-9jf1-zgu .auto-group-e5js-rUD .rectangle-16-LuB {
-  width: 4.9rem;
-  height: 4.9rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-b2bv-mZF .auto-group-8ctd-tA1 {
-  box-sizing: border-box;
-  padding-left: 2rem;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-b2bv-mZF .auto-group-8ctd-tA1 .rectangle-17-cLu {
-  margin-right: 19.2rem;
-  width: 4.9rem;
-  height: 4.9rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-b2bv-mZF .auto-group-8ctd-tA1 .auto-group-15ib-YEZ {
-  margin-bottom: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-b2bv-mZF .auto-group-8ctd-tA1 .auto-group-15ib-YEZ .about-us-61B {
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-b2bv-mZF .auto-group-8ctd-tA1 .auto-group-15ib-YEZ .faq-pxm {
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-rsbm-Mxh {
-  margin: 0rem 21.7rem 2.9rem 0rem;
-  display: flex;
-  align-items: flex-start;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-rsbm-Mxh .lorem-ipsum-dolor-sit-amet-consectetur-gzy {
-  margin-right: 15.7rem;
-  max-width: 34.6rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-rsbm-Mxh .auto-group-mxfv-1GZ {
-  margin: 2rem 19.2rem 0rem 0rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-rsbm-Mxh .auto-group-mxfv-1GZ .call-us-K2M {
-  margin-bottom: 1.6rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-rsbm-Mxh .auto-group-mxfv-1GZ .item-085762382649-3U9 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-rsbm-Mxh .auto-group-9wwu-Aof {
-  margin-top: 0.3rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-rsbm-Mxh .auto-group-9wwu-Aof .privacy-iqB {
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-rsbm-Mxh .auto-group-9wwu-Aof .contact-us-fEd {
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.about-us-iD3 .auto-group-lq4k-sCy .line-1-PgR {
-  margin-bottom: 2.1rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
-  height: 0.1rem;
-  background-color: #000000;
-  flex-shrink: 0;
+  margin: 0 auto;
 }
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-brjb-76d {
-  margin: 0rem 7.6rem 0rem 7.8rem;
-  width: calc(100% - 15.4rem);
+
+.subs{
+  margin-top: 30px;
+  margin-left: 80px;
+}
+
+.subs h3{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.subs p{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.subs form {
   display: flex;
   align-items: center;
-  flex-shrink: 0;
 }
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-brjb-76d .lorem-ipsum-dolor-sit-amet-1Su {
-  margin-right: 48.3rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
+
+.subs input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
-.about-us-iD3 .auto-group-lq4k-sCy .auto-group-brjb-76d .lorem-ipsum-dolor-sit-amet-YBw {
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
+
+.subs button {
+  background-color: #279ef8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.subs button:hover {
+  background-color: #0056b3;
+}
+
+
+.mid {
+  padding: 20px;
+}
+
+.mid .followus {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.sosmed {
+  text-align: center;
+}
+
+.icon-sosmed img {
+  margin-bottom: 10px;
+  width: 25%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+.notelp {
+  margin-top: 20px;
+}
+
+.watermark {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  opacity: 0.7;
 }
