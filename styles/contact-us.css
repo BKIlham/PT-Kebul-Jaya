@@ -148,10 +148,16 @@ a:hover {
     color: #fafafa;
 }
 
-.img-side img{
-    max-width: 100%;
-    height: auto;
-    flex-shrink: 0;
+.login-layout .form textarea {
+  width: 100%; /* Gunakan lebar 100% agar tetap responsif */
+  height: 100px; /* Tentukan tinggi textarea */
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #2979ff;
+  color: #fff;
+  font-size: 20px;
 }
 
 .content {
@@ -179,14 +185,27 @@ a:hover {
   width: calc(100% - 20rem);
   display: flex;
   align-items: center;
+  justify-content: space-between; /* Menambahkan properti justify-content */
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
+
 .content .mid-content .login-layout {
   margin: 0rem 23.9rem 3.5rem 0rem;
   width: 37.9rem;
   flex-shrink: 0;
 }
+
+.img-side {
+  width: 37.9rem; /* Menambahkan lebar agar sesuai dengan lebar login-layout */
+}
+
+.img-side img {
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
 
 .content .mid-content .login-layout .or-login-with-eoF {
   width: 100%;
