@@ -12,9 +12,117 @@ ul, li {
 input {
 	border: none;
 }
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
 body {
-  width: 144rem;
-}.privacy-gH3 {
+  font-family: montserrat;
+}
+nav {
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  background: #1b9bff;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
+.content-body {
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -22,44 +130,8 @@ body {
   flex-direction: column;
   background-color: #ffffff;
 }
-.privacy-gH3 .auto-group-e6zo-REd {
-  margin-bottom: 11.3rem;
-  box-sizing: border-box;
-  padding: 3.2rem 10rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  background-color: #b1b1b1;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-e6zo-REd .logo-8eq {
-  margin-right: 44rem;
-  width: 23.2rem;
-  height: 7rem;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-e6zo-REd .login-fuf {
-  margin-right: 2.3rem;
-  width: 17.4rem;
-  height: 4rem;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-e6zo-REd .login-1id {
-  margin-right: 2.3rem;
-  width: 17.4rem;
-  height: 4rem;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-e6zo-REd .login-YCm {
-  width: 17.4rem;
-  height: 4rem;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.privacy-gH3 .privacy-policy-tGd {
+
+.content-body .content-title {
   margin-left: 9.9rem;
   font-size: 4rem;
   font-weight: 700;
@@ -69,7 +141,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.privacy-gH3 .auto-group-mdaj-Qkm {
+.content-body .content {
   box-sizing: border-box;
   padding: 8rem 10rem 16.4rem 9.9rem;
   width: 100%;
@@ -78,14 +150,14 @@ body {
   flex-direction: column;
   flex-shrink: 0;
 }
-.privacy-gH3 .auto-group-mdaj-Qkm .rectangle-25-uhX {
+.content-body .content .gambar {
   margin: 0rem 0rem 8rem 0.1rem;
   width: 124rem;
   height: 50rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.privacy-gH3 .auto-group-mdaj-Qkm .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1 {
+.content-body .content .tulisan {
   margin-right: 0.5rem;
   max-width: 123.6rem;
   font-size: 2.5rem;
@@ -95,243 +167,190 @@ body {
   font-family: Poppins, 'Source Sans Pro';
   flex-shrink: 0;
 }
-.privacy-gH3 .auto-group-mdaj-Qkm .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1 .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1-sub-0 {
+.content-body .content .tulisan .tulisan-sub-0 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.privacy-gH3 .auto-group-mdaj-Qkm .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1 .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1-sub-1 {
+.content-body .content .tulisan .tulisan-sub-1 {
 }
-.privacy-gH3 .auto-group-mdaj-Qkm .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1 .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1-sub-2 {
+.content-body .content .tulisan .tulisan-sub-2 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.privacy-gH3 .auto-group-mdaj-Qkm .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1 .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1-sub-3 {
+.content-body .content .tulisan .tulisan-sub-3 {
 }
-.privacy-gH3 .auto-group-mdaj-Qkm .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1 .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1-sub-4 {
+.content-body .content .tulisan .tulisan-sub-4 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.privacy-gH3 .auto-group-mdaj-Qkm .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1 .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1-sub-5 {
+.content-body .content .tulisan .tulisan-sub-5 {
 }
-.privacy-gH3 .auto-group-mdaj-Qkm .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1 .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1-sub-6 {
+.content-body .content .tulisan .tulisan-sub-6 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.privacy-gH3 .auto-group-mdaj-Qkm .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1 .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1-sub-7 {
+.content-body .content .tulisan .tulisan-sub-7 {
 }
-.privacy-gH3 .auto-group-mdaj-Qkm .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1 .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1-sub-8 {
+.content-body .content .tulisan .tulisan-sub-8 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.privacy-gH3 .auto-group-mdaj-Qkm .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1 .kebijakan-privasi-selamat-datang-di-situs-web-kami-kami-menghargai-dan-menjaga-privasi-pengunjung-kami-dengan-sepenuh-hati-dalam-teks-ini-kami-menjelaskan-bagaimana-kami-mengumpulkan-menggunakan-dan-melindungi-informasi-pribadi-anda-saat-mengunjungi-situs-ini-informasi-yang-kami-kumpulkan-1-informasi-pribadi-saat-anda-menggunakan-situs-kami-mungkin-kami-meminta-anda-untuk-memberikan-informasi-tertentu-yang-dapat-diidentifikasi-secara-pribadi-ini-termasuk-nama-alamat-email-nomor-telepon-dan-informasi-lainnya-yang-relevan-2-log-files-seperti-banyak-situs-web-lainnya-kami-menggunakan-log-files-informasi-dalam-log-files-mencakup-alamat-ip-jenis-browser-isp-internet-service-provider-tanggal-dan-waktu-serta-halaman-yang-anda-kunjungi-di-situs-kami-3-cookies-kami-menggunakan-cookies-untuk-menyimpan-informasi-tentang-preferensi-pengunjung-mengikuti-data-lalu-lintas-di-situs-dan-mempersonalisasi-pengalaman-pengguna-penggunaan-informasi-1-meningkatkan-layanan-informasi-yang-kami-kumpulkan-digunakan-untuk-meningkatkan-layanan-kami-mempersonalisasi-pengalaman-pengguna-dan-merespons-permintaan-pelanggan-dengan-lebih-efektif-2-keamanan-kami-berkomitmen-untuk-menjaga-keamanan-informasi-pribadi-pengunjung-tindakan-keamanan-telah-diimplementasikan-untuk-mencegah-akses-tidak-sah-atau-pengungkapan-informasi-tanpa-izin-3-pemberitahuan-perubahan-setiap-kali-kami-memutuskan-untuk-mengubah-kebijakan-privasi-perubahan-tersebut-akan-segera-diberitahukan-di-halaman-ini-keamanan-informasi-kami-memprioritaskan-keamanan-informasi-pribadi-anda-kami-menggunakan-langkah-langkah-fisik-elektronik-dan-administratif-yang-sesuai-untuk-melindungi-informasi-pribadi-yang-kami-kumpulkan-dari-akses-yang-tidak-sah-atau-pengungkapan-hak-anda-anda-memiliki-hak-untuk-mengetahui-informasi-apa-yang-kami-simpan-tentang-anda-dan-bagaimana-informasi-tersebut-digunakan-jika-anda-memiliki-pertanyaan-atau-kekhawatiran-tentang-kebijakan-privasi-kami-jangan-ragu-untuk-menghubungi-kami-terima-kasih-telah-membaca-kebijakan-privasi-kami-kami-berharap-penjelasan-ini-memberikan-gambaran-yang-jelas-tentang-cara-kami-melindungi-dan-menggunakan-informasi-pribadi-pengunjung-kami-EE1-sub-9 {
+.content-body .content .tulisan .tulisan-sub-9 {
 }
-.privacy-gH3 .auto-group-ikzz-8sf {
-  box-sizing: border-box;
-  padding: 2.9rem 5.6rem 2.6rem 5.5rem;
+
+.footer {
+  background-color: #0082e6;
+  padding: 25px;
+  color: #fff;
+  position: relative;
   width: 100%;
-  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-content {
   display: flex;
-  flex-direction: column;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-znaw-dJd {
-  margin-right: 24.4rem;
-  height: 10.3rem;
-  display: flex;
-  align-items: flex-start;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-znaw-dJd .rectangle-19-jcZ {
-  margin: 0.1rem 27.1rem 0rem 0rem;
-  width: 23.2rem;
-  height: 7rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-znaw-dJd .auto-group-l5vm-dxq {
-  width: 11.8rem;
-  height: 100%;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-znaw-dJd .auto-group-l5vm-dxq .follow-us-zHb {
-  margin-bottom: 1.6rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-znaw-dJd .auto-group-l5vm-dxq .auto-group-vdws-Kam {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
   width: 100%;
+  margin: 0 auto;
+}
+
+.line1-col {
+  width: 21.2%;
+  margin: 20px;
+}
+
+.line1-col a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo1 .logo{
+  font-size: 50px;
+}
+
+.logo1 .desk p {
+  font-size: 1px;
+}
+
+.tentang ul,
+.Important ul,
+.Useful-Links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tentang ul li,
+.Important ul li,
+.Useful-Links ul li {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.line1-col p,
+.line1-col h3,
+.line1-col .desk {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.line2-col{
   display: flex;
-  align-items: center;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-znaw-dJd .auto-group-l5vm-dxq .auto-group-vdws-Kam .rectangle-15-UCm {
-  margin-right: 2rem;
-  width: 4.9rem;
-  height: 4.9rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-znaw-dJd .auto-group-l5vm-dxq .auto-group-vdws-Kam .rectangle-16-nz9 {
-  width: 4.9rem;
-  height: 4.9rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-znaw-dJd .auto-group-3udv-Xwj {
-  box-sizing: border-box;
-  padding-left: 2rem;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-znaw-dJd .auto-group-3udv-Xwj .rectangle-17-FMw {
-  margin-right: 19.2rem;
-  width: 4.9rem;
-  height: 4.9rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-znaw-dJd .auto-group-3udv-Xwj .auto-group-4m7h-PU9 {
-  margin-bottom: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-znaw-dJd .auto-group-3udv-Xwj .auto-group-4m7h-PU9 .about-us-iFX {
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-znaw-dJd .auto-group-3udv-Xwj .auto-group-4m7h-PU9 .faq-e9B {
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-a97q-BQ1 {
-  margin: 0rem 18.4rem 2.9rem 0rem;
-  display: flex;
-  align-items: flex-start;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-a97q-BQ1 .lorem-ipsum-dolor-sit-amet-consectetur-u57 {
-  margin-right: 15.7rem;
-  max-width: 34.6rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-a97q-BQ1 .auto-group-e4kb-QXf {
-  margin: 2rem 19.2rem 0rem 0rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-a97q-BQ1 .auto-group-e4kb-QXf .call-us-txd {
-  margin-bottom: 1.6rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-a97q-BQ1 .auto-group-e4kb-QXf .item-085762382649-2ow {
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-a97q-BQ1 .auto-group-fddv-fM7 {
-  margin-top: 0.3rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-a97q-BQ1 .auto-group-fddv-fM7 .privacy-policy-cXF {
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-a97q-BQ1 .auto-group-fddv-fM7 .contact-us-kNZ {
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.privacy-gH3 .auto-group-ikzz-8sf .line-1-tDs {
-  margin-bottom: 2.1rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
-  height: 0.1rem;
-  background-color: #000000;
-  flex-shrink: 0;
+  margin: 0 auto;
 }
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-h7ym-1ZP {
-  margin: 0rem 7.6rem 0rem 7.8rem;
-  width: calc(100% - 15.4rem);
+
+.subs{
+  margin-top: 30px;
+  margin-left: 80px;
+}
+
+.subs h3{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.subs p{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.subs form {
   display: flex;
   align-items: center;
-  flex-shrink: 0;
 }
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-h7ym-1ZP .lorem-ipsum-dolor-sit-amet-76d {
-  margin-right: 48.3rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
+
+.subs input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
-.privacy-gH3 .auto-group-ikzz-8sf .auto-group-h7ym-1ZP .lorem-ipsum-dolor-sit-amet-Eh3 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
+
+.subs button {
+  background-color: #279ef8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.subs button:hover {
+  background-color: #0056b3;
+}
+
+
+.mid {
+  padding: 20px;
+}
+
+.mid .followus {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.sosmed {
+  text-align: center;
+}
+
+.icon-sosmed img {
+  margin-bottom: 10px;
+  width: 25%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+.notelp {
+  margin-top: 20px;
+}
+
+.watermark {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  opacity: 0.7;
 }
