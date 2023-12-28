@@ -36,6 +36,12 @@ label.logo {
   font-weight: bold;
 }
 
+div img{
+  max-width: 100px;
+  padding: 2px;
+  
+}
+
 nav ul {
   float: right;
   margin-right: 20px;
