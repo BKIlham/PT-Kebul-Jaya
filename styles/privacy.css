@@ -180,8 +180,7 @@ a:hover {
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.content-body .content .tulisan .tulisan-sub-1 {
-}
+
 .content-body .content .tulisan .tulisan-sub-2 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -189,8 +188,7 @@ a:hover {
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.content-body .content .tulisan .tulisan-sub-3 {
-}
+
 .content-body .content .tulisan .tulisan-sub-4 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -198,8 +196,7 @@ a:hover {
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.content-body .content .tulisan .tulisan-sub-5 {
-}
+
 .content-body .content .tulisan .tulisan-sub-6 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -207,8 +204,7 @@ a:hover {
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.content-body .content .tulisan .tulisan-sub-7 {
-}
+
 .content-body .content .tulisan .tulisan-sub-8 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -216,8 +212,7 @@ a:hover {
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.content-body .content .tulisan .tulisan-sub-9 {
-}
+
 
 .footer {
   background-color: #0082e6;
@@ -247,13 +242,18 @@ a:hover {
   color: #fff;
 }
 
-.logo1 .logo{
-  font-size: 50px;
+
+.logo1 img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 0px; 
 }
 
-.logo1 .desk p {
-  font-size: 1px;
+.logo1 p.desk {
+  font-size: 15px;
+  line-height: 0.7em;
 }
+
 
 .tentang ul,
 .Important ul,
