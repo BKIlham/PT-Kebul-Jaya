@@ -28,6 +28,13 @@ nav {
   width: 100%;
 }
 
+div img{
+  max-width: 100px;
+  padding: 2px;
+  
+}
+
+
 label.logo {
   color: white;
   font-size: 35px;
