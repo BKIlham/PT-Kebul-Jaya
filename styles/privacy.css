@@ -28,7 +28,7 @@ nav {
   width: 100%;
 }
 
-div img{
+nav img{
   max-width: 100px;
   padding: 2px;
   
@@ -162,7 +162,19 @@ a:hover {
   height: 50rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.content-body .content .gambar img {
+  height: auto;
+  width: 60.5%;
+  display: block;
+  margin: auto;
+}
+
+
 .content-body .content .tulisan {
   margin-right: 0.5rem;
   max-width: 123.6rem;
