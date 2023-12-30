@@ -710,12 +710,15 @@ a:hover {
   color: #fff;
 }
 
-.logo1 .logo{
-  font-size: 50px;
+.logo1 img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 0px; 
 }
 
-.logo1 .desk p {
-  font-size: 1px;
+.logo1 p.desk {
+  font-size: 15px;
+  line-height: 0.7em;
 }
 
 .tentang ul,
