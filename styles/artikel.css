@@ -128,7 +128,7 @@ a:hover {
     left: 0;
   }
 }
-.artikel-tJ9 {
+.content-body {
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -137,73 +137,73 @@ a:hover {
   flex-direction: column;
   background-color: #ffffff;
 }
-.artikel-tJ9 .auto-group-xruo-D7T {
-  width: 100%;
+
+.content-body .content {
+  width: 90%;
   height: 193.6rem;
   position: relative;
   flex-shrink: 0;
 }
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-mnck-Xdw {
-  width: 124.1rem;
+.content-body .content .kategori-box {
+  width: 100%;
   height: 2.8rem;
   position: absolute;
-  left: 9.9rem;
   top: 23.4rem;
   display: flex;
   align-items: center;
 }
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-mnck-Xdw .login-quX {
+.content-body .content .kategori-box .login-PbK {
   margin-right: 2.5rem;
   width: 12.4rem;
   height: 2.8rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-mnck-Xdw .login-zGd {
+.content-body .content .kategori-box .login-7nD {
   margin-right: 2.5rem;
   width: 12.4rem;
   height: 2.8rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-mnck-Xdw .login-X1f {
+.content-body .content .kategori-box .login-T5P {
   margin-right: 2.5rem;
   width: 12.4rem;
   height: 2.8rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-mnck-Xdw .login-ftZ {
+.content-body .content .kategori-box .login-Zu7 {
   margin-right: 2.5rem;
   width: 12.4rem;
   height: 2.8rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-mnck-Xdw .login-DQH {
+.content-body .content .kategori-box .login-iX7 {
   margin-right: 32.7rem;
   width: 12.4rem;
   height: 2.8rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-mnck-Xdw .login-ZDF {
+.content-body .content .kategori-box .login-45B {
   width: 19.4rem;
   height: 2.8rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-nmy7-JwX {
-  width: 124.1rem;
+.content-body .content .content-title-layout {
+  width: 100%;
   height: 6rem;
-  position: absolute;
-  left: 9.9rem;
+  position: relative;
   top: 11.3rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-nmy7-JwX .artikel-F65 {
-  margin-right: 68.6rem;
+.content-body .content .content-title-layout .title {
+  margin-right: 10px;
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.5;
@@ -212,53 +212,31 @@ a:hover {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-nmy7-JwX .master-input-text-yXs {
-  margin: 0.7rem 0;
-  box-sizing: border-box;
-  padding: 1.4rem 2.4rem 1.4rem 2.4rem;
-  width: 41.9rem;
-  height: calc(100% - 1.4rem);
-  background-color: #f2f1f9;
-  border-radius: 5rem;
-  flex-shrink: 0;
+
+.searchbox {
+  position: relative;
+  margin-left: 10px;
 }
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-nmy7-JwX .master-input-text-yXs .text-icons-3Gq {
-  box-sizing: border-box;
-  padding-right: 0.15rem;
+
+.searchbox input[type="text"] {
+  padding: 8px 30px 8px 8px;
+  border: none;
+  border-radius: 10px;
+  background-color: #b4b4b4;
+}
+
+.searchbox button {
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding:5px;
+}
+
+.content-body .content .sub-content .artikel-title {
   width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-nmy7-JwX .master-input-text-yXs .text-icons-3Gq .input-content-zSy {
-  margin-right: 31.05rem;
-  width: 4.4rem;
-  height: 100%;
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.125;
-  color: #767393;
-  font-family: DM Sans, 'Source Sans Pro';
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-nmy7-JwX .master-input-text-yXs .text-icons-3Gq .line-rounded-search-VPj {
-  margin-bottom: 0.0541rem;
-  width: 1.5001rem;
-  height: 1.5rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .lorem-ipsum-ntd {
-  width: 16.1rem;
   height: 3.6rem;
   position: absolute;
-  left: 10.9rem;
   top: 35.4rem;
   font-size: 2.4rem;
   font-weight: 700;
@@ -267,75 +245,23 @@ a:hover {
   font-family: Poppins, 'Source Sans Pro';
   white-space: nowrap;
 }
-.artikel-tJ9 .auto-group-xruo-D7T .lorem-ipsum-twf {
-  width: 16.1rem;
-  height: 3.6rem;
-  position: absolute;
-  left: 10.9rem;
-  top: 65.7rem;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .lorem-ipsum-DDF {
-  width: 16.1rem;
-  height: 3.6rem;
-  position: absolute;
-  left: 10.9rem;
-  top: 96rem;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .lorem-ipsum-JVb {
-  width: 16.1rem;
-  height: 3.6rem;
-  position: absolute;
-  left: 10.9rem;
-  top: 126.3rem;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .lorem-ipsum-pD3 {
-  width: 16.1rem;
-  height: 3.6rem;
-  position: absolute;
-  left: 10.9rem;
-  top: 156.6rem;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-xo7r-6RT {
-  width: 16.1rem;
+
+.content-body .content .sub-content .penulis-artikel {
+  width: 100%;
   height: 3.5rem;
   position: absolute;
-  left: 10.9rem;
   top: 39rem;
   display: flex;
   align-items: center;
 }
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-xo7r-6RT .rectangle-32-Qww {
+.content-body .content .sub-content .penulis-artikel .rectangle-32-E5T {
   margin-right: 0.8rem;
   width: 3.5rem;
   height: 3.5rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-xo7r-6RT .sandya-naufal-wws {
+.content-body .content .sub-content .penulis-artikel .sandya-naufal-NSZ {
   margin-top: 0.1rem;
   font-size: 1.6rem;
   font-weight: 400;
@@ -345,120 +271,16 @@ a:hover {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-hmhm-gPf {
-  width: 16.1rem;
-  height: 3.5rem;
-  position: absolute;
-  left: 10.9rem;
-  top: 69.3rem;
-  display: flex;
-  align-items: center;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-hmhm-gPf .rectangle-33-azq {
-  margin-right: 0.8rem;
-  width: 3.5rem;
-  height: 3.5rem;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-hmhm-gPf .sandya-naufal-6CV {
-  margin-top: 0.1rem;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-9rgx-RkZ {
-  width: 16.1rem;
-  height: 3.5rem;
-  position: absolute;
-  left: 10.9rem;
-  top: 99.6rem;
-  display: flex;
-  align-items: center;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-9rgx-RkZ .rectangle-34-Zbs {
-  margin-right: 0.8rem;
-  width: 3.5rem;
-  height: 3.5rem;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-9rgx-RkZ .sandya-naufal-JpM {
-  margin-top: 0.1rem;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-9bjr-3G9 {
-  width: 16.1rem;
-  height: 3.5rem;
-  position: absolute;
-  left: 10.9rem;
-  top: 129.9rem;
-  display: flex;
-  align-items: center;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-9bjr-3G9 .rectangle-35-aWy {
-  margin-right: 0.8rem;
-  width: 3.5rem;
-  height: 3.5rem;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-9bjr-3G9 .sandya-naufal-vqj {
-  margin-top: 0.1rem;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-6aaf-rDb {
-  width: 16.1rem;
-  height: 3.5rem;
-  position: absolute;
-  left: 10.9rem;
-  top: 160.2rem;
-  display: flex;
-  align-items: center;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-6aaf-rDb .rectangle-36-Bmf {
-  margin-right: 0.8rem;
-  width: 3.5rem;
-  height: 3.5rem;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-6aaf-rDb .sandya-naufal-LPf {
-  margin-top: 0.1rem;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-x4p3-3Yy {
-  width: 122.2328rem;
+
+.content-body .content .sub-content .desk {
+  width: 100%;
   height: 12rem;
   position: absolute;
-  left: 10.9rem;
   top: 43.1rem;
   display: flex;
   align-items: center;
 }
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-x4p3-3Yy .lorem-ipsum-dolor-sit-amet-consectetur-ipsum-at-convallis-cras-netus-pellentesque-morbi-magna-malesuada-aenean-phasellus-in-auctor-vitae-aliquam-justo-felis-libero-id-facilisis-viverra-velit-integer-mauris-sed-enim-venenatis-neque-pharetra-sodales-cras-ut-ac-consectetur-integer-est-metus-suspendisse-iaculis-laoreet-adipiscing-egestas-nibh-vulputate-integer-non-risus-vel-quam-in-egestas-ut-NLM {
+.content-body .content .sub-content .desk .deskrip {
   margin-right: 12.1672rem;
   max-width: 104.9rem;
   font-size: 2rem;
@@ -468,7 +290,7 @@ a:hover {
   font-family: Poppins, 'Source Sans Pro';
   flex-shrink: 0;
 }
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-x4p3-3Yy .ph-heart-bold-KQ1 {
+.content-body .content .sub-content .desk .ph-heart-bold-ZUR {
   margin-top: 0.3001rem;
   width: 5.1656rem;
   height: 4.4532rem;
@@ -476,152 +298,11 @@ a:hover {
   vertical-align: top;
   flex-shrink: 0;
 }
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-qk4b-2ZK {
-  width: 122.2328rem;
-  height: 12rem;
-  position: absolute;
-  left: 10.9rem;
-  top: 73.4rem;
-  display: flex;
-  align-items: center;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-qk4b-2ZK .lorem-ipsum-dolor-sit-amet-consectetur-ipsum-at-convallis-cras-netus-pellentesque-morbi-magna-malesuada-aenean-phasellus-in-auctor-vitae-aliquam-justo-felis-libero-id-facilisis-viverra-velit-integer-mauris-sed-enim-venenatis-neque-pharetra-sodales-cras-ut-ac-consectetur-integer-est-metus-suspendisse-iaculis-laoreet-adipiscing-egestas-nibh-vulputate-integer-non-risus-vel-quam-in-egestas-ut-AQd {
-  margin-right: 12.1672rem;
-  max-width: 104.9rem;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-qk4b-2ZK .ph-heart-bold-k7w {
-  margin-top: 0.3001rem;
-  width: 5.1656rem;
-  height: 4.4532rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-curb-5g1 {
-  width: 122.2328rem;
-  height: 12rem;
-  position: absolute;
-  left: 10.9rem;
-  top: 103.7rem;
-  display: flex;
-  align-items: center;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-curb-5g1 .lorem-ipsum-dolor-sit-amet-consectetur-ipsum-at-convallis-cras-netus-pellentesque-morbi-magna-malesuada-aenean-phasellus-in-auctor-vitae-aliquam-justo-felis-libero-id-facilisis-viverra-velit-integer-mauris-sed-enim-venenatis-neque-pharetra-sodales-cras-ut-ac-consectetur-integer-est-metus-suspendisse-iaculis-laoreet-adipiscing-egestas-nibh-vulputate-integer-non-risus-vel-quam-in-egestas-ut-oru {
-  margin-right: 12.1672rem;
-  max-width: 104.9rem;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-curb-5g1 .ph-heart-bold-nyj {
-  margin-top: 0.3001rem;
-  width: 5.1656rem;
-  height: 4.4532rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-ggaf-7m7 {
-  width: 122.2328rem;
-  height: 12rem;
-  position: absolute;
-  left: 10.9rem;
-  top: 134rem;
-  display: flex;
-  align-items: center;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-ggaf-7m7 .lorem-ipsum-dolor-sit-amet-consectetur-ipsum-at-convallis-cras-netus-pellentesque-morbi-magna-malesuada-aenean-phasellus-in-auctor-vitae-aliquam-justo-felis-libero-id-facilisis-viverra-velit-integer-mauris-sed-enim-venenatis-neque-pharetra-sodales-cras-ut-ac-consectetur-integer-est-metus-suspendisse-iaculis-laoreet-adipiscing-egestas-nibh-vulputate-integer-non-risus-vel-quam-in-egestas-ut-T4H {
-  margin-right: 12.1672rem;
-  max-width: 104.9rem;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-ggaf-7m7 .ph-heart-bold-2Fo {
-  margin-top: 0.3001rem;
-  width: 5.1656rem;
-  height: 4.4532rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-gt9m-vry {
-  width: 122.2328rem;
-  height: 12rem;
-  position: absolute;
-  left: 10.9rem;
-  top: 164.3rem;
-  display: flex;
-  align-items: center;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-gt9m-vry .lorem-ipsum-dolor-sit-amet-consectetur-ipsum-at-convallis-cras-netus-pellentesque-morbi-magna-malesuada-aenean-phasellus-in-auctor-vitae-aliquam-justo-felis-libero-id-facilisis-viverra-velit-integer-mauris-sed-enim-venenatis-neque-pharetra-sodales-cras-ut-ac-consectetur-integer-est-metus-suspendisse-iaculis-laoreet-adipiscing-egestas-nibh-vulputate-integer-non-risus-vel-quam-in-egestas-ut-4TP {
-  margin-right: 12.1672rem;
-  max-width: 104.9rem;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .auto-group-gt9m-vry .ph-heart-bold-2Yd {
-  margin-top: 0.3001rem;
-  width: 5.1656rem;
-  height: 4.4532rem;
-  object-fit: contain;
-  vertical-align: top;
-  flex-shrink: 0;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .line-2-mFK {
-  width: 124.1rem;
+.content-body .content .sub-content .line {
+  width: 100%;
   height: 0.1rem;
   position: absolute;
-  left: 9.9rem;
   top: 61.8rem;
-  background-color: #000000;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .line-3-frV {
-  width: 124.1rem;
-  height: 0.1rem;
-  position: absolute;
-  left: 9.9rem;
-  top: 92.1rem;
-  background-color: #000000;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .line-4-1QZ {
-  width: 124.1rem;
-  height: 0.1rem;
-  position: absolute;
-  left: 9.9rem;
-  top: 122.4rem;
-  background-color: #000000;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .line-5-YfP {
-  width: 124.1rem;
-  height: 0.1rem;
-  position: absolute;
-  left: 9.9rem;
-  top: 152.7rem;
-  background-color: #000000;
-}
-.artikel-tJ9 .auto-group-xruo-D7T .line-6-gmb {
-  width: 124.1rem;
-  height: 0.1rem;
-  position: absolute;
-  left: 9.9rem;
-  top: 183rem;
   background-color: #000000;
 }
 .footer {
