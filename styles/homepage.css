@@ -129,7 +129,7 @@ a:hover {
   }
 }
 
-.homepage-3nu {
+.content-body {
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -138,7 +138,7 @@ a:hover {
   flex-direction: column;
   background-color: #ffffff;
 }
-.homepage-3nu .auto-group-faur-zCM {
+.content-body .auto-group-faur-zCM {
   box-sizing: border-box;
   padding: 3.2rem 10rem;
   width: 100%;
@@ -147,7 +147,7 @@ a:hover {
   background-color: #0082e6;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-faur-zCM .logo-hcZ {
+.content-body .auto-group-faur-zCM .logo-hcZ {
   margin-right: 83rem;
   width: 23.2rem;
   height: 7rem;
@@ -157,31 +157,31 @@ a:hover {
   font-family: 'Gafata', sans-serif;
   font-weight: bold;
 }
-.homepage-3nu a.active, .homepage-3nu a:hover {
+.content-body a.active, .content-body a:hover {
   background: #1b9bff;
   transition: .5s;
 }
-.homepage-3nu .auto-group-faur-zCM .login-dm7 {
+.content-body .auto-group-faur-zCM .login-dm7 {
   margin-right: 2.3rem;
   width: 17.4rem;
   height: 4rem;
   background: #1b9bff;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-faur-zCM .login-Zem {
+.content-body .auto-group-faur-zCM .login-Zem {
   margin-right: 2.3rem;
   width: 17.4rem;
   height: 4rem;
   background: #1b9bff;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-faur-zCM .login-uyX {
+.content-body .auto-group-faur-zCM .login-uyX {
   width: 17.4rem;
   height: 4rem;
   background: #1b9bff;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 {
+.content-body .content {
   box-sizing: border-box;
   padding: 4.9rem 10rem 29.8rem 10rem;
   width: 100%;
@@ -189,7 +189,7 @@ a:hover {
   flex-direction: column;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj {
+.content-body .content .content-desk {
   margin-bottom: 15.7rem;
   box-sizing: border-box;
   padding: 11.4rem 12.6rem 15rem 12.6rem;
@@ -199,7 +199,7 @@ a:hover {
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .deskripsi-singkat-GBo {
+.content-body .content .content-desk .desk-title {
   margin-bottom: 3.8rem;
   font-size: 4rem;
   font-weight: 700;
@@ -209,7 +209,7 @@ a:hover {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .lorem-ipsum-dolor-sit-amet-consectetur-nunc-quis-faucibus-non-gravida-turpis-ullamcorper-amet-massa-et-amet-rutrum-felis-ac-massa-BpZ {
+.content-body .content .content-desk .desk {
   margin-bottom: 6.1rem;
   max-width: 51.8rem;
   font-size: 2.5rem;
@@ -219,18 +219,18 @@ a:hover {
   font-family: Poppins, 'Source Sans Pro';
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .auto-group-tdmd-4dT {
+.content-body .content .content-desk .auto-group-tdmd-4dT {
   width: 100%;
   display: flex;
   align-items: flex-end;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .auto-group-tdmd-4dT .auto-group-k8dh-pMj {
+.content-body .content .content-desk .auto-group-tdmd-4dT .auto-group-k8dh-pMj {
   margin: 0rem 2rem 0.9rem 0rem;
   width: 18.7rem;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .auto-group-tdmd-4dT .auto-group-k8dh-pMj .lorem-ipsum-MMf {
+.content-body .content .content-desk .auto-group-tdmd-4dT .auto-group-k8dh-pMj .lorem-ipsum-MMf {
   margin-bottom: 3rem;
   font-size: 2.5rem;
   font-weight: 700;
@@ -239,45 +239,45 @@ a:hover {
   font-family: Poppins, 'Source Sans Pro';
   white-space: nowrap;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .auto-group-tdmd-4dT .auto-group-k8dh-pMj .auto-group-jgjv-Fhw {
+.content-body .content .content-desk .auto-group-tdmd-4dT .auto-group-k8dh-pMj .auto-group-jgjv-Fhw {
   width: 100%;
   display: flex;
   column-gap: 2rem;
   align-items: center;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .auto-group-tdmd-4dT .auto-group-k8dh-pMj .auto-group-jgjv-Fhw .rectangle-15-1BK {
+.content-body .content .content-desk .auto-group-tdmd-4dT .auto-group-k8dh-pMj .auto-group-jgjv-Fhw .rectangle-15-1BK {
   width: 4.9rem;
   height: 4.9rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .auto-group-tdmd-4dT .auto-group-k8dh-pMj .auto-group-jgjv-Fhw .rectangle-16-9oK {
+.content-body .content .content-desk .auto-group-tdmd-4dT .auto-group-k8dh-pMj .auto-group-jgjv-Fhw .rectangle-16-9oK {
   width: 4.9rem;
   height: 4.9rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .auto-group-tdmd-4dT .auto-group-k8dh-pMj .auto-group-jgjv-Fhw .rectangle-17-hCZ {
+.content-body .content .content-desk .auto-group-tdmd-4dT .auto-group-k8dh-pMj .auto-group-jgjv-Fhw .rectangle-17-hCZ {
   width: 4.9rem;
   height: 4.9rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .auto-group-tdmd-4dT .rectangle-18-qZf {
+.content-body .content .content-desk .auto-group-tdmd-4dT .rectangle-18-qZf {
   margin: 0rem 37.4rem 0.9rem 0rem;
   width: 4.9rem;
   height: 4.9rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .auto-group-tdmd-4dT .buy-now-NJh {
+.content-body .content .content-desk .auto-group-tdmd-4dT .buy-now-NJh {
   width: 35.8rem;
   height: 11.7rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .data-kemiskinan-hrm {
-  margin: 0rem 0rem 3.5rem 5.5rem;
+.content-body .content .subcontent .subcontent-title {
+  margin: 0 0 3.5rem 6.5rem;
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.5;
@@ -286,18 +286,20 @@ a:hover {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-nmum-ouo {
-  margin: 0rem 5.3rem 8.4rem 6.5rem;
+
+.content-body .content .subcontent .subcontent-container {
+  margin: 0 5.3rem 8.4rem 6.5rem;
   box-sizing: border-box;
   padding: 8.6rem 9.9rem 6.8rem 4.2rem;
   width: calc(100% - 11.8rem);
   display: flex;
-  align-items: center;
+  align-items: space-between;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-nmum-ouo .lorem-ipsum-dolor-sit-amet-consectetur-nunc-quis-faucibus-non-gravida-turpis-ullamcorper-amet-massa-et-amet-rutrum-felis-ac-massa-uT3 {
-  margin: 0rem 17.5rem 4rem 0rem;
+
+.content-body .content .subcontent .subcontent-container .subcontent-desk {
+  margin: 0 1.5rem 4rem 0;
   max-width: 52.9rem;
   font-size: 3.2rem;
   font-weight: 400;
@@ -306,124 +308,24 @@ a:hover {
   font-family: Poppins, 'Source Sans Pro';
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-nmum-ouo .buy-now-a3P {
-  margin-top: 18.9rem;
+
+.content-body .content .subcontent .subcontent-container .subcontent-button {
+  margin-top: 148px;
+  margin-left: 130px;
   width: 27.7rem;
   height: 9.1rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
+  border: none; 
+  cursor: pointer; 
+  outline: none; 
 }
-.homepage-3nu .auto-group-tnsv-3K3 .faktor-kemiskinan-JVB {
-  margin: 0rem 0rem 3.5rem 6.5rem;
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
+
+
+.content-body .content .subcontent .subcontent-container .subcontent-button:hover {
+  background-color: #555; 
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-qrbd-RZo {
-  margin: 0rem 5.3rem 8.4rem 6.5rem;
-  box-sizing: border-box;
-  padding: 8.6rem 9.9rem 6.8rem 4.2rem;
-  width: calc(100% - 11.8rem);
-  display: flex;
-  align-items: center;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-qrbd-RZo .lorem-ipsum-dolor-sit-amet-consectetur-nunc-quis-faucibus-non-gravida-turpis-ullamcorper-amet-massa-et-amet-rutrum-felis-ac-massa-8UD {
-  margin: 0rem 17.5rem 4rem 0rem;
-  max-width: 52.9rem;
-  font-size: 3.2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-qrbd-RZo .buy-now-xi9 {
-  margin-top: 18.9rem;
-  width: 27.7rem;
-  height: 9.1rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .dampak-kemiskinan-FBT {
-  margin: 0rem 0rem 3.5rem 6.5rem;
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-zyiw-m9o {
-  margin: 0rem 5.3rem 8.4rem 6.5rem;
-  box-sizing: border-box;
-  padding: 8.6rem 9.9rem 6.8rem 4.2rem;
-  width: calc(100% - 11.8rem);
-  display: flex;
-  align-items: center;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-zyiw-m9o .lorem-ipsum-dolor-sit-amet-consectetur-nunc-quis-faucibus-non-gravida-turpis-ullamcorper-amet-massa-et-amet-rutrum-felis-ac-massa-fW5 {
-  margin: 0rem 17.5rem 4rem 0rem;
-  max-width: 52.9rem;
-  font-size: 3.2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-zyiw-m9o .buy-now-k1j {
-  margin-top: 18.9rem;
-  width: 27.7rem;
-  height: 9.1rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .mari-diskusi-UiR {
-  margin: 0rem 0rem 3.5rem 6.5rem;
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-zfnt-cJq {
-  margin: 0rem 5.3rem 0rem 6.5rem;
-  box-sizing: border-box;
-  padding: 8.6rem 9.9rem 6.8rem 4.2rem;
-  width: calc(100% - 11.8rem);
-  display: flex;
-  align-items: center;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-zfnt-cJq .lorem-ipsum-dolor-sit-amet-consectetur-nunc-quis-faucibus-non-gravida-turpis-ullamcorper-amet-massa-et-amet-rutrum-felis-ac-massa-KDF {
-  margin: 0rem 17.5rem 4rem 0rem;
-  max-width: 52.9rem;
-  font-size: 3.2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-zfnt-cJq .buy-now-aey {
-  margin-top: 18.9rem;
-  width: 27.7rem;
-  height: 9.1rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
+
 .footer {
   background-color: #0082e6;
   padding: 25px;
