@@ -12,9 +12,7 @@ ul, li {
 input {
 	border: none;
 }
-body {
-  width: 144rem;
-}.homepage-3nu {
+.homepage-3nu {
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -23,7 +21,7 @@ body {
   flex-direction: column;
   background-color: #ffffff;
 }
-.homepage-3nu .auto-group-faur-zCM {
+.homepage-3nu .navbar {
   box-sizing: border-box;
   padding: 3.2rem 10rem;
   width: 100%;
@@ -32,28 +30,28 @@ body {
   background-color: #b1b1b1;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-faur-zCM .logo-hcZ {
+.homepage-3nu .navbar .logo-hcZ {
   margin-right: 44rem;
   width: 23.2rem;
   height: 7rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-faur-zCM .login-dm7 {
+.homepage-3nu .navbar .login-dm7 {
   margin-right: 2.3rem;
   width: 17.4rem;
   height: 4rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-faur-zCM .login-Zem {
+.homepage-3nu .navbar .login-Zem {
   margin-right: 2.3rem;
   width: 17.4rem;
   height: 4rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-faur-zCM .login-uyX {
+.homepage-3nu .navbar .login-uyX {
   width: 17.4rem;
   height: 4rem;
   background-color: #d9d9d9;
@@ -154,7 +152,7 @@ body {
   background-color: #6e6e6e;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .data-kemiskinan-hrm {
+.homepage-3nu .auto-group-tnsv-3K3 .data-kemiskinan-txt {
   margin: 0rem 0rem 3.5rem 5.5rem;
   font-size: 4rem;
   font-weight: 700;
@@ -164,7 +162,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-nmum-ouo {
+.homepage-3nu .auto-group-tnsv-3K3 .data-kemiskinan-box {
   margin: 0rem 5.3rem 8.4rem 6.5rem;
   box-sizing: border-box;
   padding: 8.6rem 9.9rem 6.8rem 4.2rem;
@@ -174,7 +172,7 @@ body {
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-nmum-ouo .lorem-ipsum-dolor-sit-amet-consectetur-nunc-quis-faucibus-non-gravida-turpis-ullamcorper-amet-massa-et-amet-rutrum-felis-ac-massa-uT3 {
+.homepage-3nu .auto-group-tnsv-3K3 .data-kemiskinan-box .data-kemiskinan-box-text {
   margin: 0rem 17.5rem 4rem 0rem;
   max-width: 52.9rem;
   font-size: 3.2rem;
@@ -184,7 +182,7 @@ body {
   font-family: Poppins, 'Source Sans Pro';
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-nmum-ouo .buy-now-a3P {
+.homepage-3nu .auto-group-tnsv-3K3 .data-kemiskinan-box .buy-now-a3P {
   margin-top: 18.9rem;
   width: 27.7rem;
   height: 9.1rem;
