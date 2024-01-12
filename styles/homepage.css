@@ -23,7 +23,7 @@ body {
 }
 
 nav {
-  background: #0082e6;
+  background: #3c4c6a;
   height: 80px;
   width: 100%;
 }
@@ -327,7 +327,7 @@ a:hover {
 }
 
 .footer {
-  background-color: #0082e6;
+  background-color: #3c4c6a;
   padding: 25px;
   color: #fff;
   position: relative;

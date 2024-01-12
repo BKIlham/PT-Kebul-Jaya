@@ -140,7 +140,7 @@ a:hover {
 
 .content-body .content {
   width: 90%;
-  height: 193.6rem;
+  height: 100%;
   position: relative;
   flex-shrink: 0;
 }
@@ -233,7 +233,13 @@ a:hover {
   padding:5px;
 }
 
-.content-body .content .sub-content .berita-title {
+.content-body .content .berita-content{
+  height: 193.6rem;
+  position: relative;
+
+}
+
+.content-body .content .berita-content .berita-title {
   width: 100%;
   height: 3.6rem;
   position: absolute;
@@ -246,7 +252,7 @@ a:hover {
   white-space: nowrap;
 }
 
-.content-body .content .sub-content .penulis-berita {
+.content-body .content .berita-content .penulis-berita {
   width: 100%;
   height: 3.5rem;
   position: absolute;
@@ -254,14 +260,14 @@ a:hover {
   display: flex;
   align-items: center;
 }
-.content-body .content .sub-content .penulis-berita .rectangle-32-E5T {
+.content-body .content .berita-content .penulis-berita .rectangle-32-E5T {
   margin-right: 0.8rem;
   width: 3.5rem;
   height: 3.5rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.content-body .content .sub-content .penulis-berita .sandya-naufal-NSZ {
+.content-body .content .berita-content .penulis-berita .sandya-naufal-NSZ {
   margin-top: 0.1rem;
   font-size: 1.6rem;
   font-weight: 400;
@@ -272,7 +278,7 @@ a:hover {
   flex-shrink: 0;
 }
 
-.content-body .content .sub-content .desk {
+.content-body .content .berita-content .desk {
   width: 100%;
   height: 12rem;
   position: absolute;
@@ -280,7 +286,7 @@ a:hover {
   display: flex;
   align-items: center;
 }
-.content-body .content .sub-content .desk .deskrip {
+.content-body .content .berita-content .desk .deskrip {
   margin-right: 12.1672rem;
   max-width: 104.9rem;
   font-size: 2rem;
@@ -290,7 +296,7 @@ a:hover {
   font-family: Poppins, 'Source Sans Pro';
   flex-shrink: 0;
 }
-.content-body .content .sub-content .desk .ph-heart-bold-ZUR {
+.content-body .content .berita-content .desk .ph-heart-bold-ZUR {
   margin-top: 0.3001rem;
   width: 5.1656rem;
   height: 4.4532rem;
@@ -298,7 +304,7 @@ a:hover {
   vertical-align: top;
   flex-shrink: 0;
 }
-.content-body .content .sub-content .line {
+.content-body .content .berita-content .line {
   width: 100%;
   height: 0.1rem;
   position: absolute;
