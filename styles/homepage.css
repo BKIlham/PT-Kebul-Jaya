@@ -1,18 +1,17 @@
-
 html {
 	font-size:62.5%;
 }
-* {
-	margin: 0;
-	padding: 0;
-}
+
 ul, li {
 	list-style: none;
 }
+
 input {
 	border: none;
 }
-.homepage-3nu {
+body {
+  width: 144rem;
+}.homepage-3nu {
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -21,43 +20,46 @@ input {
   flex-direction: column;
   background-color: #ffffff;
 }
-.homepage-3nu .navbar {
+.homepage-3nu .auto-group-faur-zCM {
   box-sizing: border-box;
   padding: 3.2rem 10rem;
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: #b1b1b1;
+  background-color: #0082e6;
   flex-shrink: 0;
 }
-.homepage-3nu .navbar .logo-hcZ {
+.homepage-3nu .auto-group-faur-zCM .logo-hcZ {
   margin-right: 44rem;
   width: 23.2rem;
   height: 7rem;
-  background-color: #d9d9d9;
   flex-shrink: 0;
+  font-size: 50px;
+  color: white;
+  font-family: 'Gafata', sans-serif;
+  font-weight: bold;
 }
-.homepage-3nu .navbar .login-dm7 {
+.homepage-3nu .auto-group-faur-zCM .login-dm7 {
   margin-right: 2.3rem;
   width: 17.4rem;
   height: 4rem;
-  background-color: #d9d9d9;
+  background: #1b9bff;
   flex-shrink: 0;
 }
-.homepage-3nu .navbar .login-Zem {
+.homepage-3nu .auto-group-faur-zCM .login-Zem {
   margin-right: 2.3rem;
   width: 17.4rem;
   height: 4rem;
-  background-color: #d9d9d9;
+  background: #1b9bff;
   flex-shrink: 0;
 }
-.homepage-3nu .navbar .login-uyX {
+.homepage-3nu .auto-group-faur-zCM .login-uyX {
   width: 17.4rem;
   height: 4rem;
-  background-color: #d9d9d9;
+  background: #1b9bff;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 {
+.content-body .content {
   box-sizing: border-box;
   padding: 4.9rem 10rem 29.8rem 10rem;
   width: 100%;
@@ -65,7 +67,7 @@ input {
   flex-direction: column;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj {
+.content-body .content .content-desk {
   margin-bottom: 15.7rem;
   box-sizing: border-box;
   padding: 11.4rem 12.6rem 15rem 12.6rem;
@@ -75,7 +77,7 @@ input {
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .deskripsi-singkat-GBo {
+.content-body .content .content-desk .desk-title {
   margin-bottom: 3.8rem;
   font-size: 4rem;
   font-weight: 700;
@@ -85,7 +87,7 @@ input {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .lorem-ipsum-dolor-sit-amet-consectetur-nunc-quis-faucibus-non-gravida-turpis-ullamcorper-amet-massa-et-amet-rutrum-felis-ac-massa-BpZ {
+.content-body .content .content-desk .desk {
   margin-bottom: 6.1rem;
   max-width: 51.8rem;
   font-size: 2.5rem;
@@ -95,18 +97,18 @@ input {
   font-family: Poppins, 'Source Sans Pro';
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .auto-group-tdmd-4dT {
+.content-body .content .content-desk .auto-group-tdmd-4dT {
   width: 100%;
   display: flex;
   align-items: flex-end;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .auto-group-tdmd-4dT .auto-group-k8dh-pMj {
+.content-body .content .content-desk .auto-group-tdmd-4dT .auto-group-k8dh-pMj {
   margin: 0rem 2rem 0.9rem 0rem;
   width: 18.7rem;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .auto-group-tdmd-4dT .auto-group-k8dh-pMj .lorem-ipsum-MMf {
+.content-body .content .content-desk .auto-group-tdmd-4dT .auto-group-k8dh-pMj .lorem-ipsum-MMf {
   margin-bottom: 3rem;
   font-size: 2.5rem;
   font-weight: 700;
@@ -115,44 +117,44 @@ input {
   font-family: Poppins, 'Source Sans Pro';
   white-space: nowrap;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .auto-group-tdmd-4dT .auto-group-k8dh-pMj .auto-group-jgjv-Fhw {
+.content-body .content .content-desk .auto-group-tdmd-4dT .auto-group-k8dh-pMj .auto-group-jgjv-Fhw {
   width: 100%;
   display: flex;
   column-gap: 2rem;
   align-items: center;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .auto-group-tdmd-4dT .auto-group-k8dh-pMj .auto-group-jgjv-Fhw .rectangle-15-1BK {
+.content-body .content .content-desk .auto-group-tdmd-4dT .auto-group-k8dh-pMj .auto-group-jgjv-Fhw .rectangle-15-1BK {
   width: 4.9rem;
   height: 4.9rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .auto-group-tdmd-4dT .auto-group-k8dh-pMj .auto-group-jgjv-Fhw .rectangle-16-9oK {
+.content-body .content .content-desk .auto-group-tdmd-4dT .auto-group-k8dh-pMj .auto-group-jgjv-Fhw .rectangle-16-9oK {
   width: 4.9rem;
   height: 4.9rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .auto-group-tdmd-4dT .auto-group-k8dh-pMj .auto-group-jgjv-Fhw .rectangle-17-hCZ {
+.content-body .content .content-desk .auto-group-tdmd-4dT .auto-group-k8dh-pMj .auto-group-jgjv-Fhw .rectangle-17-hCZ {
   width: 4.9rem;
   height: 4.9rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .auto-group-tdmd-4dT .rectangle-18-qZf {
+.content-body .content .content-desk .auto-group-tdmd-4dT .rectangle-18-qZf {
   margin: 0rem 37.4rem 0.9rem 0rem;
   width: 4.9rem;
   height: 4.9rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-p19m-MKj .auto-group-tdmd-4dT .buy-now-NJh {
+.content-body .content .content-desk .auto-group-tdmd-4dT .buy-now-NJh {
   width: 35.8rem;
   height: 11.7rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .data-kemiskinan-txt {
+.homepage-3nu .auto-group-tnsv-3K3 .data-kemiskinan-hrm {
   margin: 0rem 0rem 3.5rem 5.5rem;
   font-size: 4rem;
   font-weight: 700;
@@ -162,17 +164,17 @@ input {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .data-kemiskinan-box {
+.homepage-3nu .auto-group-tnsv-3K3 .auto-group-nmum-ouo {
   margin: 0rem 5.3rem 8.4rem 6.5rem;
   box-sizing: border-box;
   padding: 8.6rem 9.9rem 6.8rem 4.2rem;
   width: calc(100% - 11.8rem);
   display: flex;
-  align-items: center;
+  align-items: space-between;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .data-kemiskinan-box .data-kemiskinan-box-text {
+.homepage-3nu .auto-group-tnsv-3K3 .auto-group-nmum-ouo .lorem-ipsum-dolor-sit-amet-consectetur-nunc-quis-faucibus-non-gravida-turpis-ullamcorper-amet-massa-et-amet-rutrum-felis-ac-massa-uT3 {
   margin: 0rem 17.5rem 4rem 0rem;
   max-width: 52.9rem;
   font-size: 3.2rem;
@@ -182,316 +184,163 @@ input {
   font-family: Poppins, 'Source Sans Pro';
   flex-shrink: 0;
 }
-.homepage-3nu .auto-group-tnsv-3K3 .data-kemiskinan-box .buy-now-a3P {
+.homepage-3nu .auto-group-tnsv-3K3 .auto-group-nmum-ouo .buy-now-a3P {
   margin-top: 18.9rem;
   width: 27.7rem;
   height: 9.1rem;
   background-color: #6e6e6e;
   flex-shrink: 0;
+  border: none; 
+  cursor: pointer; 
+  outline: none; 
 }
-.homepage-3nu .auto-group-tnsv-3K3 .faktor-kemiskinan-JVB {
-  margin: 0rem 0rem 3.5rem 6.5rem;
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
+
+
+.content-body .content .subcontent .subcontent-container .subcontent-button:hover {
+  background-color: #555; 
 }
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-qrbd-RZo {
-  margin: 0rem 5.3rem 8.4rem 6.5rem;
-  box-sizing: border-box;
-  padding: 8.6rem 9.9rem 6.8rem 4.2rem;
-  width: calc(100% - 11.8rem);
-  display: flex;
-  align-items: center;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-qrbd-RZo .lorem-ipsum-dolor-sit-amet-consectetur-nunc-quis-faucibus-non-gravida-turpis-ullamcorper-amet-massa-et-amet-rutrum-felis-ac-massa-8UD {
-  margin: 0rem 17.5rem 4rem 0rem;
-  max-width: 52.9rem;
-  font-size: 3.2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-qrbd-RZo .buy-now-xi9 {
-  margin-top: 18.9rem;
-  width: 27.7rem;
-  height: 9.1rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .dampak-kemiskinan-FBT {
-  margin: 0rem 0rem 3.5rem 6.5rem;
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-zyiw-m9o {
-  margin: 0rem 5.3rem 8.4rem 6.5rem;
-  box-sizing: border-box;
-  padding: 8.6rem 9.9rem 6.8rem 4.2rem;
-  width: calc(100% - 11.8rem);
-  display: flex;
-  align-items: center;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-zyiw-m9o .lorem-ipsum-dolor-sit-amet-consectetur-nunc-quis-faucibus-non-gravida-turpis-ullamcorper-amet-massa-et-amet-rutrum-felis-ac-massa-fW5 {
-  margin: 0rem 17.5rem 4rem 0rem;
-  max-width: 52.9rem;
-  font-size: 3.2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-zyiw-m9o .buy-now-k1j {
-  margin-top: 18.9rem;
-  width: 27.7rem;
-  height: 9.1rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .mari-diskusi-UiR {
-  margin: 0rem 0rem 3.5rem 6.5rem;
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-zfnt-cJq {
-  margin: 0rem 5.3rem 0rem 6.5rem;
-  box-sizing: border-box;
-  padding: 8.6rem 9.9rem 6.8rem 4.2rem;
-  width: calc(100% - 11.8rem);
-  display: flex;
-  align-items: center;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-zfnt-cJq .lorem-ipsum-dolor-sit-amet-consectetur-nunc-quis-faucibus-non-gravida-turpis-ullamcorper-amet-massa-et-amet-rutrum-felis-ac-massa-KDF {
-  margin: 0rem 17.5rem 4rem 0rem;
-  max-width: 52.9rem;
-  font-size: 3.2rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-tnsv-3K3 .auto-group-zfnt-cJq .buy-now-aey {
-  margin-top: 18.9rem;
-  width: 27.7rem;
-  height: 9.1rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP {
-  box-sizing: border-box;
-  padding: 2.9rem 5.6rem 2.6rem 5.5rem;
+
+.footer {
+  background-color: #0082e6;
+  padding: 25px;
+  color: #fff;
+  position: relative;
   width: 100%;
-  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-content {
   display: flex;
-  flex-direction: column;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-khns-RvV {
-  margin-right: 24.4rem;
-  height: 10.3rem;
-  display: flex;
-  align-items: flex-start;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-khns-RvV .rectangle-19-ySD {
-  margin: 0.1rem 27.1rem 0rem 0rem;
-  width: 23.2rem;
-  height: 7rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-khns-RvV .auto-group-pnqk-JUV {
-  width: 11.8rem;
-  height: 100%;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-khns-RvV .auto-group-pnqk-JUV .follow-us-Rp1 {
-  margin-bottom: 1.6rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-khns-RvV .auto-group-pnqk-JUV .auto-group-fxmu-Z9X {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
   width: 100%;
+  margin: 0 auto;
+}
+
+.line1-col {
+  width: 21.2%;
+  margin: 20px;
+}
+
+.line1-col a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo1 img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 0px; 
+}
+
+.logo1 p.desk {
+  font-size: 15px;
+  line-height: 0.7em;
+}
+
+.tentang ul,
+.Important ul,
+.Useful-Links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tentang ul li,
+.Important ul li,
+.Useful-Links ul li {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.line1-col p,
+.line1-col h3,
+.line1-col .desk {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.line2-col{
   display: flex;
-  align-items: center;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-khns-RvV .auto-group-pnqk-JUV .auto-group-fxmu-Z9X .rectangle-15-SDK {
-  margin-right: 2rem;
-  width: 4.9rem;
-  height: 4.9rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-khns-RvV .auto-group-pnqk-JUV .auto-group-fxmu-Z9X .rectangle-16-mmP {
-  width: 4.9rem;
-  height: 4.9rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-khns-RvV .auto-group-bmrj-7qF {
-  box-sizing: border-box;
-  padding-left: 2rem;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-khns-RvV .auto-group-bmrj-7qF .rectangle-17-4kV {
-  margin-right: 19.2rem;
-  width: 4.9rem;
-  height: 4.9rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-khns-RvV .auto-group-bmrj-7qF .auto-group-sqdv-QJZ {
-  margin-bottom: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-khns-RvV .auto-group-bmrj-7qF .auto-group-sqdv-QJZ .about-us-MUh {
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-khns-RvV .auto-group-bmrj-7qF .auto-group-sqdv-QJZ .faq-J93 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-ryt7-1p9 {
-  margin: 0rem 18.4rem 2.9rem 0rem;
-  display: flex;
-  align-items: flex-start;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-ryt7-1p9 .lorem-ipsum-dolor-sit-amet-consectetur-Yp5 {
-  margin-right: 15.7rem;
-  max-width: 34.6rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-ryt7-1p9 .auto-group-uuws-Egu {
-  margin: 2rem 19.2rem 0rem 0rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-ryt7-1p9 .auto-group-uuws-Egu .call-us-NYD {
-  margin-bottom: 1.6rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-ryt7-1p9 .auto-group-uuws-Egu .item-085762382649-tmT {
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-ryt7-1p9 .auto-group-5typ-pf7 {
-  margin-top: 0.3rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-ryt7-1p9 .auto-group-5typ-pf7 .privacy-policy-Ngd {
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-ryt7-1p9 .auto-group-5typ-pf7 .contact-us-Gn1 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.homepage-3nu .auto-group-uwpb-iFP .line-1-p2q {
-  margin-bottom: 2.1rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
-  height: 0.1rem;
-  background-color: #000000;
-  flex-shrink: 0;
+  margin: 0 auto;
 }
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-zz5d-kx5 {
-  margin: 0rem 7.6rem 0rem 7.8rem;
-  width: calc(100% - 15.4rem);
+
+.subs{
+  margin-top: 30px;
+  margin-left: 80px;
+}
+
+.subs h3{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.subs p{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.subs form {
   display: flex;
   align-items: center;
-  flex-shrink: 0;
 }
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-zz5d-kx5 .lorem-ipsum-dolor-sit-amet-tHb {
-  margin-right: 48.3rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
+
+.subs input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
-.homepage-3nu .auto-group-uwpb-iFP .auto-group-zz5d-kx5 .lorem-ipsum-dolor-sit-amet-pS9 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
+
+.subs button {
+  background-color: #279ef8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.subs button:hover {
+  background-color: #0056b3;
+}
+
+
+.mid {
+  padding: 20px;
+}
+
+.mid .followus {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.sosmed {
+  text-align: center;
+}
+
+.icon-sosmed img {
+  margin-bottom: 10px;
+  width: 25%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+.notelp {
+  margin-top: 20px;
+}
+
+.watermark {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  opacity: 0.7;
 }

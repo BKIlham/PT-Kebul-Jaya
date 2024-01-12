@@ -12,9 +12,123 @@ ul, li {
 input {
 	border: none;
 }
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
 body {
-  width: 144rem;
-}.dampak-kemiskinan-7S5 {
+  font-family: montserrat;
+}
+nav {
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+
+nav img{
+  max-width: 100px;
+  padding: 2px;
+  
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  background: #1b9bff;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
+.content-body {
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -22,7 +136,7 @@ body {
   flex-direction: column;
   background-color: #ffffff;
 }
-.dampak-kemiskinan-7S5 .auto-group-yqf1-3ad {
+.content-body .auto-group-yqf1-3ad {
   margin-bottom: 11.3rem;
   box-sizing: border-box;
   padding: 3.2rem 10rem;
@@ -32,34 +146,35 @@ body {
   background-color: #b1b1b1;
   flex-shrink: 0;
 }
-.dampak-kemiskinan-7S5 .auto-group-yqf1-3ad .logo-ZYy {
+.content-body .auto-group-yqf1-3ad .logo-ZYy {
   margin-right: 44rem;
   width: 23.2rem;
   height: 7rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.dampak-kemiskinan-7S5 .auto-group-yqf1-3ad .login-tr9 {
+.content-body .auto-group-yqf1-3ad .login-tr9 {
   margin-right: 2.3rem;
   width: 17.4rem;
   height: 4rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.dampak-kemiskinan-7S5 .auto-group-yqf1-3ad .login-qmP {
+.content-body .auto-group-yqf1-3ad .login-qmP {
   margin-right: 2.3rem;
   width: 17.4rem;
   height: 4rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.dampak-kemiskinan-7S5 .auto-group-yqf1-3ad .login-Li9 {
+.content-body .auto-group-yqf1-3ad .login-Li9 {
   width: 17.4rem;
   height: 4rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.dampak-kemiskinan-7S5 .dampak-kemiskinan-VL9 {
+.content-body .content-title {
+  margin-top: 5rem;
   margin-left: 9.9rem;
   font-size: 4rem;
   font-weight: 700;
@@ -69,7 +184,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR {
+.content-body .content {
   box-sizing: border-box;
   padding: 8rem 9.9rem 25.3rem 9.9rem;
   width: 100%;
@@ -78,14 +193,24 @@ body {
   flex-direction: column;
   flex-shrink: 0;
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR .rectangle-25-whw {
+.content-body .content .gambar {
   margin: 0rem 0.1rem 8rem 0.1rem;
   width: calc(100% - 0.2rem);
   height: 50rem;
-  background-color: #d9d9d9;
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T {
+
+.gambar img{
+  height: auto;
+  max-width: calc(65% - 0.2rem);
+  display: block;
+  margin: auto;
+}
+
+.content-body .content .teks {
   max-width: 124.2rem;
   font-size: 2.5rem;
   font-weight: 400;
@@ -94,81 +219,81 @@ body {
   font-family: Poppins, 'Source Sans Pro';
   flex-shrink: 0;
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T-sub-0 {
+.content-body .content .teks .teks-sub-0 {
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T-sub-1 {
+.content-body .content .teks .teks-sub-1 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T-sub-2 {
+.content-body .content .teks .teks-sub-2 {
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T-sub-3 {
+.content-body .content .teks .teks-sub-3 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T-sub-4 {
+.content-body .content .teks .teks-sub-4 {
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T-sub-5 {
+.content-body .content .teks .teks-sub-5 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T-sub-6 {
+.content-body .content .teks .teks-sub-6 {
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T-sub-7 {
+.content-body .content .teks .teks-sub-7 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T-sub-8 {
+.content-body .content .teks .teks-sub-8 {
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T-sub-9 {
+.content-body .content .teks .teks-sub-9 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T-sub-10 {
+.content-body .content .teks .teks-sub-10 {
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T-sub-11 {
+.content-body .content .teks .teks-sub-11 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T-sub-12 {
+.content-body .content .teks .teks-sub-12 {
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T-sub-13 {
+.content-body .content .teks .teks-sub-13 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T-sub-14 {
+.content-body .content .teks .teks-sub-14 {
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T-sub-15 {
+.content-body .content .teks .teks-sub-15 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.dampak-kemiskinan-7S5 .auto-group-wrv7-pNR .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T .selamat-datang-di-halaman-kami-yang-membahas-dampak-kemiskinan-kemiskinan-bukan-hanya-masalah-ekonomi-tetapi-juga-memberikan-dampak-serius-terhadap-kehidupan-individu-keluarga-dan-masyarakat-secara-keseluruhan-dalam-halaman-ini-kami-akan-menjelaskan-beberapa-dampak-utama-yang-sering-kali-terjadi-akibat-kondisi-kemiskinan-1-kesehatan-kemiskinan-sering-kali-berkaitan-erat-dengan-masalah-kesehatan-individu-yang-hidup-dalam-kemiskinan-mungkin-memiliki-akses-terbatas-terhadap-layanan-kesehatan-nutrisi-yang-memadai-dan-sanitasi-yang-baik-yang-semuanya-dapat-meningkatkan-risiko-penyakit-dan-menurunkan-kualitas-hidup-2-pendidikan-keterbatasan-akses-terhadap-pendidikan-berkualitas-adalah-dampak-serius-kemiskinan-anak-anak-yang-hidup-dalam-kondisi-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mengakses-bahan-ajar-sarana-pendidikan-dan-dukungan-akademis-yang-dapat-membatasi-peluang-pendidikan-mereka-3-ketidaksetaraan-sosial-kemiskinan-dapat-memperdalam-ketidaksetaraan-sosial-individu-dan-kelompok-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-diskriminasi-pengucilan-dan-stigmatisasi-menyebabkan-ketidaksetaraan-dalam-berbagai-aspek-kehidupan-4-keterbatasan-akses-terhadap-pekerjaan-yang-layak-kemiskinan-seringkali-terkait-dengan-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-hal-ini-dapat-menciptakan-siklus-sulit-di-mana-individu-sulit-untuk-keluar-dari-kondisi-kemiskinan-5-perumahan-dan-keamanan-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-kesulitan-dalam-mendapatkan-tempat-tinggal-yang-layak-dan-aman-kondisi-perumahan-yang-buruk-dapata-berdampak-negatif-pada-kesehatan-fisik-dan-mental-6-siklus-kemiskinan-kemiskinan-cenderung-menciptakan-siklus-sulit-untuk-dihentikan-keterbatasan-akses-terhadap-pendidikan-dan-pekerjaan-yang-layak-dapat-diturunkan-dari-satu-generasi-ke-generasi-berikutnya-7-ketidaksetaraan-peluang-individu-yang-hidup-dalam-kemiskinan-mungkin-menghadapi-ketidaksetaraan-peluang-dalam-bidang-pendidikan-pekerjaan-dan-pengembangan-diri-ini-dapat-menciptakan-kesenjangan-ekonomi-yang-sulit-diatasi-8-ketidakstabilan-mental-dan-emosional-stress-dan-kekhawatiran-finansial-yang-terkait-dengan-kemiskinan-dapat-memberikan-dampak-negatif-pada-kesehatan-mental-dan-emosional-individu-dan-keluarga-melalui-pemahaman-mendalam-tentang-dampak-dampak-ini-kita-dapat-lebih-baik-menyusun-kebijakan-dan-program-program-yang-efektif-untuk-mengatasi-masalah-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini-53T-sub-16 {
+.content-body .content .teks .teks-sub-16 {
 }
-.dampak-kemiskinan-7S5 .auto-group-136b-frm {
+.content-body .auto-group-136b-frm {
   box-sizing: border-box;
   padding: 2.9rem 5.6rem 2.6rem 5.5rem;
   width: 100%;
@@ -178,188 +303,148 @@ body {
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-rpwf-Mjb {
-  margin-right: 24.4rem;
-  height: 10.3rem;
-  display: flex;
-  align-items: flex-start;
-  flex-shrink: 0;
-}
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-rpwf-Mjb .rectangle-19-VL1 {
-  margin: 0.1rem 27.1rem 0rem 0rem;
-  width: 23.2rem;
-  height: 7rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-rpwf-Mjb .auto-group-uhpw-oLh {
-  width: 11.8rem;
-  height: 100%;
-  flex-shrink: 0;
-}
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-rpwf-Mjb .auto-group-uhpw-oLh .follow-us-8Ny {
-  margin-bottom: 1.6rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-rpwf-Mjb .auto-group-uhpw-oLh .auto-group-ndyv-FyP {
+
+.footer {
+  background-color: #0082e6;
+  padding: 25px;
+  color: #fff;
+  position: relative;
   width: 100%;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.line1-col {
+  width: 21.2%;
+  margin: 20px;
+}
+
+.line1-col a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo1 img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 0px; 
+}
+
+.logo1 p.desk {
+  font-size: 15px;
+  line-height: 0.7em;
+}
+
+.tentang ul,
+.Important ul,
+.Useful-Links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tentang ul li,
+.Important ul li,
+.Useful-Links ul li {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.line1-col p,
+.line1-col h3,
+.line1-col .desk {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.line2-col{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.subs{
+  margin-top: 30px;
+  margin-left: 80px;
+}
+
+.subs h3{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.subs p{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.subs form {
   display: flex;
   align-items: center;
 }
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-rpwf-Mjb .auto-group-uhpw-oLh .auto-group-ndyv-FyP .rectangle-15-cZ3 {
-  margin-right: 2rem;
-  width: 4.9rem;
-  height: 4.9rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
+
+.subs input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-rpwf-Mjb .auto-group-uhpw-oLh .auto-group-ndyv-FyP .rectangle-16-x77 {
-  width: 4.9rem;
-  height: 4.9rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
+
+.subs button {
+  background-color: #279ef8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-rpwf-Mjb .auto-group-mf9v-JAy {
-  box-sizing: border-box;
-  padding-left: 2rem;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  flex-shrink: 0;
+
+.subs button:hover {
+  background-color: #0056b3;
 }
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-rpwf-Mjb .auto-group-mf9v-JAy .rectangle-17-qAu {
-  margin-right: 19.2rem;
-  width: 4.9rem;
-  height: 4.9rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
+
+
+.mid {
+  padding: 20px;
 }
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-rpwf-Mjb .auto-group-mf9v-JAy .auto-group-mm8o-n69 {
-  margin-bottom: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
+
+.mid .followus {
+  margin-bottom: 10px;
+  font-size: 20px;
 }
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-rpwf-Mjb .auto-group-mf9v-JAy .auto-group-mm8o-n69 .about-us-Wnq {
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
+
+.sosmed {
+  text-align: center;
 }
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-rpwf-Mjb .auto-group-mf9v-JAy .auto-group-mm8o-n69 .faq-ETw {
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
+
+.icon-sosmed img {
+  margin-bottom: 10px;
+  width: 25%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
 }
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-yfyo-khB {
-  margin: 0rem 21.7rem 2.9rem 0rem;
-  display: flex;
-  align-items: flex-start;
-  flex-shrink: 0;
+
+.notelp {
+  margin-top: 20px;
 }
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-yfyo-khB .lorem-ipsum-dolor-sit-amet-consectetur-5jT {
-  margin-right: 15.7rem;
-  max-width: 34.6rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-yfyo-khB .auto-group-gbn3-zLd {
-  margin: 2rem 19.2rem 0rem 0rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-yfyo-khB .auto-group-gbn3-zLd .call-us-vEH {
-  margin-bottom: 1.6rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-yfyo-khB .auto-group-gbn3-zLd .item-085762382649-q6M {
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-yfyo-khB .auto-group-pix5-LYu {
-  margin-top: 0.3rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-yfyo-khB .auto-group-pix5-LYu .privacy-Hyw {
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-yfyo-khB .auto-group-pix5-LYu .contact-us-dnu {
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .line-1-BJd {
-  margin-bottom: 2.1rem;
-  width: 100%;
-  height: 0.1rem;
-  background-color: #000000;
-  flex-shrink: 0;
-}
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-6oor-vX7 {
-  margin: 0rem 7.6rem 0rem 7.8rem;
-  width: calc(100% - 15.4rem);
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-}
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-6oor-vX7 .lorem-ipsum-dolor-sit-amet-eT7 {
-  margin-right: 48.3rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.dampak-kemiskinan-7S5 .auto-group-136b-frm .auto-group-6oor-vX7 .lorem-ipsum-dolor-sit-amet-km3 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
+
+.watermark {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  opacity: 0.7;
 }

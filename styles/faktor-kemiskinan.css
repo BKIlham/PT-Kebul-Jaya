@@ -12,9 +12,123 @@ ul, li {
 input {
 	border: none;
 }
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
 body {
-  width: 144rem;
-}.faktor-kemiskinan-NQu {
+  font-family: montserrat;
+}
+nav {
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+
+div img{
+  max-width: 100px;
+  padding: 2px;
+  
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  background: #1b9bff;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
+.content-body {
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -22,7 +136,7 @@ body {
   flex-direction: column;
   background-color: #ffffff;
 }
-.faktor-kemiskinan-NQu .auto-group-mqz5-W1K {
+.content-body .auto-group-mqz5-W1K {
   margin-bottom: 11.3rem;
   box-sizing: border-box;
   padding: 3.2rem 10rem;
@@ -32,34 +146,35 @@ body {
   background-color: #b1b1b1;
   flex-shrink: 0;
 }
-.faktor-kemiskinan-NQu .auto-group-mqz5-W1K .logo-pGu {
+.content-body .auto-group-mqz5-W1K .logo-pGu {
   margin-right: 44rem;
   width: 23.2rem;
   height: 7rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.faktor-kemiskinan-NQu .auto-group-mqz5-W1K .login-9py {
+.content-body .auto-group-mqz5-W1K .login-9py {
   margin-right: 2.3rem;
   width: 17.4rem;
   height: 4rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.faktor-kemiskinan-NQu .auto-group-mqz5-W1K .login-6kD {
+.content-body .auto-group-mqz5-W1K .login-6kD {
   margin-right: 2.3rem;
   width: 17.4rem;
   height: 4rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.faktor-kemiskinan-NQu .auto-group-mqz5-W1K .login-eFw {
+.content-body .auto-group-mqz5-W1K .login-eFw {
   width: 17.4rem;
   height: 4rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.faktor-kemiskinan-NQu .faktor-faktor-kemiskinan-AVB {
+.content-body .content-title {
+  margin-top: 5rem;
   margin-left: 9.9rem;
   font-size: 4rem;
   font-weight: 700;
@@ -69,7 +184,7 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 {
+.content-body .content {
   box-sizing: border-box;
   padding: 8rem 10rem 18.6rem 9.9rem;
   width: 100%;
@@ -78,14 +193,14 @@ body {
   flex-direction: column;
   flex-shrink: 0;
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 .rectangle-25-QPX {
+.content-body .content .gambar {
   margin: 0rem 0rem 8rem 0.1rem;
   width: 124rem;
   height: 50rem;
   background-color: #d9d9d9;
   flex-shrink: 0;
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF {
+.content-body .content .teks {
   max-width: 124.1rem;
   font-size: 2.5rem;
   font-weight: 400;
@@ -94,272 +209,222 @@ body {
   font-family: Poppins, 'Source Sans Pro';
   flex-shrink: 0;
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF-sub-0 {
+.content-body .content .teks .teks-sub-0 {
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF-sub-1 {
+.content-body .content .teks .teks-sub-1 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF-sub-2 {
+.content-body .content .teks .teks-sub-2 {
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF-sub-3 {
+.content-body .content .teks .teks-sub-3 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF-sub-4 {
+.content-body .content .teks .teks-sub-4 {
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF-sub-5 {
+.content-body .content .teks .teks-sub-5 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF-sub-6 {
+.content-body .content .teks .teks-sub-6 {
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF-sub-7 {
+.content-body .content .teks .teks-sub-7 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF-sub-8 {
+.content-body .content .teks .teks-sub-8 {
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF-sub-9 {
+.content-body .content .teks .teks-sub-9 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF-sub-10 {
+.content-body .content .teks .teks-sub-10 {
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF-sub-11 {
+.content-body .content .teks .teks-sub-11 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF-sub-12 {
+.content-body .content .teks .teks-sub-12 {
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF-sub-13 {
+.content-body .content .teks .teks-sub-13 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF-sub-14 {
+.content-body .content .teks .teks-sub-14 {
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF-sub-15 {
+.content-body .content .teks .teks-sub-15 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
 }
-.faktor-kemiskinan-NQu .auto-group-sntd-5s3 .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF .selamat-datang-di-halaman-kami-yang-membahas-faktor-faktor-kemiskinan-kemiskinan-adalah-masalah-kompleks-yang-dipengaruhi-oleh-berbagai-faktor-ekonomi-sosial-dan-struktural-dalam-halaman-ini-kami-akan-menguraikan-beberapa-faktor-utama-yang-berkontribusi-terhadap-tingkat-kemiskinan-di-berbagai-komunitas-1-pendidikan-ketidaksetaraan-dalam-akses-dan-kualitas-pendidikan-dapat-menjadi-faktor-utama-kemiskinan-kurangnya-akses-terhadap-pendidikan-yang-berkualitas-dapat-menghambat-kemampuan-seseorang-untuk-memperoleh-pekerjaan-yang-layak-dan-meningkatkan-keterampilan-mereka-2-ketenagakerjaan-dan-upah-kurangnya-lapangan-pekerjaan-yang-layak-dan-upah-yang-mencukupi-dapat-membatasi-kemampuan-individu-atau-keluarga-untuk-keluar-dari-kondisi-kemiskinan-ketidaksetaraan-upah-dan-kesenjangan-ekonomi-dapat-menjadi-penghambat-pertumbuhan-ekonomi-yang-inklusif-3-kesehatan-akses-terbatas-terhadap-layanan-kesehatan-dan-infrastruktur-kesehatan-yang-buruk-dapat-mengakibatkan-biaya-kesehatan-yang-tinggi-dan-menurunkan-produktivitas-faktor-faktor-ini-dapat-berkontribusi-terhadap-siklus-kemiskinan-yang-sulit-diputuskan-4-ketidaksetaraan-gender-ketidaksetaraan-antara-gender-dapat-memberikan-dampak-besar-pada-kemiskinan-perempuan-sering-menghadapi-akses-terbatas-terhadap-pendidikan-dan-pekerjaan-serta-memikul-beban-tanggung-jawab-keluarga-yang-lebih-besar-5-infrastruktur-dan-akses-kurangnya-infrastruktur-dasar-seperti-akses-air-bersih-sanitasi-dan-transportasi-dapat-membatasi-peluang-ekonomi-dan-meningkatkan-kerentanan-terhadap-kemiskinan-terutama-di-daerah-pedesaan-6-ketidaksetaraan-sosial-dan-struktural-ketidaksetaraan-dalam-struktur-sosial-dan-kebijakan-dapat-mengakibatkan-pembedaan-dan-penindasan-menciptakan-kesenjangan-sosial-yang-dapat-memperdalam-masalah-kemiskinan-7-krisis-ekonomi-dan-bencana-alam-krisis-ekonomi-atau-bencana-alam-dapat-secara-signifikan-meningkatkan-tingkat-kemiskinan-dengan-menghancurkan-mata-pencaharian-merusak-infrastruktur-dan-meningkatkan-beban-ekonomi-masyarakat-8-kurangnya-akses-keuangan-kurangnya-akses-ke-layanan-keuangan-seperti-pinjaman-mikro-atau-sistem-perbankan-yang-inklusif-dapat-menghambat-upaya-individu-untuk-memulai-atau-mengembangkan-usaha-mereka-melalui-pemahaman-yang-mendalam-tentang-faktor-faktor-ini-kami-berharap-dapat-memberikan-wawasan-yang-berguna-dalam-mengembangkan-strategi-dan-kebijakan-untuk-mengurangi-tingkat-kemiskinan-dan-meningkatkan-kesejahteraan-masyarakat-terima-kasih-telah-mengunjungi-halaman-ini--XDF-sub-16 {
+.content-body .content .teks .teks-sub-16 {
 }
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR {
-  box-sizing: border-box;
-  padding: 2.9rem 5.6rem 2.6rem 5.5rem;
+
+.footer {
+  background-color: #0082e6;
+  padding: 25px;
+  color: #fff;
+  position: relative;
   width: 100%;
-  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-content {
   display: flex;
-  flex-direction: column;
-  background-color: #d9d9d9;
-  flex-shrink: 0;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-xrcb-9Zw {
-  margin-right: 24.4rem;
-  height: 10.3rem;
-  display: flex;
-  align-items: flex-start;
-  flex-shrink: 0;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-xrcb-9Zw .rectangle-19-5iV {
-  margin: 0.1rem 27.1rem 0rem 0rem;
-  width: 23.2rem;
-  height: 7rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-xrcb-9Zw .auto-group-89bh-BWd {
-  width: 11.8rem;
-  height: 100%;
-  flex-shrink: 0;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-xrcb-9Zw .auto-group-89bh-BWd .follow-us-vDK {
-  margin-bottom: 1.6rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-xrcb-9Zw .auto-group-89bh-BWd .auto-group-khxo-FmP {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
   width: 100%;
+  margin: 0 auto;
+}
+
+.line1-col {
+  width: 21.2%;
+  margin: 20px;
+}
+
+.line1-col a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo1 img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 0px; 
+}
+
+.logo1 p.desk {
+  font-size: 15px;
+  line-height: 0.7em;
+}
+
+.tentang ul,
+.Important ul,
+.Useful-Links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tentang ul li,
+.Important ul li,
+.Useful-Links ul li {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.line1-col p,
+.line1-col h3,
+.line1-col .desk {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.line2-col{
   display: flex;
-  align-items: center;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-xrcb-9Zw .auto-group-89bh-BWd .auto-group-khxo-FmP .rectangle-15-baM {
-  margin-right: 2rem;
-  width: 4.9rem;
-  height: 4.9rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-xrcb-9Zw .auto-group-89bh-BWd .auto-group-khxo-FmP .rectangle-16-wPK {
-  width: 4.9rem;
-  height: 4.9rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-xrcb-9Zw .auto-group-rxs9-gbo {
-  box-sizing: border-box;
-  padding-left: 2rem;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  flex-shrink: 0;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-xrcb-9Zw .auto-group-rxs9-gbo .rectangle-17-S5B {
-  margin-right: 19.2rem;
-  width: 4.9rem;
-  height: 4.9rem;
-  background-color: #6e6e6e;
-  flex-shrink: 0;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-xrcb-9Zw .auto-group-rxs9-gbo .auto-group-4qxd-mt9 {
-  margin-bottom: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-xrcb-9Zw .auto-group-rxs9-gbo .auto-group-4qxd-mt9 .about-us-6Qd {
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-xrcb-9Zw .auto-group-rxs9-gbo .auto-group-4qxd-mt9 .faq-EWq {
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-7mfh-aKo {
-  margin: 0rem 21.7rem 2.9rem 0rem;
-  display: flex;
-  align-items: flex-start;
-  flex-shrink: 0;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-7mfh-aKo .lorem-ipsum-dolor-sit-amet-consectetur-ucy {
-  margin-right: 15.7rem;
-  max-width: 34.6rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  flex-shrink: 0;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-7mfh-aKo .auto-group-rspx-pV3 {
-  margin: 2rem 19.2rem 0rem 0rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-7mfh-aKo .auto-group-rspx-pV3 .call-us-kdb {
-  margin-bottom: 1.6rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-7mfh-aKo .auto-group-rspx-pV3 .item-085762382649-VbB {
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-7mfh-aKo .auto-group-wdtp-ymF {
-  margin-top: 0.3rem;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-7mfh-aKo .auto-group-wdtp-ymF .privacy-88M {
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-7mfh-aKo .auto-group-wdtp-ymF .contact-us-53b {
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .line-1-oVP {
-  margin-bottom: 2.1rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
-  height: 0.1rem;
-  background-color: #000000;
-  flex-shrink: 0;
+  margin: 0 auto;
 }
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-nhoz-MG1 {
-  margin: 0rem 7.6rem 0rem 7.8rem;
-  width: calc(100% - 15.4rem);
+
+.subs{
+  margin-top: 30px;
+  margin-left: 80px;
+}
+
+.subs h3{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.subs p{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.subs form {
   display: flex;
   align-items: center;
-  flex-shrink: 0;
 }
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-nhoz-MG1 .lorem-ipsum-dolor-sit-amet-H9f {
-  margin-right: 48.3rem;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
+
+.subs input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
-.faktor-kemiskinan-NQu .auto-group-hf2k-SvR .auto-group-nhoz-MG1 .lorem-ipsum-dolor-sit-amet-Qzy {
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
-  flex-shrink: 0;
+
+.subs button {
+  background-color: #279ef8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.subs button:hover {
+  background-color: #0056b3;
+}
+
+
+.mid {
+  padding: 20px;
+}
+
+.mid .followus {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.sosmed {
+  text-align: center;
+}
+
+.icon-sosmed img {
+  margin-bottom: 10px;
+  width: 25%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+.notelp {
+  margin-top: 20px;
+}
+
+.watermark {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  opacity: 0.7;
 }
