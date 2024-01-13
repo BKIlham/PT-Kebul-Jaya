@@ -1,0 +1,23 @@
+.section-title {
+    margin-top: 100px;
+}
+.row {
+    align-items: center;
+    justify-content: center;
+}
+.row img{
+    width: 35%;   
+}
+.row p{
+    font-size: 20px;
+    text-align: justify;
+}
+#header {
+    background-color: #3d4d6a;
+}
+.navbar {
+    background-color: #3d4d6a;
+}
+.row ol{
+    font-size: 20px;
+}
