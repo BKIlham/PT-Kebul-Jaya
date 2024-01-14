@@ -96,7 +96,7 @@ include 'koneksi.php';
                                 href=""><?= $row["kategori"] ?></a>
                             <a class="text-white" href=""><small><?= $row["waktu_dibuat"] ?></small></a>
                         </div>
-                        <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href=""><?= $row["judul_pendek"] ?>...</a>
+                        <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="artikelread.php?id=<?= $row["id_artikel"] ?>"><?= $row["judul_pendek"] ?>...</a>
                     </div>
                 </div>
                 <?php
@@ -141,7 +141,7 @@ include 'koneksi.php';
                                         <a class="text-body" href=""><small><?= $row["waktu_dibuat"] ?></small></a>
                                     </div>
                                     <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold"
-                                        href=""><?= $row["judul_pendek"] ?>...</a>
+                                        href="artikelread.php?id=<?= $row["id_artikel"] ?>"><?= $row["judul_pendek"] ?>...</a>
                                     <p class="m-0"><?= $row["isi_pendek"] ?>...</p>
                                 </div>
                                 <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
@@ -193,7 +193,7 @@ include 'koneksi.php';
                                             href=""><?= $row["kategori"] ?></a>
                                         <a class="text-body" href=""><small><?= $row["waktu_dibuat"] ?></small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href=""><?= $row["judul_pendek"] ?>...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="artikelread.php?id=<?= $row["id_artikel"] ?>"><?= $row["judul_pendek"] ?>...</a>
                                 </div>
                             </div>
                             <?php
