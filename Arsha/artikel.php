@@ -80,20 +80,23 @@ include 'koneksi.php';
             </div>
             <div class="owl-carousel news-carousel carousel-item-4 position-relative">
                 <?php
-                    $sql = "SELECT id_artikel, SUBSTRING(judul, 1, 35) AS judul_pendek, kategori, id_user, SUBSTRING(isi, 1, 35) AS isi_pendek, waktu_dibuat FROM Artikel";
+                    $sql = "SELECT a.id_artikel, SUBSTRING(a.judul, 1, 35) AS judul_pendek, a.kategori, a.id_user, SUBSTRING(a.isi, 1, 35) AS isi_pendek, a.waktu_dibuat, f.id_foto, f.nama 
+                    FROM Artikel a
+                    LEFT JOIN foto_artikel f ON a.id_artikel = f.id_artikel
+                    ORDER BY a.waktu_dibuat DESC";
                     $result = $conn->query($sql);
                     if ($result->num_rows > 0) {
                          while ($row = $result->fetch_assoc()) {
                 ?>
                 <div class="position-relative overflow-hidden" style="height: 300px;">
-                    <img class="img-fluid h-100" src="img/news-700x435-1.jpg" style="object-fit: cover;">
+                    <img class="img-fluid h-100" src="img/<?= $row["nama"] ?>" style="object-fit: cover;">
                     <div class="overlay">
                         <div class="mb-2">
                             <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
                                 href=""><?= $row["kategori"] ?></a>
                             <a class="text-white" href=""><small><?= $row["waktu_dibuat"] ?></small></a>
                         </div>
-                        <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href=""><?= $row["judul_pendek"] ?>...</a>
+                        <a class="h6 m-0 text-white text-uppercase font-weight-semi-bold" href="artikelread.php?id=<?= $row["id_artikel"] ?>"><?= $row["judul_pendek"] ?>...</a>
                     </div>
                 </div>
                 <?php
@@ -118,17 +121,19 @@ include 'koneksi.php';
                             </div>
                         </div>
                         <?php
-                            $sql = "SELECT a.id_artikel, SUBSTRING(a.judul, 1, 35) AS judul_pendek, a.kategori, a.id_user, p.username, p.foto, SUBSTRING(a.isi, 1, 70) AS isi_pendek, a.waktu_dibuat,  a.kehangatan
-                                FROM artikel a
-                                JOIN user p ON a.id_user = p.id_user
-                                ORDER BY a.waktu_dibuat DESC";
+                            $sql = "SELECT a.id_artikel, SUBSTRING(a.judul, 1, 35) AS judul_pendek, a.kategori, a.id_user, p.username, p.foto AS user_foto, SUBSTRING(a.isi, 1, 70) AS isi_pendek, a.waktu_dibuat, a.kehangatan, f.id_foto, f.nama AS foto_artikel
+                            FROM artikel a
+                            JOIN user p ON a.id_user = p.id_user
+                            LEFT JOIN foto_artikel f ON a.id_artikel = f.id_artikel
+                            ORDER BY a.waktu_dibuat DESC";
+
                             $result = $conn->query($sql);
                             if ($result->num_rows > 0) {
                                  while ($row = $result->fetch_assoc()) {
                         ?>
                         <div class="col-lg-6">
                             <div class="position-relative mb-3">
-                                <img class="img-fluid w-100" src="img/news-700x435-1.jpg" style="object-fit: cover;">
+                                <img class="img-fluid w-100" src="img/<?=  $row["foto_artikel"] ?>" style="object-fit: cover;">
                                 <div class="bg-white border border-top-0 p-4">
                                     <div class="mb-2">
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2"
@@ -136,12 +141,12 @@ include 'koneksi.php';
                                         <a class="text-body" href=""><small><?= $row["waktu_dibuat"] ?></small></a>
                                     </div>
                                     <a class="h4 d-block mb-3 text-secondary text-uppercase font-weight-bold"
-                                        href=""><?= $row["judul_pendek"] ?>...</a>
+                                        href="artikelread.php?id=<?= $row["id_artikel"] ?>"><?= $row["judul_pendek"] ?>...</a>
                                     <p class="m-0"><?= $row["isi_pendek"] ?>...</p>
                                 </div>
                                 <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
                                     <div class="d-flex align-items-center">
-                                        <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25"
+                                        <img class="rounded-circle mr-2" src="img/user/<?= $row["user_foto"] ?>" width="25" height="25"
                                             alt="">
                                         <small><?= $row["username"] ?></small>
                                     </div>
@@ -169,83 +174,32 @@ include 'koneksi.php';
                         </div>
                         <div class="bg-white border border-top-0 p-3">
                             <?php
-                            $sql = "SELECT id_artikel, judul, kategori, id_user, SUBSTRING(isi, 1, 25) AS isi_pendek, waktu_dibuat 
-                                    FROM Artikel
-                                    ORDER BY kehangatan DESC";
+                            $sql = "SELECT a.id_artikel, SUBSTRING(a.judul, 1, 25) AS judul_pendek, a.kategori, a.id_user, p.username, p.foto AS user_foto, SUBSTRING(a.isi, 1, 25) AS isi_pendek, a.waktu_dibuat, a.kehangatan, f.id_foto, f.nama AS foto_artikel
+                                FROM Artikel a
+                                LEFT JOIN user p ON a.id_user = p.id_user
+                                LEFT JOIN foto_artikel f ON a.id_artikel = f.id_artikel
+                                ORDER BY a.kehangatan DESC";
                             
                                 $result = $conn->query($sql);
                                 if ($result->num_rows > 0) {
                                      while ($row = $result->fetch_assoc()) {
                             ?>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                                <img class="img-fluid" src="img/news-110x110-1.jpg" alt="">
+                                <img class="img-fluid" src="img/<?= $row["foto_artikel"] ?>" alt="" style="height: 110px; width: 110px; object-fit: cover;">
                                 <div
                                     class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
                                         <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
-                                            href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
+                                            href=""><?= $row["kategori"] ?></a>
+                                        <a class="text-body" href=""><small><?= $row["waktu_dibuat"] ?></small></a>
                                     </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum
-                                        dolor sit amet elit...</a>
+                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="artikelread.php?id=<?= $row["id_artikel"] ?>"><?= $row["judul_pendek"] ?>...</a>
                                 </div>
                             </div>
                             <?php
                                      }
                                 }
                             ?>
-                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                                <img class="img-fluid" src="img/news-110x110-2.jpg" alt="">
-                                <div
-                                    class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
-                                    <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
-                                            href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
-                                    </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum
-                                        dolor sit amet elit...</a>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                                <img class="img-fluid" src="img/news-110x110-3.jpg" alt="">
-                                <div
-                                    class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
-                                    <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
-                                            href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
-                                    </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum
-                                        dolor sit amet elit...</a>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                                <img class="img-fluid" src="img/news-110x110-4.jpg" alt="">
-                                <div
-                                    class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
-                                    <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
-                                            href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
-                                    </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum
-                                        dolor sit amet elit...</a>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                                <img class="img-fluid" src="img/news-110x110-5.jpg" alt="">
-                                <div
-                                    class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
-                                    <div class="mb-2">
-                                        <a class="badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2"
-                                            href="">Business</a>
-                                        <a class="text-body" href=""><small>Jan 01, 2045</small></a>
-                                    </div>
-                                    <a class="h6 m-0 text-secondary text-uppercase font-weight-bold" href="">Lorem ipsum
-                                        dolor sit amet elit...</a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <!-- Popular News End -->
