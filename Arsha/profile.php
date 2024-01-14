@@ -79,7 +79,7 @@
         <div class="profile-info col-md-9">
             <div class="panel">
                 <div class="bio-graph-heading">
-                    Aliquam ac magna metus. Nam sed arcu non tellus fringilla fringilla ut vel ispum. Aliquam ac magna metus.
+                    Bersyukur adalah cara terbaik agar merasa cukup, bahkan ketika berkekurangan. Jangan berharap lebih sebelum berusaha lebih.
                 </div>
                 <div class="panel-body bio-graph-info">
                     <h1>Bio Graph</h1>
