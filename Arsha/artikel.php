@@ -146,7 +146,7 @@ include 'koneksi.php';
                                 </div>
                                 <div class="d-flex justify-content-between bg-white border border-top-0 p-4">
                                     <div class="d-flex align-items-center">
-                                        <img class="rounded-circle mr-2" src="img/user.jpg" width="25" height="25"
+                                        <img class="rounded-circle mr-2" src="img/user/<?= $row["user_foto"] ?>" width="25" height="25"
                                             alt="">
                                         <small><?= $row["username"] ?></small>
                                     </div>
@@ -174,16 +174,18 @@ include 'koneksi.php';
                         </div>
                         <div class="bg-white border border-top-0 p-3">
                             <?php
-                            $sql = "SELECT id_artikel, SUBSTRING(judul, 1, 25) as judul_pendek, kategori, id_user, SUBSTRING(isi, 1, 25) AS isi_pendek, waktu_dibuat 
-                                    FROM Artikel
-                                    ORDER BY kehangatan DESC";
+                            $sql = "SELECT a.id_artikel, SUBSTRING(a.judul, 1, 25) AS judul_pendek, a.kategori, a.id_user, p.username, p.foto AS user_foto, SUBSTRING(a.isi, 1, 25) AS isi_pendek, a.waktu_dibuat, a.kehangatan, f.id_foto, f.nama AS foto_artikel
+                                FROM Artikel a
+                                LEFT JOIN user p ON a.id_user = p.id_user
+                                LEFT JOIN foto_artikel f ON a.id_artikel = f.id_artikel
+                                ORDER BY a.kehangatan DESC";
                             
                                 $result = $conn->query($sql);
                                 if ($result->num_rows > 0) {
                                      while ($row = $result->fetch_assoc()) {
                             ?>
                             <div class="d-flex align-items-center bg-white mb-3" style="height: 110px;">
-                                <img class="img-fluid" src="img/news-110x110-1.jpg" alt="">
+                                <img class="img-fluid" src="img/<?= $row["foto_artikel"] ?>" alt="" style="height: 110px; width: 110px; object-fit: cover;">
                                 <div
                                     class="w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0">
                                     <div class="mb-2">
