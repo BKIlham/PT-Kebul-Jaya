@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Kebul Jaya</title>
+    <title>Sign In</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -37,16 +37,16 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top "style="background-color: #3d4d6a;">
         <div class="container d-flex align-items-center">
-            <a href="index.html" class="logo me-auto"><img src="assets/img/logoPt.png" alt="" class="img-fluid"></a>
+            <a href="index.php" class="logo me-auto"><img src="assets/img/logoPt.png" alt="" class="img-fluid"></a>
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link" href="index.html">Home</a></li>
-                    <li><a class="nav-link" href="about-us.html">About</a></li>
-                    <li><a class="nav-link" href="artikel.html">Artikel</a></li>
-                    <li><a class="nav-link" href="galeri.html">Galeri</a></li>
-                    <li><a class="nav-link" href="forum.html">Forum Diskusi</a></li>
-                    <li><a class="getstarted" href="signin.html">Sign In</a></li>
+                    <li><a class="nav-link" href="index.php">Home</a></li>
+                    <li><a class="nav-link" href="about-us.php">About</a></li>
+                    <li><a class="nav-link" href="artikel.php">Artikel</a></li>
+                    <li><a class="nav-link" href="galeri.php">Galeri</a></li>
+                    <li><a class="nav-link" href="forum.php">Forum Diskusi</a></li>
+                    <li><a class="getstarted" href="signin.php">Sign In</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -66,8 +66,7 @@
                             <span class="text-primary">di Indonesia</span>
                         </h1>
                         Dengan login, Anda akan membuka akses ke informasi terkini tentang tingkat kemiskinan di Indonesia.
-                        Temukan data yang relevan, bergabung dalam diskusi forum, dan baca berita terbaru untuk mendapatkan wawasan
-                        menyeluruh.
+                        Temukan data yang relevan, bergabung dalam diskusi forum, dan baca berita terbaru untuk mendapatkan wawasan menyeluruh.
                         Ayo bersama-sama berkontribusi melawan kemiskinan.
                         </p>
                     </div>
@@ -77,21 +76,6 @@
                             <div class="card-body py-5 px-md-5">
                                 <form>
                                     <!-- 2 column grid layout with text inputs for the first and last names -->
-                                    <div class="row">
-                                        <div class="col-md-6 mb-4">
-                                            <div class="form-outline">
-                                                <label class="form-label" for="form3Example1">First name</label>
-                                                <input type="text" id="form3Example1" class="form-control" />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-                                            <div class="form-outline">
-                                                <label class="form-label" for="form3Example2">Last name</label>
-                                                <input type="text" id="form3Example2" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-    
                                     <!-- Email input -->
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="form3Example3">Email address</label>
@@ -104,26 +88,18 @@
                                         <input type="password" id="form3Example4" class="form-control" />
                                     </div>
     
-                                    <!-- Checkbox -->
-                                    <div class="form-check d-flex justify-content-center mb-4">
-                                        <label class="form-check-label" for="form2Example33">
-                                        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33"
-                                            checked />
-                                            Subscribe to our newsletter
-                                        </label>
-                                    </div>
                                     <div class="d-flex justify-content-center mb-4">
                                         <!-- Submit button -->
                                         <button type="submit" class="btn btn-primary btn-block mb-4">
-                                            Sign up
+                                            Sign In
                                         </button>
                                     </div>
     
     
                                     <!-- Login buttons -->
                                     <div class="text-center">
-                                        <p>Have an Account ?</p>
-                                        <a href="signin.html">Sign In</a>
+                                        <p>Need an Account ?</p>
+                                        <a href="signup.php">Sign Up</a>
                                     </div>
                                 </form>
                             </div>
@@ -159,21 +135,20 @@
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="about-us.html">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="galeri.html">Galeri</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="privacy.html">Privacy policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="index.php">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="about-us.php">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="galeri.php">Galeri</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="privacy.php">Privacy policy</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="data.html">Data Kemiskinan</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="forum.html">Forum</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="kisah-sukses.html">Kisah Sukses</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="artikel.html">Artikel</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="galeri.html">Galeri</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="data.php">Data Kemiskinan</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="forum.php">Forum</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="artikel.php">Artikel</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="galeri.php">Galeri</a></li>
                         </ul>
                     </div>
 

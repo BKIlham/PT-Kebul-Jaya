@@ -35,16 +35,16 @@
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top ">
 <div class="container d-flex align-items-center">
-    <a href="index.html" class="logo me-auto"><img src="assets/img/logoPt.png" alt="" class="img-fluid"></a>
+    <a href="index.php" class="logo me-auto"><img src="assets/img/logoPt.png" alt="" class="img-fluid"></a>
 
     <nav id="navbar" class="navbar">
     <ul>
-        <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link " href="about-us.html">About</a></li>
-        <li><a class="nav-link" href="berita.html">Berita</a></li>
-        <li><a class="nav-link  " href="galeri.html">Galeri</a></li>
-        <li><a class="nav-link" href="forum.html">Forum Diskusi</a></li>
-        <li><a class="getstarted" href="signin.html">Sign In</a></li>
+        <li><a class="nav-link" href="index.php">Home</a></li>
+        <li><a class="nav-link " href="about-us.php">About</a></li>
+        <li><a class="nav-link" href="berita.php">Berita</a></li>
+        <li><a class="nav-link  " href="galeri.php">Galeri</a></li>
+        <li><a class="nav-link" href="forum.php">Forum Diskusi</a></li>
+        <li><a class="getstarted" href="signin.php">Sign In</a></li>
     </ul>
     <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->

@@ -49,16 +49,16 @@ $result = $conn->query($sql);
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top "style="background-color: #3d4d6a;">
         <div class="container d-flex align-items-center">
-            <a href="index.html" class="logo me-auto"><img src="assets/img/logoPt.png" alt="" class="img-fluid"></a>
+            <a href="index.php" class="logo me-auto"><img src="assets/img/logoPt.png" alt="" class="img-fluid"></a>
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link" href="index.html">Home</a></li>
-                    <li><a class="nav-link" href="about-us.html">About</a></li>
-                    <li><a class="nav-link" href="artikel.html">Artikel</a></li>
-                    <li><a class="nav-link active" href="galeri.html">Galeri</a></li>
-                    <li><a class="nav-link" href="forum.html">Forum Diskusi</a></li>
-                    <li><a class="getstarted" href="signin.html">Sign In</a></li>
+                    <li><a class="nav-link" href="index.php">Home</a></li>
+                    <li><a class="nav-link" href="about-us.php">About</a></li>
+                    <li><a class="nav-link" href="artikel.php">Artikel</a></li>
+                    <li><a class="nav-link active" href="galeri.php">Galeri</a></li>
+                    <li><a class="nav-link" href="forum.php">Forum Diskusi</a></li>
+                    <li><a class="getstarted" href="signin.php">Sign In</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -126,20 +126,20 @@ $result = $conn->query($sql);
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="about-us.html">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="galeri.html">Galeri</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="privacy.html">Privacy policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="index.php">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="about-us.php">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="galeri.php">Galeri</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="privacy.php">Privacy policy</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="data.html">Data Kemiskinan</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="forum.html">Forum</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="artikel.html">Artikel</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="galeri.html">Galeri</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="data.php">Data Kemiskinan</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="forum.php">Forum</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="artikel.php">Artikel</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="galeri.php">Galeri</a></li>
                         </ul>
                     </div>
 
