@@ -47,7 +47,7 @@ session_start();
         <div class="container d-flex align-items-center">
             <a href="index.php" class="logo me-auto"><img src="assets/img/logoPt.png" alt="" class="img-fluid"></a>
 
-            <nav id="navbar" class="navbar">
+            <nav id="navbar" class="navbar" style="font-family: Open Sans, sans-serif;">
                 <ul>
                     <li><a class="nav-link" href="index.php">Home</a></li>
                     <li><a class="nav-link" href="about-us.php">About</a></li>

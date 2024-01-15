@@ -1,9 +1,29 @@
 <?php
-include "koneksi.php";
 session_start();
+include 'koneksi.php';
+
+// Check if the user is logged in
+if (isset($_SESSION['user_id'])) {
+    $user_id = $_SESSION['user_id'];
+
+    // Fetch user data from the database based on user ID
+    $query = "SELECT * FROM user WHERE id_user = $user_id";
+    $result = mysqli_query($conn, $query);
+
+    // Check if the query was successful
+    if ($result) {
+        $user_dataya = mysqli_fetch_assoc($result);
+
+    } else {
+        // Handle query error
+        echo "Error: " . mysqli_error($conn);
+    }
+} else {
+    // Redirect to the login page if the user is not logged in
+    header("Location: login.php");
+    exit();
+}
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,17 +64,17 @@ session_start();
 <body style="background-color: hsl(0, 0%, 96%);">
 
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
+    <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center" style="height: 59.9844px">
         <a href="index.php" class="logo me-auto"><img src="assets/img/logoPt.png" alt="" class="img-fluid"></a>
 
-        <nav id="navbar" class="navbar">
+        <nav id="navbar" class="navbar" style="font-family: Open Sans, sans-serif;vertical-align: middle;padding-bottom: 8px;padding-left: 16px;padding-right: 16px;padding-top: 8px;margin-top:25px">
             <ul>
-                <li><a class="nav-link" href="index.php">Home</a></li>
-                <li><a class="nav-link" href="about-us.php">About</a></li>
-                <li><a class="nav-link" href="artikel.php">Artikel</a></li>
-                <li><a class="nav-link" href="galeri.php">Galeri</a></li>
-                <li><a class="nav-link" href="forum.php">Forum Diskusi</a></li>
+                <li><a class="nav-link" href="index.php" style="text-decoration:none;">Home</a></li>
+                <li><a class="nav-link" href="about-us.php" style="text-decoration:none;">About</a></li>
+                <li><a class="nav-link" href="artikel.php" style="text-decoration:none;">Artikel</a></li>
+                <li><a class="nav-link" href="galeri.php" style="text-decoration:none;">Galeri</a></li>
+                <li><a class="nav-link" href="forum.php" style="text-decoration:none;">Forum Diskusi</a></li>
                 <?php
                 // Check if the user is logged in
                 if (isset($_SESSION['user_id'])) {
@@ -91,9 +111,9 @@ session_start();
             <div class="panel">
                 <div class="user-heading round">
                     <a href="#">
-                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
+                        <img src="img/user/<?= $user_data['foto']?>" alt="">
                     </a>
-                    <h1>Camila Smith</h1>
+                    <h1><?= $user_data['username']?></h1>
                     <p>deydey@theEmail.com</p>
                 </div>
 
@@ -113,10 +133,13 @@ session_start();
                     <h1>Bio Graph</h1>
                     <div class="row">
                         <div class="bio-row">
-                            <p><span>First Name </span>: Camila</p>
+                            <p><span>First Name </span>: <?= $user_data['first_name']?></p>
                         </div>
                         <div class="bio-row">
-                            <p><span>Last Name </span>: Smith</p>
+                            <p><span>Last Name </span>: <?= $user_data['last_name']?></p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>Email </span>: <?= $user_data['email']?></p>
                         </div>
                         <div class="bio-row">
                             <p><span>Country </span>: Australia</p>
