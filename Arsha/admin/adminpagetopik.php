@@ -50,10 +50,11 @@ session_start();
 									<label for="selectAll"></label>
 								</span>
 							</th>
-                            <th>User</th>
+                            <th>Id Topik</th>
 							<th>Judul</th>
 							<th>Deskripsi</th>
-							<th>Waktu dibuat</th>
+							<th>Id User</th>
+							<th>Waktu Dibuat</th>
                             <th>Action</th>
 						</tr>
 					</thead>
@@ -102,17 +103,24 @@ session_start();
 					</div>
 					<div class="modal-body">					
 						<div class="form-group">
-							<label>Judul Topik</label>
+							<label>Id Topik</label>
+							<input type="text" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Judul</label>
 							<input type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
 							<label>Deskripsi</label>
 							<textarea class="form-control" required></textarea>
 						</div>
+						<div class="form-group">
+							<label>Id User</label>
+							<input type="text" class="form-control" required>
+						</div>
                         <div class="form-group">
-							<label for="id_user">Pilih Pengguna:</label>
-							<select class="form-control" name="id_user" required>
-							</select>
+							<label>Waktu Dibuat</label>
+							<input type="text" class="form-control" required>
 						</div>
 					</div>
 					<div class="modal-footer">
@@ -131,17 +139,28 @@ session_start();
 					<div class="modal-header">						
 						<h4 class="modal-title">Edit Topik</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					</div>
+						</div>
 					<div class="modal-body">					
 						<div class="form-group">
-							<label>Judul Topik</label>
+							<label>Id Topik</label>
+							<input type="text" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Judul</label>
 							<input type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
 							<label>Deskripsi</label>
 							<textarea class="form-control" required></textarea>
-						</div>	
-                        	
+						</div>
+						<div class="form-group">
+							<label>Id User</label>
+							<input type="text" class="form-control" required>
+						</div>
+                        <div class="form-group">
+							<label>Waktu Dibuat</label>
+							<input type="text" class="form-control" required>
+						</div>
 					</div>
 					<div class="modal-footer">
 						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
