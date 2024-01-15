@@ -1,6 +1,12 @@
 <?php
 include "koneksi.php";
 session_start();
+if(isset($_GET['order'])) {
+    // Mendapatkan ID artikel dari parameter URL
+    $order = $_GET['order'];
+} else {
+    $order = 1;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -115,18 +121,10 @@ session_start();
                                             style="height: 100%; overflow: hidden;">
                                             <div class="simplebar-content" style="padding: 16px;">
                                                 <nav class="nav nav-pills nav-gap-y-1 flex-column">
-                                                    <a href="javascript:void(0)"
-                                                        class="nav-link nav-link-faded has-icon active">All Threads</a>
-                                                    <a href="javascript:void(0)"
-                                                        class="nav-link nav-link-faded has-icon">Popular this week</a>
-                                                    <a href="javascript:void(0)"
-                                                        class="nav-link nav-link-faded has-icon">Popular all time</a>
-                                                    <a href="javascript:void(0)"
-                                                        class="nav-link nav-link-faded has-icon">Solved</a>
-                                                    <a href="javascript:void(0)"
-                                                        class="nav-link nav-link-faded has-icon">Unsolved</a>
-                                                    <a href="javascript:void(0)" class="nav-link nav-link-faded has-icon">No
-                                                        replies yet</a>
+                                                    <a href="forum.php?order=1" class="nav-link nav-link-faded has-icon<?php if ($order==1): ?> active <?php endif; ?>">All Threads</a>
+                                                    <a href="forum.php?order=2" class="nav-link nav-link-faded has-icon<?php if ($order==2): ?> active <?php endif; ?>">Popular this week</a>
+                                                    <a href="forum.php?order=3" class="nav-link nav-link-faded has-icon<?php if ($order==3): ?> active <?php endif; ?>">Popular all time</a>
+                                                    <a href="forum.php?order=4" class="nav-link nav-link-faded has-icon<?php if ($order==4): ?> active <?php endif; ?>">No replies yet</a>
                                                 </nav>
                                             </div>
                                         </div>
@@ -148,42 +146,77 @@ session_start();
     
     
                 <div class="inner-main">
-    
-                    <div class="inner-main-header">
-                        <a class="nav-link nav-icon rounded-circle nav-link-faded mr-3 d-md-none" href="#"
-                            data-toggle="inner-sidebar"><i class="material-icons">arrow_forward_ios</i></a>
-                        <select class="custom-select custom-select-sm w-auto mr-1">
-                            <option selected>Latest</option>
-                            <option value="1">Popular</option>
-                            <option value="3">Solved</option>
-                            <option value="3">Unsolved</option>
-                            <option value="3">No Replies Yet</option>
-                        </select>
-                        <span class="input-icon input-icon-sm ml-auto w-auto">
-                            <input type="text"
-                                class="form-control form-control-sm bg-gray-200 border-gray-200 shadow-none mb-4 mt-4"
-                                placeholder="Search forum" />
-                        </span>
-                    </div>
-    
-    
-    
                     <div class="inner-main-body p-2 p-sm-3 collapse forum-content show">
                         <?php
                         // Fetch forum data
-                        $sql = "SELECT user.username as user_username, user.email as user_email, user.foto as user_foto,
-                               Topik.id_topik as topik_id, Topik.judul as topik_judul, LEFT(Topik.deskripsi, 75) as topik_deskripsi,
-                               (SELECT COUNT(*) FROM Balasan WHERE Balasan.id_topik = Topik.id_topik) as reply_count,
-                               (SELECT user.username FROM user 
-                                JOIN Balasan ON user.id_user = Balasan.id_user 
-                                WHERE Balasan.id_topik = Topik.id_topik 
-                                ORDER BY Balasan.waktu_dibuat DESC LIMIT 1) as last_replier_username,
-                               (SELECT Balasan.waktu_dibuat FROM Balasan 
-                                WHERE Balasan.id_topik = Topik.id_topik 
-                                ORDER BY Balasan.waktu_dibuat DESC LIMIT 1) as last_reply_time
-                        FROM Topik
-                        JOIN user ON Topik.id_user = user.id_user
-                        ORDER BY Topik.waktu_dibuat DESC";
+                        if ($order == 1){
+                            $sql = "SELECT user.username as user_username, user.email as user_email, user.foto as user_foto,
+                                   Topik.id_topik as topik_id, Topik.judul as topik_judul, LEFT(Topik.deskripsi, 75) as topik_deskripsi,
+                                   (SELECT COUNT(*) FROM Balasan WHERE Balasan.id_topik = Topik.id_topik) as reply_count,
+                                   (SELECT user.username FROM user 
+                                    JOIN Balasan ON user.id_user = Balasan.id_user 
+                                    WHERE Balasan.id_topik = Topik.id_topik 
+                                    ORDER BY Balasan.waktu_dibuat DESC LIMIT 1) as last_replier_username,
+                                   (SELECT Balasan.waktu_dibuat FROM Balasan 
+                                    WHERE Balasan.id_topik = Topik.id_topik 
+                                    ORDER BY Balasan.waktu_dibuat DESC LIMIT 1) as last_reply_time
+                            FROM Topik
+                            JOIN user ON Topik.id_user = user.id_user
+                            ORDER BY Topik.waktu_dibuat DESC";
+                        }elseif ($order == 2){
+                            $sql = "SELECT user.username as user_username, user.email as user_email, user.foto as user_foto,
+                                   Topik.id_topik as topik_id, Topik.judul as topik_judul, LEFT(Topik.deskripsi, 75) as topik_deskripsi,
+                                   (SELECT COUNT(*) FROM Balasan WHERE Balasan.id_topik = Topik.id_topik) as reply_count,
+                                   (SELECT user.username FROM user 
+                                    JOIN Balasan ON user.id_user = Balasan.id_user 
+                                    WHERE Balasan.id_topik = Topik.id_topik 
+                                    ORDER BY Balasan.waktu_dibuat DESC LIMIT 1) as last_replier_username,
+                                   (SELECT Balasan.waktu_dibuat FROM Balasan 
+                                    WHERE Balasan.id_topik = Topik.id_topik 
+                                    ORDER BY Balasan.waktu_dibuat DESC LIMIT 1) as last_reply_time
+                            FROM Topik
+                            JOIN user ON Topik.id_user = user.id_user
+                            WHERE Topik.waktu_dibuat >= DATE_SUB(NOW(), INTERVAL 1 WEEK)
+                            ORDER BY reply_count DESC";
+                        }elseif ($order == 3){
+                            $sql = "SELECT user.username as user_username, user.email as user_email, user.foto as user_foto,
+                                   Topik.id_topik as topik_id, Topik.judul as topik_judul, LEFT(Topik.deskripsi, 75) as topik_deskripsi,
+                                   (SELECT COUNT(*) FROM Balasan WHERE Balasan.id_topik = Topik.id_topik) as reply_count,
+                                   (SELECT user.username FROM user 
+                                    JOIN Balasan ON user.id_user = Balasan.id_user 
+                                    WHERE Balasan.id_topik = Topik.id_topik 
+                                    ORDER BY Balasan.waktu_dibuat DESC LIMIT 1) as last_replier_username,
+                                   (SELECT Balasan.waktu_dibuat FROM Balasan 
+                                    WHERE Balasan.id_topik = Topik.id_topik 
+                                    ORDER BY Balasan.waktu_dibuat DESC LIMIT 1) as last_reply_time
+                            FROM Topik
+                            JOIN user ON Topik.id_user = user.id_user
+                            ORDER BY reply_count DESC";
+                        }elseif ($order == 4){
+                            $sql = "SELECT user.username as user_username, user.email as user_email, user.foto as user_foto,
+                                   Topik.id_topik as topik_id, Topik.judul as topik_judul, LEFT(Topik.deskripsi, 75) as topik_deskripsi,
+                                   0 as reply_count,
+                                   NULL as last_replier_username,
+                                   NULL as last_reply_time
+                            FROM Topik
+                            JOIN user ON Topik.id_user = user.id_user
+                            WHERE Topik.id_topik NOT IN (SELECT id_topik FROM Balasan)
+                            ORDER BY Topik.waktu_dibuat DESC";
+                        }else{
+                            $sql = "SELECT user.username as user_username, user.email as user_email, user.foto as user_foto,
+                                   Topik.id_topik as topik_id, Topik.judul as topik_judul, LEFT(Topik.deskripsi, 75) as topik_deskripsi,
+                                   (SELECT COUNT(*) FROM Balasan WHERE Balasan.id_topik = Topik.id_topik) as reply_count,
+                                   (SELECT user.username FROM user 
+                                    JOIN Balasan ON user.id_user = Balasan.id_user 
+                                    WHERE Balasan.id_topik = Topik.id_topik 
+                                    ORDER BY Balasan.waktu_dibuat DESC LIMIT 1) as last_replier_username,
+                                   (SELECT Balasan.waktu_dibuat FROM Balasan 
+                                    WHERE Balasan.id_topik = Topik.id_topik 
+                                    ORDER BY Balasan.waktu_dibuat DESC LIMIT 1) as last_reply_time
+                            FROM Topik
+                            JOIN user ON Topik.id_user = user.id_user
+                            ORDER BY Topik.waktu_dibuat DESC";
+                        }
                         
                         $result = $conn->query($sql);
                         
@@ -202,7 +235,8 @@ session_start();
                                                 <p class="text-secondary">
                                                     <?=$row['topik_deskripsi']?>...
                                                 </p>
-                                                <p class="text-muted"><a href="javascript:void(0)"><?=$row['last_replier_username']?></a> replied <span
+                                                <span class="text-muted">From : <?=$row['user_username']?></span>
+                                                <p class="text-muted"><a href="javascript:void(0)"><?=$row['last_replier_username']?></a><span
                                                         class="text-secondary font-weight-bold"><?= time_elapsed_string($row['last_reply_time'])?></span></p>
                                             </div>
                                             <div class="text-muted small text-center align-self-center">
@@ -248,11 +282,14 @@ session_start();
                                 $string = array_slice($string, 0, 1);
                             }
                         
-                            $result = implode(', ', $string) . ' ago';
+                            $result = " replied ". implode(', ', $string) . ' ago';
                         
                             // Handle the case when the time is less than a minute
                             if ($diffInSeconds < 60) {
                                 $result = 'just now';
+                            }
+                            if ($diffInSeconds <= 0) {
+                                $result = 'Belum Dikomentari';
                             }
                         
                             return $result;
@@ -273,28 +310,30 @@ session_start();
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <form>
-                            <div class="modal-header d-flex align-items-center bg-primary text-white">
-                                <h6 class="modal-title mb-0" id="threadModalLabel">New Discussion</h6>
+                            <div class="modal-header d-flex align-items-center bg-primary text-white" style="background-color:#3d4d6a!important;>
+                                <h6 class="modal-title mb-0" id="threadModalLabel" style="background-color:#3d4d6a;border-color:#3d4d6a">New Discussion</h6>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
+                                    <span aria-hidden="true" style="color:white">×</span>
                                 </button>
                             </div>
-                            <div class="modal-body">
-                                <div class="form-group">
-                                    <label for="threadTitle">Title</label>
-                                    <input type="text" class="form-control" id="threadTitle" placeholder="Enter title"
-                                        autofocus />
+                            <form action="createtopic.php" method="post">
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label for="threadTitle">Judul Topik</label>
+                                        <input type="text" class="form-control" id="threadTitle" name="title" placeholder="Enter title" autofocus />
+                                    </div>
+                            
+                                    <div class="form-group">
+                                        <label for="threadDescription">Deskripsi</label>
+                                        <textarea class="form-control summernote" id="threadDescription" name="description"></textarea>
+                                    </div>
+                                    
                                 </div>
-                                <textarea class="form-control summernote" style="display: none;"></textarea>
-                                <div class="custom-file form-control-sm mt-3" style="max-width: 300px;">
-                                    <input type="file" class="custom-file-input" id="customFile" multiple />
-                                    <label class="custom-file-label" for="customFile">Attachment</label>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary" style="background-color:#3d4d6a!important;border-color:#3d4d6a;">Post</button>
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-primary">Post</button>
-                            </div>
+                            </form>
                         </form>
                     </div>
                 </div>
