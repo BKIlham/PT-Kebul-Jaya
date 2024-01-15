@@ -61,7 +61,11 @@ if(isset($_GET['id'])) {
     <nav id="navbar" class="navbar">
     <ul>
         <li><a class="nav-link" href="index.php">Home</a></li>
+<<<<<<< HEAD
         <li><a class="nav-link " href="about-us.php">About</a></li>
+=======
+        <li><a class="nav-link" href="about-us.php">About</a></li>
+>>>>>>> fa4a37694c64ce8b4acee0277da43984c86ddfa0
         <li><a class="nav-link active" href="artikel.php">Artikel</a></li>
         <li><a class="nav-link  " href="galeri.php">Galeri</a></li>
         <li><a class="nav-link" href="forum.php">Forum Diskusi</a></li>
