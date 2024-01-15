@@ -1,8 +1,6 @@
 <?php
-include "koneksi.php";
-
-$query = "SELECT id_artikel, judul, kategori, id_user, isi, waktu_dibuat FROM artikel";
-$result = mysqli_query($koneksi, $query);
+include 'koneksi.php';
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -23,65 +21,73 @@ $result = mysqli_query($koneksi, $query);
 </head>
 <body>
     <div class="container">
-        <div class="table-responsive">
-            <div class="table-wrapper">
-                <div class="table-title">
-                    <div class="row">
-                        <!-- ... Bagian header tetap sama seperti sebelumnya ... -->
-                    </div>
-                </div>
-                <table class="table table-striped table-hover">
-                    <thead>
-                        <tr>
-                            <th>
-                                <span class="custom-checkbox">
-                                    <input type="checkbox" id="selectAll">
-                                    <label for="selectAll"></label>
-                                </span>
-                            </th>
-                            <th>Judul</th>
-                            <th>Kategori</th>
-                            <th>Penulis/Pembuat</th>
-                            <th>Isi</th>
-                            <th>Waktu dibuat</th>
-                            <th>Pelihat</th>
+		<div class="table-responsive">
+			<div class="table-wrapper">
+				<div class="table-title">
+					<div class="row">
+						<div class="col-xs-6">
+							<h2>Manage <b>Artikel</b></h2>
+						</div>
+						<div class="col-xs-6">
+							<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Artikel</span></a>
+							<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>						
+						</div>
+					</div>
+				</div>
+				<table class="table table-striped table-hover">
+					<thead>
+						<tr>
+							<th>
+								<span class="custom-checkbox">
+									<input type="checkbox" id="selectAll">
+									<label for="selectAll"></label>
+								</span>
+							</th>
+							<th>Judul</th>
+							<th>Kategori</th>
+							<th>Penulis/Pembuat</th>
+							<th>Isi</th>
+							<th>Waktu dibuat</th>
+                            <th>kehangatan</th>
                             <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                        // Menampilkan data artikel ke dalam tabel
-                        while ($row = mysqli_fetch_assoc($result)) {
-                            echo "<tr>";
-                            echo "<td>
-                                    <span class='custom-checkbox'>
-                                        <input type='checkbox' id='checkbox1' name='options[]' value='{$row['id_artikel']}'>
-                                        <label for='checkbox1'></label>
-                                    </span>
-                                </td>";
-                            echo "<td>{$row['judul']}</td>";
-                            echo "<td>{$row['kategori']}</td>";
-                            
-                            // Ambil nama user berdasarkan id_user
-                            $queryUser = "SELECT username FROM user WHERE id_user = {$row['id_user']}";
-                            $resultUser = mysqli_query($koneksi, $queryUser);
-                            $userData = mysqli_fetch_assoc($resultUser);
-                            echo "<td>{$userData['username']}</td>";
-                            
-                            echo "<td>{$row['isi']}</td>";
-                            echo "<td>{$row['waktu_dibuat']}</td>";
-                            echo "<td>[Jumlah Pelihat]</td>";
-                            echo "<td>
-                                    <a href='#editEmployeeModal' class='edit' data-toggle='modal'><i class='material-icons' data-toggle='tooltip' title='Edit'>&#xE254;</i></a>
-                                    <a href='#deleteEmployeeModal' class='delete' data-toggle='modal'><i class='material-icons' data-toggle='tooltip' title='Delete'>&#xE872;</i></a>
-                                </td>";
-                            echo "</tr>";
-                        }
-                        ?>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+						</tr>
+					</thead>
+					<tbody>
+						<?php
+							$sql = "SELECT a.id_artikel, a.judul, a.kategori, u.username as penulis, a.isi, a.waktu_dibuat, a.kehangatan
+									FROM artikel a
+									INNER JOIN user u ON a.id_user = u.id_user";
+
+							$result = $conn->query($sql);
+
+							// Tampilkan data dalam tabel HTML
+							if ($result->num_rows > 0) {
+								while ($row = $result->fetch_assoc()) {
+									echo '<tr>';
+									echo '<td><span class="custom-checkbox"><input type="checkbox" id="checkbox1" name="options[]" value="' . $row['id_artikel'] . '"><label for="checkbox1"></label></span></td>';
+									echo '<td>' . $row['judul'] . '</td>';
+									echo '<td>' . $row['kategori'] . '</td>';
+									echo '<td>' . $row['penulis'] . '</td>';
+									echo '<td>' . $row['isi'] . '</td>';
+									echo '<td>' . $row['waktu_dibuat'] . '</td>';
+									echo '<td>' . $row['kehangatan'] . '</td>';
+									echo '<td>
+											<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+											<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+										</td>';
+									echo '</tr>';
+								}
+							} else {
+								echo '<tr><td colspan="8">Tidak ada data</td></tr>';
+							}
+
+							// Tutup koneksi
+							$conn->close();
+						?>
+					</tbody>
+				</table>
+			</div>
+		</div>        
     </div>
 	<!-- Add Modal HTML -->
 	<div id="addEmployeeModal" class="modal fade">
@@ -105,6 +111,15 @@ $result = mysqli_query($koneksi, $query);
 							<label>Isi</label>
 							<textarea class="form-control" required></textarea>
 						</div>
+						<div class="form-group">
+                            <label>Pelihat</label>
+                            <input type="text" class="form-control" name="kehangatan" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="id_user">Pilih Penulis:</label>
+                            <select class="form-control" name="id_user" required>
+                            </select>
+                        </div>
 					</div>
 					<div class="modal-footer">
 						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
