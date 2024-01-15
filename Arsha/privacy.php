@@ -1,3 +1,7 @@
+<?php
+include "koneksi.php";
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,7 +49,27 @@
         <li><a class="nav-link" href="artikel.php">Artikel</a></li>
         <li><a class="nav-link  " href="galeri.php">Galeri</a></li>
         <li><a class="nav-link" href="forum.php">Forum Diskusi</a></li>
-        <li><a class="getstarted" href="signin.php">Sign In</a></li>
+        <?php
+                    // Check if the user is logged in
+                    if (isset($_SESSION['user_id'])) {
+                        $user_id = $_SESSION['user_id'];
+                    
+                        // Fetch user data from the database based on user ID
+                        $user_query = "SELECT * FROM user WHERE id_user = $user_id";
+                        $user_result = $conn->query($user_query);
+                    
+                        if ($user_result && $user_result->num_rows > 0) {
+                            $user_data = $user_result->fetch_assoc();
+                            $username = $user_data['username'];
+                    
+                            // Display the customized profile link with the fetched username
+                            echo '<li><a class="getstarted" href="profile.php"><i class="bi bi-person" style="font-size: 17px;"></i> ' . $username . '</a></li>';
+                        }
+                    } else {
+                        // If not logged in, display the "Sign In" link
+                        echo '<li><a class="getstarted" href="signin.php">Sign In</a></li>';
+                    }
+                    ?>
     </ul>
     <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
