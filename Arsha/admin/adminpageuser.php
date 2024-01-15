@@ -60,7 +60,7 @@ session_start();
 					</thead>
 					<tbody>
 						<?php
-							$sql = "SELECT id_user, username, first_name, last_name, email, password FROM user";
+							$sql = "SELECT * FROM user";
 
 							$result = $conn->query($sql);
 							
@@ -69,6 +69,7 @@ session_start();
 								while ($row = $result->fetch_assoc()) {
 									echo '<tr>';
 									echo '<td><span class="custom-checkbox"><input type="checkbox" id="checkbox1" name="options[]" value="' . $row['id_user'] . '"><label for="checkbox1"></label></span></td>';
+									echo '<td>' . $row['id_user'] . '</td>';
 									echo '<td>' . $row['username'] . '</td>';
 									echo '<td>' . $row['first_name'] . '</td>';
 									echo '<td>' . $row['last_name'] . '</td>';
