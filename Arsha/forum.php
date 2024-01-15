@@ -90,7 +90,7 @@ session_start();
                 <div class="inner-sidebar">
     
                     <div class="inner-sidebar-header justify-content-center">
-                        <button class="btn btn-primary has-icon btn-block" type="button" data-toggle="modal"
+                        <button class="btn btn-primary has-icon btn-block" type="button" data-toggle="modal" style="background-color:#3d4d6a;border-color:#3d4d6a"
                             data-target="#threadModal">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -169,141 +169,97 @@ session_start();
     
     
                     <div class="inner-main-body p-2 p-sm-3 collapse forum-content show">
-                        <div class="card mb-2">
-                            <div class="card-body p-2 p-sm-3">
-                                <div class="media forum-item">
-                                    <a href="#" data-toggle="collapse" data-target=".forum-content"><img
-                                            src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                                            class="mr-3 rounded-circle" width="50" alt="User" /></a>
-                                    <div class="media-body">
-                                        <h6><a href="#" data-toggle="collapse" data-target=".forum-content"
-                                                class="text-body">Realtime fetching data</a></h6>
-                                        <p class="text-secondary">
-                                            lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
-                                        </p>
-                                        <p class="text-muted"><a href="javascript:void(0)">drewdan</a> replied <span
-                                                class="text-secondary font-weight-bold">13 minutes ago</span></p>
-                                    </div>
-                                    <div class="text-muted small text-center align-self-center">
-                                        <span class="d-none d-sm-inline-block"><i class="far fa-eye"></i> 19</span>
-                                        <span><i class="far fa-comment ml-2"></i> 3</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-2">
-                            <div class="card-body p-2 p-sm-3">
-                                <div class="media forum-item">
-                                    <a href="#" data-toggle="collapse" data-target=".forum-content"><img
-                                            src="https://bootdey.com/img/Content/avatar/avatar2.png"
-                                            class="mr-3 rounded-circle" width="50" alt="User" /></a>
-                                    <div class="media-body">
-                                        <h6><a href="#" data-toggle="collapse" data-target=".forum-content"
-                                                class="text-body">Laravel 7 database backup</a></h6>
-                                        <p class="text-secondary">
-                                            lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
-                                        </p>
-                                        <p class="text-muted"><a href="javascript:void(0)">jlrdw</a> replied <span
-                                                class="text-secondary font-weight-bold">3 hours ago</span></p>
-                                    </div>
-                                    <div class="text-muted small text-center align-self-center">
-                                        <span class="d-none d-sm-inline-block"><i class="far fa-eye"></i> 18</span>
-                                        <span><i class="far fa-comment ml-2"></i> 1</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-2">
-                            <div class="card-body p-2 p-sm-3">
-                                <div class="media forum-item">
-                                    <a href="#" data-toggle="collapse" data-target=".forum-content"><img
-                                            src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                                            class="mr-3 rounded-circle" width="50" alt="User" /></a>
-                                    <div class="media-body">
-                                        <h6><a href="#" data-toggle="collapse" data-target=".forum-content"
-                                                class="text-body">Auth attempt returns false</a></h6>
-                                        <p class="text-secondary">
-                                            lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
-                                        </p>
-                                        <p class="text-muted"><a href="javascript:void(0)">michaeloravec</a> replied <span
-                                                class="text-secondary font-weight-bold">18 hours ago</span></p>
-                                    </div>
-                                    <div class="text-muted small text-center align-self-center">
-                                        <span class="d-none d-sm-inline-block"><i class="far fa-eye"></i> 70</span>
-                                        <span><i class="far fa-comment ml-2"></i> 3</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <ul class="pagination pagination-sm pagination-circle justify-content-center mb-0">
-                            <li class="page-item disabled">
-                                <span class="page-link has-icon"><i class="bx bx-chevron-left"></i></span>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
-                            <li class="page-item active"><span class="page-link">2</span></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link has-icon" href="javascript:void(0)"><i class="bx bx-chevron-right"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-    
-    
-                    <div class="inner-main-body p-2 p-sm-3 collapse forum-content">
-                        <a href="#" class="btn btn-light btn-sm mb-3 has-icon" data-toggle="collapse"
-                            data-target=".forum-content"><i class="fa fa-arrow-left mr-2"></i>Back</a>
-                        <div class="card mb-2">
-                            <div class="card-body">
-                                <div class="media forum-item">
-                                    <a href="javascript:void(0)" class="card-link">
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="rounded-circle"
-                                            width="50" alt="User" />
-                                        <small class="d-block text-center text-muted">Newbie</small>
-                                    </a>
-                                    <div class="media-body ml-3">
-                                        <a href="javascript:void(0)" class="text-secondary">Mokrani</a>
-                                        <small class="text-muted ml-2">1 hour ago</small>
-                                        <h5 class="mt-1">Realtime fetching data</h5>
-                                        <div class="mt-3 font-size-sm">
-                                            <p>Hellooo :)</p>
-                                            <p>
-                                                I'm newbie with laravel and i want to fetch data from database in realtime
-                                                for my dashboard anaytics and i found a solution with ajax but it dosen't
-                                                work if any one have a simple solution it will be
-                                                helpful
-                                            </p>
-                                            <p>Thank</p>
+                        <?php
+                        // Fetch forum data
+                        $sql = "SELECT user.username as user_username, user.email as user_email, user.foto as user_foto,
+                               Topik.id_topik as topik_id, Topik.judul as topik_judul, LEFT(Topik.deskripsi, 75) as topik_deskripsi,
+                               (SELECT COUNT(*) FROM Balasan WHERE Balasan.id_topik = Topik.id_topik) as reply_count,
+                               (SELECT user.username FROM user 
+                                JOIN Balasan ON user.id_user = Balasan.id_user 
+                                WHERE Balasan.id_topik = Topik.id_topik 
+                                ORDER BY Balasan.waktu_dibuat DESC LIMIT 1) as last_replier_username,
+                               (SELECT Balasan.waktu_dibuat FROM Balasan 
+                                WHERE Balasan.id_topik = Topik.id_topik 
+                                ORDER BY Balasan.waktu_dibuat DESC LIMIT 1) as last_reply_time
+                        FROM Topik
+                        JOIN user ON Topik.id_user = user.id_user
+                        ORDER BY Topik.waktu_dibuat DESC";
+                        
+                        $result = $conn->query($sql);
+                        
+                        // Display forum data
+                        if ($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                ?>
+                                <div class="card mb-2">
+                                    <div class="card-body p-2 p-sm-3">
+                                        <div class="media forum-item">
+                                            <a href="#" data-toggle="collapse" data-target=".forum-content"><img
+                                                    src="img/user/<?=$row['user_foto']?>"
+                                                    class="mr-3 rounded-circle" width="50" alt="User" /></a>
+                                            <div class="media-body">
+                                                <h6><a href="forumread.php?id=<?=$row['topik_id']?>" class="text-body"><?=$row['topik_judul']?></a></h6>
+                                                <p class="text-secondary">
+                                                    <?=$row['topik_deskripsi']?>...
+                                                </p>
+                                                <p class="text-muted"><a href="javascript:void(0)"><?=$row['last_replier_username']?></a> replied <span
+                                                        class="text-secondary font-weight-bold"><?= time_elapsed_string($row['last_reply_time'])?></span></p>
+                                            </div>
+                                            <div class="text-muted small text-center align-self-center">
+                                                <span><i class="far fa-comment ml-2"></i> <?=$row['reply_count']?></span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="text-muted small text-center">
-                                        <span class="d-none d-sm-inline-block"><i class="far fa-eye"></i> 19</span>
-                                        <span><i class="far fa-comment ml-2"></i> 3</span>
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="card mb-2">
-                            <div class="card-body">
-                                <div class="media forum-item">
-                                    <a href="javascript:void(0)" class="card-link">
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="rounded-circle"
-                                            width="50" alt="User" />
-                                        <small class="d-block text-center text-muted">Pro</small>
-                                    </a>
-                                    <div class="media-body ml-3">
-                                        <a href="javascript:void(0)" class="text-secondary">drewdan</a>
-                                        <small class="text-muted ml-2">1 hour ago</small>
-                                        <div class="mt-3 font-size-sm">
-                                            <p>What exactly doesn't work with your ajax calls?</p>
-                                            <p>Also, WebSockets are a great solution for realtime data on a dashboard.
-                                                Laravel offers this out of the box using broadcasting</p>
-                                        </div>
-                                        <button class="btn btn-xs text-muted has-icon"><i class="fa fa-heart"
-                                                aria-hidden="true"></i>1</button>
-                                        <a href="javascript:void(0)" class="text-muted small">Reply</a>
-                                    </div>
-                                </div>
-                            </div>
+                                <?php
+                            }
+                        } else {
+                            echo "No topics found.";
+                        }
+                        
+                        // Function to calculate time elapsed
+                        function time_elapsed_string($datetime, $full = false)
+                        {
+                            $now = new DateTime('now', new DateTimeZone('Asia/Jakarta'));
+                            $ago = new DateTime($datetime, new DateTimeZone('Asia/Jakarta'));
+                        
+                            $diff = $now->diff($ago);
+                        
+                            $diffInSeconds = $diff->s + $diff->i * 60 + $diff->h * 3600 + $diff->days * 86400;
+                        
+                            $string = array(
+                                'y' => 'year',
+                                'm' => 'month',
+                                'd' => 'day',
+                                'h' => 'hour',
+                                'i' => 'minute',
+                                's' => 'second',
+                            );
+                        
+                            foreach ($string as $k => &$v) {
+                                if ($diff->$k) {
+                                    $v = $diff->$k . ' ' . ($diff->$k > 1 ? $v . 's' : $v);
+                                } else {
+                                    unset($string[$k]);
+                                }
+                            }
+                        
+                            if (!$full) {
+                                $string = array_slice($string, 0, 1);
+                            }
+                        
+                            $result = implode(', ', $string) . ' ago';
+                        
+                            // Handle the case when the time is less than a minute
+                            if ($diffInSeconds < 60) {
+                                $result = 'just now';
+                            }
+                        
+                            return $result;
+                        }
+                        
+                        
+                        ?>
                         </div>
                     </div>
     
