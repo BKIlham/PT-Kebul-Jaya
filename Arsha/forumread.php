@@ -202,8 +202,19 @@ function time_elapsed_string($datetime, $full = false)
                         }
                         ?>
                     </div>
-    
-
+        <form action="createbalasan.php" method="post">
+            <div class="modal-body">
+                <input type="hidden" value="<?=$topic_id?>" name="id_topik">
+                <div class="form-group">
+                    <label for="threadDescription">Deskripsi</label>
+                    <textarea class="form-control summernote" id="threadDescription" name="deskripsi"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" style="background-color:#3d4d6a!important;border-color:#3d4d6a;">Post</button>
+                </div>
+            </div>
+        </form>
+    </div>
     </div>
     
     <!-- ======= Footer ======= -->

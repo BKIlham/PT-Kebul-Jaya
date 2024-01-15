@@ -7,6 +7,14 @@ if(isset($_GET['order'])) {
 } else {
     $order = 1;
 }
+$success_message = '';
+if (isset($_GET['success'])) {
+    if ($_GET['success'] === 'create') {
+        $success_message = 'Topik berhasil dibuat.';
+    } elseif ($_GET['success'] === 'update') {
+        $success_message = 'Topik berhasil diubah.';
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -94,7 +102,9 @@ if(isset($_GET['order'])) {
             <div class="inner-wrapper">
     
                 <div class="inner-sidebar">
-    
+                <?php
+                if (isset($_SESSION['user_id'])) {
+                ?>
                     <div class="inner-sidebar-header justify-content-center">
                         <button class="btn btn-primary has-icon btn-block" type="button" data-toggle="modal" style="background-color:#3d4d6a;border-color:#3d4d6a"
                             data-target="#threadModal">
@@ -107,6 +117,9 @@ if(isset($_GET['order'])) {
                             NEW DISCUSSION
                         </button>
                     </div>
+                <?php
+                }
+                ?>
     
     
                     <div class="inner-sidebar-body p-0">
@@ -147,6 +160,20 @@ if(isset($_GET['order'])) {
     
                 <div class="inner-main">
                     <div class="inner-main-body p-2 p-sm-3 collapse forum-content show">
+                                <?php if (!empty($success_message)) : ?>
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert" style="background-color: #0d6efd; color: white;">
+                                        <?php echo $success_message; ?>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                <?php endif; ?>
+                                
+                                <!-- Display error message -->
+                                <?php if (!empty($error_message)) : ?>
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert" style="background-color: #dc3545; color: white;">
+                                        <?php echo $error_message; ?>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                <?php endif; ?>
                         <?php
                         // Fetch forum data
                         if ($order == 1){
@@ -309,31 +336,28 @@ if(isset($_GET['order'])) {
                 aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
-                        <form>
+                        <form action="createtopic.php" method="post">
                             <div class="modal-header d-flex align-items-center bg-primary text-white" style="background-color:#3d4d6a!important;>
                                 <h6 class="modal-title mb-0" id="threadModalLabel" style="background-color:#3d4d6a;border-color:#3d4d6a">New Discussion</h6>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true" style="color:white">×</span>
+                                    <span aria-hidden="true" style="color:white">x</span>
                                 </button>
                             </div>
-                            <form action="createtopic.php" method="post">
-                                <div class="modal-body">
-                                    <div class="form-group">
-                                        <label for="threadTitle">Judul Topik</label>
-                                        <input type="text" class="form-control" id="threadTitle" name="title" placeholder="Enter title" autofocus />
-                                    </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="threadTitle">Judul Topik</label>
+                                    <input type="text" class="form-control" id="threadTitle" name="judul" placeholder="" autofocus />
+                                </div>
                             
-                                    <div class="form-group">
-                                        <label for="threadDescription">Deskripsi</label>
-                                        <textarea class="form-control summernote" id="threadDescription" name="description"></textarea>
-                                    </div>
-                                    
+                                <div class="form-group">
+                                    <label for="threadDescription">Deskripsi</label>
+                                    <textarea class="form-control summernote" id="threadDescription" name="deskripsi"></textarea>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
                                     <button type="submit" class="btn btn-primary" style="background-color:#3d4d6a!important;border-color:#3d4d6a;">Post</button>
                                 </div>
-                            </form>
+                            </div>
                         </form>
                     </div>
                 </div>
