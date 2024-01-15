@@ -53,10 +53,11 @@ $result = $conn->query($sql);
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link" href="index.php">Home</a></li>
-                    <li><a class="nav-link" href="about-us.php">About</a></li>
+                    <li><a class="nav-link " href="data.php">Data</a></li>
                     <li><a class="nav-link" href="artikel.php">Artikel</a></li>
                     <li><a class="nav-link active" href="galeri.php">Galeri</a></li>
                     <li><a class="nav-link" href="forum.php">Forum Diskusi</a></li>
+                    <li><a class="nav-link" href="about-us.php">About</a></li>
                     <?php
                     // Check if the user is logged in
                     if (isset($_SESSION['user_id'])) {
