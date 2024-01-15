@@ -57,9 +57,7 @@ session_start();
 					</thead>
 					<tbody>
 						<?php
-							$sql = "SELECT f.nama, a.judul as judul_artikel, f.id_artikel
-							FROM foto_artikel f
-							INNER JOIN artikel a ON f.id_artikel = a.id_artikel";
+							$sql = "SELECT * FROM foto_artikel";
 					
 							$result = $conn->query($sql);
 							
@@ -68,8 +66,9 @@ session_start();
 								while ($row = $result->fetch_assoc()) {
 									echo '<tr>';
 									echo '<td><span class="custom-checkbox"><input type="checkbox" id="checkbox1" name="options[]" value="' . $row['id_artikel'] . '"><label for="checkbox1"></label></span></td>';
+									echo '<td>' . $row['id_foto'] . '</td>';
 									echo '<td>' . $row['nama'] . '</td>';
-									echo '<td>' . $row['judul_artikel'] . '</td>';
+									echo '<td>' . $row['id_artikel'] . '</td>';
 									echo '<td>
 											<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
 											<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>

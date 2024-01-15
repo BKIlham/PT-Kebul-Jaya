@@ -59,9 +59,7 @@ session_start();
 					</thead>
 					<tbody>
 						<?php
-							$sql = "SELECT t.id_topik, t.judul, t.deskripsi, t.waktu_dibuat, u.id_user, u.username
-							FROM topik t
-							INNER JOIN user u ON t.id_user = u.id_user";
+							$sql = "SELECT * FROM topik ";
 					
 							$result = $conn->query($sql);
 							
@@ -70,9 +68,10 @@ session_start();
 								while ($row = $result->fetch_assoc()) {
 									echo '<tr>';
 									echo '<td><span class="custom-checkbox"><input type="checkbox" id="checkbox1" name="options[]" value="' . $row['id_topik'] . '"><label for="checkbox1"></label></span></td>';
-									echo '<td>' . $row['username'] . '</td>';
+									echo '<td>' . $row['id_topik'] . '</td>';
 									echo '<td>' . $row['judul'] . '</td>';
 									echo '<td>' . $row['deskripsi'] . '</td>';
+									echo '<td>' . $row['id_user'] . '</td>';
 									echo '<td>' . $row['waktu_dibuat'] . '</td>';
 									echo '<td>
 											<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>

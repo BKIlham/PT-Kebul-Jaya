@@ -61,7 +61,7 @@ session_start();
 					</thead>
 					<tbody>
 						<?php
-							$sql = "SELECT id_user, username, first_name, last_name, email, password FROM user";
+							$sql = "SELECT * FROM user";
 
 							$result = $conn->query($sql);
 							
