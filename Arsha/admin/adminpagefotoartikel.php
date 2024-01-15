@@ -50,15 +50,9 @@ session_start();
 									<label for="selectAll"></label>
 								</span>
 							</th>
-							<th>Id_artikel</th>
-							<th>Judul</th>
-							<th>Kategori</th>
-							<th>Id_user</th>
-							<th>Isi</th>
-                            <th>Waktu Buat</th>
-							<th>Kehangatan</th>
-							<th>Name</th>
-							<th>Judul Artikel</th>
+							<th>Id Foto</th>
+							<th>Nama</th>
+							<th>Id Artikel</th>
                             <th>Action</th>
 						</tr>
 					</thead>
@@ -102,38 +96,17 @@ session_start();
 					</div>
 					<div class="modal-body">					
 						<div class="form-group">
-							<label>Id artikel</label>
+							<label>Id foto</label>
 							<input type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
-							<label>Judul</label>
+							<label>Nama</label>
 							<input type="email" class="form-control" required>
 						</div>
 						<div class="form-group">
-							<label>Id user</label>
+							<label>Id Artikel</label>
 							<input type="email" class="form-control" required>
 						</div>
-						<div class="form-group">
-							<label>Isi</label>
-							<textarea class="form-control" required></textarea>
-						</div>
-						<div class="form-group">
-							<label>Waktu Buat</label>
-							<input type="email" class="form-control" required>
-						</div>
-						<div class="form-group">
-							<label>Kehangatan</label>
-							<input type="email" class="form-control" required>
-						</div>
-
-							<label>Name</label>
-							<input type="text" class="form-control" required>
-						</div>
-						<div class="form-group">
-							<label>Judul Artikel</label>
-							<input type="email" class="form-control" required>
-						</div>
-
 					</div>
 					<div class="modal-footer">
 						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
@@ -151,39 +124,18 @@ session_start();
 					<div class="modal-header">						
 						<h4 class="modal-title">Edit Foto Artikel</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					</div>
+						</div>
 					<div class="modal-body">					
 						<div class="form-group">
-
-							<label>Id artikel</label>
+							<label>Id foto</label>
 							<input type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
-							<label>Judul</label>
+							<label>Nama</label>
 							<input type="email" class="form-control" required>
 						</div>
 						<div class="form-group">
-							<label>Kategori</label>
-							<input type="email" class="form-control" required>
-						</div>
-						<div class="form-group">
-							<label>Isi</label>
-							<textarea class="form-control" required></textarea>
-						</div>	
-						<div class="form-group">
-							<label>Waktu buat</label>
-							<input type="email" class="form-control" required>
-						</div>	
-						<div class="form-group">
-							<label>Kehangatan</label>
-							<input type="email" class="form-control" required>
-						</div>
-
-							<label>Name</label>
-							<input type="text" class="form-control" required>
-						</div>
-						<div class="form-group">
-							<label>Judul Artikel</label>
+							<label>Id Artikel</label>
 							<input type="email" class="form-control" required>
 						</div>
 					</div>
