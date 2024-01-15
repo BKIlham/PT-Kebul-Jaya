@@ -1,3 +1,50 @@
+<?php
+include "koneksi.php";
+// Initialize session
+session_start();
+if (isset($_SESSION['user_id'])) {
+    header("Location: profile.php");
+    exit();
+}
+// Define variables to store success and error messages
+$success_message = $error_message = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve form data
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    // Validate input fields (check if they are not empty)
+    if (empty($email) || empty($password)) {
+        $error_message = "Semua kolom harus diisi";
+    } else {
+        // Check if the user with the given email exists
+        $check_user_query = "SELECT * FROM user WHERE email = '$email'";
+        $result = $conn->query($check_user_query);
+
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+
+            // Verify the password
+            if (password_verify($password, $row['password'])) {
+                // Set session variables
+                $_SESSION['user_id'] = $row['id_user'];
+                $_SESSION['username'] = $row['username'];
+
+                $success_message = "Login berhasil";
+                // Redirect to the user's dashboard or any other page after successful login
+                header("Location: profile.php");
+                exit();
+            } else {
+                $error_message = "Password salah";
+            }
+        } else {
+            $error_message = "Email tidak terdaftar";
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -65,7 +112,7 @@
                             Pantau Data Kemiskinan<br />
                             <span class="text-primary">di Indonesia</span>
                         </h1>
-                        Dengan login, Anda akan membuka akses ke informasi terkini tentang tingkat kemiskinan di Indonesia.
+                        Dengan Sign In, Anda akan membuka akses ke informasi terkini tentang tingkat kemiskinan di Indonesia.
                         Temukan data yang relevan, bergabung dalam diskusi forum, dan baca berita terbaru untuk mendapatkan wawasan menyeluruh.
                         Ayo bersama-sama berkontribusi melawan kemiskinan.
                         </p>
@@ -74,31 +121,39 @@
                     <div class="col-lg-6 mb-5 mb-lg-0">
                         <div class="card">
                             <div class="card-body py-5 px-md-5">
-                                <form>
-                                    <!-- 2 column grid layout with text inputs for the first and last names -->
-                                    <!-- Email input -->
+                                <!-- Display success message -->
+                                <?php if (!empty($success_message)) : ?>
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert" style="background-color: #0d6efd; color: white;">
+                                        <?php echo $success_message; ?>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                <?php endif; ?>
+                                
+                                <!-- Display error message -->
+                                <?php if (!empty($error_message)) : ?>
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert" style="background-color: #dc3545; color: white;">
+                                        <?php echo $error_message; ?>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                <?php endif; ?>
+
+                                <!-- Section: Design Block -->
+                                <form action="signin.php" method="post">
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="form3Example3">Email address</label>
-                                        <input type="email" id="form3Example3" class="form-control" />
+                                        <input type="email" id="form3Example3" name="email" class="form-control" />
                                     </div>
-    
-                                    <!-- Password input -->
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="form3Example4">Password</label>
-                                        <input type="password" id="form3Example4" class="form-control" />
+                                        <input type="password" id="form3Example4" name="password" class="form-control" />
                                     </div>
-    
                                     <div class="d-flex justify-content-center mb-4">
-                                        <!-- Submit button -->
                                         <button type="submit" class="btn btn-primary btn-block mb-4">
                                             Sign In
                                         </button>
                                     </div>
-    
-    
-                                    <!-- Login buttons -->
                                     <div class="text-center">
-                                        <p>Need an Account ?</p>
+                                        <p>Butuh Akun ?</p>
                                         <a href="signup.php">Sign Up</a>
                                     </div>
                                 </form>

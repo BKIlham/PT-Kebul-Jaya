@@ -1,3 +1,66 @@
+<?php
+include "koneksi.php";
+// Initialize session
+session_start();
+if (isset($_SESSION['user_id'])) {
+    header("Location: profile.php");
+    exit();
+}
+// Define variables to store success and error messages
+$success_message = $error_message = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve form data
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $cpassword = $_POST['cpassword'];
+
+    // Validate input fields (check if they are not empty)
+    if (empty($first_name) || empty($last_name) || empty($username) || empty($email) || empty($password) || empty($cpassword)) {
+        $error_message = "Semua kolom harus diisi";
+    } else {
+        // Validate and ensure passwords match
+        if ($password !== $cpassword) {
+            $error_message = "Password tidak cocok";
+        } else {
+            // Check if the username is already taken
+            $check_username_query = "SELECT * FROM user WHERE username = '$username'";
+            $result_username = $conn->query($check_username_query);
+
+            // Check if the email is already taken
+            $check_email_query = "SELECT * FROM user WHERE email = '$email'";
+            $result_email = $conn->query($check_email_query);
+
+            if ($result_username->num_rows > 0) {
+                $error_message = "Username telah digunakan";
+            } elseif ($result_email->num_rows > 0) {
+                $error_message = "Email telah digunakan";
+            } else {
+                // Hash the password
+                $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+                // Set default photo
+                $photo = "user.jpg";
+
+                // SQL query to insert user data into the table
+                $sql = "INSERT INTO user (first_name, last_name, username, email, password, foto)
+                        VALUES ('$first_name', '$last_name', '$username', '$email', '$hashed_password', '$photo')";
+
+                // Execute the SQL query
+                if ($conn->query($sql) === TRUE) {
+                    $success_message = "Pendaftaran berhasil";
+                } else {
+                    $error_message = "Error: " . $sql . "<br>" . $conn->error;
+                }
+            }
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,11 +116,10 @@
 
         </div>
     </header><!-- End Header -->
-
-    <!-- Section: Design Block -->
+    
     <section class="">
         <!-- Jumbotron -->
-        <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%);margin-top: 50px;">
+        <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%);margin-top: 20px;">
             <div class="container">
                 <div class="row gx-lg-5 align-items-center">
                     <div class="col-lg-6 mb-5 mb-lg-0">
@@ -65,64 +127,70 @@
                             Pantau Data Kemiskinan<br />
                             <span class="text-primary">di Indonesia</span>
                         </h1>
-                        Dengan login, Anda akan membuka akses ke informasi terkini tentang tingkat kemiskinan di Indonesia.
-                        Temukan data yang relevan, bergabung dalam diskusi forum, dan baca berita terbaru untuk mendapatkan wawasan
-                        menyeluruh.
-                        Ayo bersama-sama berkontribusi melawan kemiskinan.
+                        Dengan Sign Up, Anda akan membuka pintu menuju akses penuh ke informasi terbaru seputar tingkat kemiskinan di Indonesia.
+                        Temukan data yang relevan, bergabunglah dalam diskusi forum, dan nikmati berita terkini untuk mendapatkan pemahaman menyeluruh.
+                        Mari bersama-sama berkontribusi untuk melawan kemiskinan. Bergabunglah sekarang!
                         </p>
                     </div>
     
                     <div class="col-lg-6 mb-5 mb-lg-0">
                         <div class="card">
                             <div class="card-body py-5 px-md-5">
-                                <form>
-                                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                                <!-- Display success message -->
+                                <?php if (!empty($success_message)) : ?>
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert" style="background-color: #0d6efd; color: white;">
+                                        <?php echo $success_message; ?>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                <?php endif; ?>
+                                
+                                <!-- Display error message -->
+                                <?php if (!empty($error_message)) : ?>
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert" style="background-color: #dc3545; color: white;">
+                                        <?php echo $error_message; ?>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                <?php endif; ?>
+
+                                <!-- Section: Design Block -->
+                                <form action="signup.php" method="post">
                                     <div class="row">
                                         <div class="col-md-6 mb-4">
                                             <div class="form-outline">
                                                 <label class="form-label" for="form3Example1">First name</label>
-                                                <input type="text" id="form3Example1" class="form-control" />
+                                                <input type="text" id="form3Example1" class="form-control" name="first_name"/>
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-4">
                                             <div class="form-outline">
                                                 <label class="form-label" for="form3Example2">Last name</label>
-                                                <input type="text" id="form3Example2" class="form-control" />
+                                                <input type="text" id="form3Example2" class="form-control" name="last_name" />
                                             </div>
                                         </div>
                                     </div>
-    
-                                    <!-- Email input -->
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label" for="form3Example3">Username</label>
+                                        <input type="username" id="form3Example3" class="form-control" name="username"/>
+                                    </div>
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="form3Example3">Email address</label>
-                                        <input type="email" id="form3Example3" class="form-control" />
+                                        <input type="email" id="form3Example3" class="form-control" name="email"/>
                                     </div>
-    
-                                    <!-- Password input -->
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="form3Example4">Password</label>
-                                        <input type="password" id="form3Example4" class="form-control" />
+                                        <input type="password" id="form3Example4" class="form-control" name="password"/>
                                     </div>
-    
-                                    <!-- Checkbox -->
-                                    <div class="form-check d-flex justify-content-center mb-4">
-                                        <label class="form-check-label" for="form2Example33">
-                                        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33"
-                                            checked />
-                                            Subscribe to our newsletter
-                                        </label>
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label" for="form3Example4">Confirm Password</label>
+                                        <input type="cpassword" id="form3Example4" class="form-control" name="cpassword"/>
                                     </div>
                                     <div class="d-flex justify-content-center mb-4">
-                                        <!-- Submit button -->
                                         <button type="submit" class="btn btn-primary btn-block mb-4">
                                             Sign up
                                         </button>
                                     </div>
-    
-    
-                                    <!-- Login buttons -->
                                     <div class="text-center">
-                                        <p>Have an Account ?</p>
+                                        <p>Sudah Punya Akun ?</p>
                                         <a href="signin.php">Sign In</a>
                                     </div>
                                 </form>

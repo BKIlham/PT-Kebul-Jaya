@@ -1,3 +1,8 @@
+<?php
+include "koneksi.php";
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,7 +49,27 @@
           <li><a class="nav-link" href="artikel.php">Artikel</a></li>
           <li><a class="nav-link" href="galeri.php">Galeri</a></li>
           <li><a class="nav-link" href="forum.php">Forum Diskusi</a></li>
-          <li><a class="getstarted" href="signin.php">Sign In</a></li>
+          <?php
+                    // Check if the user is logged in
+                    if (isset($_SESSION['user_id'])) {
+                        $user_id = $_SESSION['user_id'];
+                    
+                        // Fetch user data from the database based on user ID
+                        $user_query = "SELECT * FROM user WHERE id_user = $user_id";
+                        $user_result = $conn->query($user_query);
+                    
+                        if ($user_result && $user_result->num_rows > 0) {
+                            $user_data = $user_result->fetch_assoc();
+                            $username = $user_data['username'];
+                    
+                            // Display the customized profile link with the fetched username
+                            echo '<li><a class="getstarted" href="profile.php"><i class="bi bi-person" style="font-size: 17px;"></i> ' . $username . '</a></li>';
+                        }
+                    } else {
+                        // If not logged in, display the "Sign In" link
+                        echo '<li><a class="getstarted" href="signin.php">Sign In</a></li>';
+                    }
+                    ?>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -175,7 +200,6 @@
 
         <div class="section-title">
           <h2>Artikel</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row">
@@ -209,7 +233,7 @@
         <div class="row">
           <div class="col-lg-9 text-center text-lg-start">
             <h3>Data Mengenai Kemiskinan Di Indonesia</h3>
-            <p> Kumpulan informasi statistik yang merinci dan menggambarkan kondisi kemiskinan di Indonesia. Data ini mencakup berbagai
+            <p> Kumpulan informasi  statistik yang merinci dan menggambarkan kondisi kemiskinan di Indonesia. Data ini mencakup berbagai
             aspek, termasuk tingkat pendapatan, akses pendidikan, layanan kesehatan, dan faktor-faktor lain yang memengaruhi
             kehidupan masyarakat yang berada di bawah garis kemiskinan.</p>
           </div>
@@ -228,7 +252,7 @@
 
         <div class="section-title">
           <h2>Frequently Asked Questions</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Pertanyaan yang Sering Diajukan.</p>
         </div>
 
         <div class="faq-list">
