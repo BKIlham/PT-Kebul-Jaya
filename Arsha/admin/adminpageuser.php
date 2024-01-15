@@ -50,6 +50,7 @@ session_start();
 									<label for="selectAll"></label>
 								</span>
 							</th>
+							<th>Id</th>
 							<th>Username</th>
 							<th>First Name</th>
 							<th>Last Name</th>
