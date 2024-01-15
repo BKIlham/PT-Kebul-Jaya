@@ -50,12 +50,13 @@ session_start();
 									<label for="selectAll"></label>
 								</span>
 							</th>
-							<th>Id</th>
+							<th>Id User</th>
 							<th>Username</th>
 							<th>First Name</th>
 							<th>Last Name</th>
 							<th>Email</th>
 							<th>Password</th>
+							<th>Email</th>
                             <th>Action</th>
 						</tr>
 					</thead>
@@ -105,6 +106,10 @@ session_start();
 					</div>
 					<div class="modal-body">					
 						<div class="form-group">
+							<label>Id User</label>
+							<input type="text" class="form-control" required>
+						</div>
+						<div class="form-group">
 							<label>Username</label>
 							<input type="text" class="form-control" required>
 						</div>
@@ -123,6 +128,10 @@ session_start();
                         <div class="form-group">
 							<label>Password</label>
 							<input type="email" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Foto</label>
+							<input type="text" class="form-control" required>
 						</div>
 					</div>
 					<div class="modal-footer">
@@ -141,8 +150,12 @@ session_start();
 					<div class="modal-header">						
 						<h4 class="modal-title">Edit User</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					</div>
+						</div>
 					<div class="modal-body">					
+						<div class="form-group">
+							<label>Id User</label>
+							<input type="text" class="form-control" required>
+						</div>
 						<div class="form-group">
 							<label>Username</label>
 							<input type="text" class="form-control" required>
@@ -151,10 +164,10 @@ session_start();
 							<label>First Name</label>
 							<input type="email" class="form-control" required>
 						</div>
-						<div class="form-group">
+                        <div class="form-group">
 							<label>Last Name</label>
 							<input type="email" class="form-control" required>
-						</div>	
+						</div>
                         <div class="form-group">
 							<label>Email</label>
 							<input type="email" class="form-control" required>
@@ -162,6 +175,10 @@ session_start();
                         <div class="form-group">
 							<label>Password</label>
 							<input type="email" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Foto</label>
+							<input type="text" class="form-control" required>
 						</div>
 					</div>
 					<div class="modal-footer">
