@@ -3,6 +3,24 @@ include "../koneksi.php";
 // Initialize session
 session_start();
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Ambil data dari form
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Query untuk memeriksa apakah data admin valid
+    $query = "SELECT * FROM admin WHERE username='$username' AND password='$password'";
+    $result = mysqli_query($conn, $query);
+
+    // Jika data admin valid, set session dan arahkan ke halaman admin
+    if (mysqli_num_rows($result) == 1) {
+        $_SESSION['username'] = $username;
+        header("location: adminpageartikel.php");
+    } else {
+        // Jika data admin tidak valid, tampilkan pesan error
+        $error = "Username atau password salah";
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -61,6 +79,12 @@ session_start();
                                         <label class="form-label" for="form3Example4">Password</label>
                                         <input type="password" id="form3Example4" name="password" class="form-control" />
                                     </div>
+                                    <?php
+                                    // Tampilkan pesan error jika ada
+                                        if (isset($error)) {
+                                            echo '<div class="alert alert-danger" role="alert">' . $error . '</div>';
+                                        }
+                                    ?>
                                     <div class="d-flex justify-content-center mb-4">
                                         <button type="submit" class="btn btn-primary btn-block mb-4">
                                             Login
