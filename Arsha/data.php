@@ -33,7 +33,14 @@ session_start();
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+    <style>
+    .butup{
+    background-color:#3d4d6a; color:white;border:1px solid #3d4d6a;padding: 3px 10px;border-radius:5px
+    }
+    .butup:hover{
+    background-color:white; color:#3d4d6a;border:1px solid #3d4d6a;padding: 3px 10px;border-radius:5px
+    }
+    </style>
 </head>
 
 <body>
@@ -80,13 +87,15 @@ session_start();
   </header><!-- End Header -->
 
     <div style="margin-top:150px;">
-        <label for="provinsiSelect">Pilih Provinsi:</label>
-        <select id="provinsiSelect"></select>
+      <h1 style="text-align:center">Data Perkembangan Kemiskinan di Indonesia Berdasarkan Persentase</h1>
+      <label for="provinsiSelect">Pilih Provinsi:</label>
+      <select id="provinsiSelect"></select>
 
-        <button onclick="updateChart()">Update Chart</button>
+      <button onclick="updateChart()" style="" class="butup">Update Chart</button>
     </div>
 
-    <canvas id="myChart" width="800" height="400" style="margin-bottom:100px">></canvas>
+    <canvas id="myChart" width="800" height="400" style="margin-bottom:30px"></canvas>
+    <p  style="margin-bottom:100px;margin-left:20px">Data diambil dari <a href="https://data.jabarprov.go.id/">https://data.jabarprov.go.id/</a></p>
 
     
 
@@ -181,7 +190,7 @@ session_start();
             xhr.send();
         }
 
-        var csvFile = 'bps-od_15052_persentase_penduduk_miskin__prov_di_indonesia_data.csv';
+        var csvFile = 'data/bps-od_15052_persentase_penduduk_miskin__prov_di_indonesia_data.csv';
 
         function processData(csvData) {
             var rows = csvData.split('\r');
