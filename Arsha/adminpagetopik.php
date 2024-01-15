@@ -63,7 +63,7 @@ session_start();
 								while ($row = $result->fetch_assoc()) {
 									echo '<tr>';
 									echo '<td><span class="custom-checkbox"><input type="checkbox" id="checkbox1" name="options[]" value="' . $row['id_topik'] . '"><label for="checkbox1"></label></span></td>';
-									echo '<td>' . $row['id_user'] . '</td>';
+									echo '<td>' . $row['username'] . '</td>';
 									echo '<td>' . $row['judul'] . '</td>';
 									echo '<td>' . $row['deskripsi'] . '</td>';
 									echo '<td>' . $row['waktu_dibuat'] . '</td>';
