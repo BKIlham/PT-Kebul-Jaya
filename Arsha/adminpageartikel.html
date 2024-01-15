@@ -38,12 +38,13 @@
 									<label for="selectAll"></label>
 								</span>
 							</th>
+							<th>Id_artikel</th>
 							<th>Judul</th>
 							<th>Kategori</th>
-							<th>Penulis/Pembuat</th>
+							<th>Id_user</th>
 							<th>Isi</th>
-							<th>Waktu dibuat</th>
-                            <th>Pelihat</th>
+                            <th>Waktu Buat</th>
+							<th>Kehangatan</th>
                             <th>Action</th>
 						</tr>
 					</thead>
@@ -55,12 +56,13 @@
 									<label for="checkbox1"></label>
 								</span>
 							</td>
-							<td>Judul</td>
-							<td>Kategori</td>
-							<td>Penlusi/Pembuat</td>
-							<td>Isi</td>
-                            <th>Waktu dibuat</th>
-                            <th>Pelihat</th>
+							<th>id_artikel</th>
+							<th>Judul</th>
+							<th>Kategori</th>
+							<th>Id_user</th>
+							<th>Isi</th>
+                            <th>Waktu Buat</th>
+							<th>Kehangatan</th>
 							<td>
 								<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
 								<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
@@ -81,16 +83,28 @@
 					</div>
 					<div class="modal-body">					
 						<div class="form-group">
-							<label>Judul Artikel</label>
+							<label>Id artikel</label>
 							<input type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
-							<label>Kategori</label>
+							<label>Judul</label>
+							<input type="email" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Id user</label>
 							<input type="email" class="form-control" required>
 						</div>
 						<div class="form-group">
 							<label>Isi</label>
 							<textarea class="form-control" required></textarea>
+						</div>
+						<div class="form-group">
+							<label>Waktu Buat</label>
+							<input type="email" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Kehangatan</label>
+							<input type="email" class="form-control" required>
 						</div>
 					</div>
 					<div class="modal-footer">
@@ -112,8 +126,12 @@
 					</div>
 					<div class="modal-body">					
 						<div class="form-group">
-							<label>Judul Artikel</label>
+							<label>Id artikel</label>
 							<input type="text" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Judul</label>
+							<input type="email" class="form-control" required>
 						</div>
 						<div class="form-group">
 							<label>Kategori</label>
@@ -122,7 +140,15 @@
 						<div class="form-group">
 							<label>Isi</label>
 							<textarea class="form-control" required></textarea>
-						</div>		
+						</div>	
+						<div class="form-group">
+							<label>Waktu buat</label>
+							<input type="email" class="form-control" required>
+						</div>	
+						<div class="form-group">
+							<label>Kehangatan</label>
+							<input type="email" class="form-control" required>
+						</div>
 					</div>
 					<div class="modal-footer">
 						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
