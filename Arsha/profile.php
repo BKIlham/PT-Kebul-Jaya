@@ -23,6 +23,51 @@ if (isset($_SESSION['user_id'])) {
     header("Location: login.php");
     exit();
 }
+$isEdit = isset($_GET['edit']);
+$success_message = $error_message = "";
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Mengambil data dari formulir
+    $new_username = $_POST['username'];
+    $new_first_name = $_POST['first_name'];
+    $new_last_name = $_POST['last_name'];
+    $new_email = $_POST['email'];
+
+    // Mengelola pembaruan foto profil jika diunggah
+    if ($_FILES['profile_picture']['error'] === 0) {
+        // Menghapus foto profil lama jika ada
+        if ($user_data['foto'] !== 'user.jpg') {
+            $old_profile_picture_path = 'img/user/' . $user_data['foto'];
+            unlink($old_profile_picture_path);
+        }
+
+        // Mengelola unggahan foto profil baru
+        $new_profile_picture_name = $user_id . '.jpg';
+        $new_profile_picture_path = 'img/user/' . $new_profile_picture_name;
+        move_uploaded_file($_FILES['profile_picture']['tmp_name'], $new_profile_picture_path);
+
+        // Mengupdate nama file foto profil di database
+        $update_foto_query = "UPDATE user SET foto = '$new_profile_picture_name' WHERE id_user = $user_id";
+        $update_foto_result = mysqli_query($conn, $update_foto_query);
+
+        if (!$update_foto_result) {
+             $error_message = "Database query failed while updating profile picture: " . mysqli_error($conn);
+        }
+    }
+
+    // Mengupdate data pengguna ke database
+    $update_user_query = "UPDATE user SET username = '$new_username', first_name = '$new_first_name', last_name = '$new_last_name', email = '$new_email' WHERE id_user = $user_id";
+    $update_user_result = mysqli_query($conn, $update_user_query);
+
+    if ($update_user_result) {
+        // Pembaruan berhasil
+        $success_message = "Berhasil Merubah";
+        header('Location: profile.php?edit');
+        exit();
+    } else {
+        // Mengatasi kesalahan kueri
+        $error_message = "Database query failed while updating user: " . mysqli_error($conn);
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -114,13 +159,13 @@ if (isset($_SESSION['user_id'])) {
                         <img src="img/user/<?= $user_data['foto']?>" alt="">
                     </a>
                     <h1><?= $user_data['username']?></h1>
-                    <p>deydey@theEmail.com</p>
+                    <p><?= $user_data['email']?></p>
                 </div>
 
                 <ul class="nav nav-pills nav-stacked">
-                    <li class="active"><a href="#"> <i class="fa fa-user"></i> Profile</a></li>
-                    <li><a href="#"> <i class="fa fa-calendar"></i> Recent Activity <span class="label label-warning pull-right r-activity">9</span></a></li>
-                    <li><a href="#"> <i class="fa fa-edit"></i> Edit profile</a></li>
+                    <li style="width:100%"<?php if (!$isEdit): ?> class="active" <?php endif; ?>><a href="profile.php"> <i class="fa fa-user"></i> Profile</a></li>
+                    <li style="width:100%"<?php if ($isEdit): ?> class="active" <?php endif; ?>><a href="?edit"> <i class="fa fa-edit"></i> Edit profile</a></li>
+                    <li style="width:100%"><a href="logout.php"> <i class="bi bi-box-arrow-right"></i> Log Out</a></li>
                 </ul>
             </div>
         </div>
@@ -130,40 +175,78 @@ if (isset($_SESSION['user_id'])) {
                     Bersyukur adalah cara terbaik agar merasa cukup, bahkan ketika berkekurangan. Jangan berharap lebih sebelum berusaha lebih.
                 </div>
                 <div class="panel-body bio-graph-info">
+                    <?php if ($isEdit): ?>
+                    <div class="container">
+                        <h2>Edit Profile</h2>
+                         <!-- Display success message -->
+                                <?php if (!empty($success_message)) : ?>
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert" style="background-color: #0d6efd; color: white;">
+                                        <?php echo $success_message; ?>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                <?php endif; ?>
+                                
+                                <!-- Display error message -->
+                                <?php if (!empty($error_message)) : ?>
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert" style="background-color: #dc3545; color: white;">
+                                        <?php echo $error_message; ?>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                <?php endif; ?>
+
+                                <!-- Section: Design Block -->
+                        <form action="profile.php?edit" method="post" enctype="multipart/form-data">
+                            <!-- Username -->
+                            <div class="form-group">
+                                <label for="username">Username:</label>
+                                <input type="text" class="form-control" style="max-width:500px" id="username" name="username" value="<?= $user_data['username']?>" required>
+                            </div>
+                
+                            <!-- First Name -->
+                            <div class="form-group">
+                                <label for="first_name">First Name:</label>
+                                <input type="text" class="form-control"  style="max-width:500px"  id="first_name" name="first_name" value="<?= $user_data['first_name']?>" required>
+                            </div>
+                
+                            <!-- Last Name -->
+                            <div class="form-group">
+                                <label for="last_name">Last Name:</label>
+                                <input type="text" class="form-control"  style="max-width:500px"  id="last_name" name="last_name" value="<?= $user_data['last_name']?>" required>
+                            </div>
+                
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control"  style="max-width:500px"  id="email" name="email" value="<?= $user_data['email']?>" required>
+                            </div>
+                
+                            <!-- Profile Picture -->
+                            <div class="form-group">
+                                <label for="profile_picture">Profile Picture:</label>
+                                <input type="file" class="form-control-file" id="profile_picture" name="profile_picture">
+                            </div>
+                
+                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                        </form>
+                    </div>
+                    <?php else: ?>
                     <h1>Bio Graph</h1>
                     <div class="row">
                         <div class="bio-row">
-                            <p><span>First Name </span>: <?= $user_data['first_name']?></p>
+                            <p><span>Username </span>: <?= $user_data['username']?></p>
                         </div>
                         <div class="bio-row">
-                            <p><span>Last Name </span>: <?= $user_data['last_name']?></p>
+                            <p><span>First Name </span>: <?= $user_data['first_name']?></p>
                         </div>
                         <div class="bio-row">
                             <p><span>Email </span>: <?= $user_data['email']?></p>
                         </div>
                         <div class="bio-row">
-                            <p><span>Country </span>: Australia</p>
-                        </div>
-                        <div class="bio-row">
-                            <p><span>Birthday</span>: 13 July 1983</p>
-                        </div>
-                        <div class="bio-row">
-                            <p><span>Occupation </span>: UI Designer</p>
-                        </div>
-                        <div class="bio-row">
-                            <p><span>Email </span>: jsmith@flatlab.com</p>
-                        </div>
-                        <div class="bio-row">
-                            <p><span>Mobile </span>: (12) 03 4567890</p>
-                        </div>
-                        <div class="bio-row">
-                            <p><span>Phone </span>: 88 (02) 123456</p>
+                            <p><span>Last Name </span>: <?= $user_data['last_name']?></p>
                         </div>
                     </div>
+                    <?php endif; ?>
                 </div>
-            </div>
-            <div>
-                
             </div>
         </div>
     </div>
