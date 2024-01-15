@@ -1,5 +1,5 @@
 <?php
-include 'koneksi.php';
+include '../koneksi.php';
 session_start();
 ?>
 
@@ -14,22 +14,29 @@ session_start();
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="assets/css/admin.css" rel="stylesheet">
+<link href="../assets/css/admin.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 <body>
+
+	<a href="adminpageartikel.php" >artikel</a><br>
+	<a href="adminpagetopik.php" >topik</a><br>
+	<a href="adminpagefotoartikel.php" >foto artikel</a><br>
+	<a href="adminpagebalasan.php" >balasan</a><br>
+	<a href="adminpageuser.php" >user</a><br>
+
     <div class="container">
 		<div class="table-responsive">
 			<div class="table-wrapper">
 				<div class="table-title">
 					<div class="row">
 						<div class="col-xs-6">
-							<h2>Manage <b>Foto Artikel</b></h2>
+							<h2>Manage <b>User</b></h2>
 						</div>
 						<div class="col-xs-6">
-							<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Foto Artikel</span></a>
+							<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New User</span></a>
 							<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>						
 						</div>
 					</div>
@@ -43,26 +50,30 @@ session_start();
 									<label for="selectAll"></label>
 								</span>
 							</th>
-							<th>Name</th>
-							<th>Judul Artikel</th>
+							<th>Username</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Email</th>
+							<th>Password</th>
                             <th>Action</th>
 						</tr>
 					</thead>
 					<tbody>
 						<?php
-							$sql = "SELECT f.nama, a.judul as judul_artikel, f.id_artikel
-							FROM foto_artikel f
-							INNER JOIN artikel a ON f.id_artikel = a.id_artikel";
-					
+							$sql = "SELECT id_user, username, first_name, last_name, email, password FROM user";
+
 							$result = $conn->query($sql);
 							
 							// Tampilkan data dalam tabel HTML
 							if ($result->num_rows > 0) {
 								while ($row = $result->fetch_assoc()) {
 									echo '<tr>';
-									echo '<td><span class="custom-checkbox"><input type="checkbox" id="checkbox1" name="options[]" value="' . $row['id_artikel'] . '"><label for="checkbox1"></label></span></td>';
-									echo '<td>' . $row['nama'] . '</td>';
-									echo '<td>' . $row['judul_artikel'] . '</td>';
+									echo '<td><span class="custom-checkbox"><input type="checkbox" id="checkbox1" name="options[]" value="' . $row['id_user'] . '"><label for="checkbox1"></label></span></td>';
+									echo '<td>' . $row['username'] . '</td>';
+									echo '<td>' . $row['first_name'] . '</td>';
+									echo '<td>' . $row['last_name'] . '</td>';
+									echo '<td>' . $row['email'] . '</td>';
+									echo '<td>' . $row['password'] . '</td>';
 									echo '<td>
 											<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
 											<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
@@ -70,8 +81,11 @@ session_start();
 									echo '</tr>';
 								}
 							} else {
-								echo '<tr><td colspan="4">Tidak ada data</td></tr>';
+								echo '<tr><td colspan="7">Tidak ada data</td></tr>';
 							}
+							
+							// Tutup koneksi
+							$conn->close();
 						?>
 					</tbody>
 				</table>
@@ -84,16 +98,28 @@ session_start();
 			<div class="modal-content">
 				<form>
 					<div class="modal-header">						
-						<h4 class="modal-title">Add Foto Artikel</h4>
+						<h4 class="modal-title">Add User</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 					</div>
 					<div class="modal-body">					
 						<div class="form-group">
-							<label>Name</label>
+							<label>Username</label>
 							<input type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
-							<label>Judul Artikel</label>
+							<label>First Name</label>
+							<input type="email" class="form-control" required>
+						</div>
+                        <div class="form-group">
+							<label>Last Name</label>
+							<input type="email" class="form-control" required>
+						</div>
+                        <div class="form-group">
+							<label>Email</label>
+							<input type="email" class="form-control" required>
+						</div>
+                        <div class="form-group">
+							<label>Password</label>
 							<input type="email" class="form-control" required>
 						</div>
 					</div>
@@ -111,16 +137,28 @@ session_start();
 			<div class="modal-content">
 				<form>
 					<div class="modal-header">						
-						<h4 class="modal-title">Edit Foto Artikel</h4>
+						<h4 class="modal-title">Edit User</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 					</div>
 					<div class="modal-body">					
 						<div class="form-group">
-							<label>Name</label>
+							<label>Username</label>
 							<input type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
-							<label>Judul Artikel</label>
+							<label>First Name</label>
+							<input type="email" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Last Name</label>
+							<input type="email" class="form-control" required>
+						</div>	
+                        <div class="form-group">
+							<label>Email</label>
+							<input type="email" class="form-control" required>
+						</div>
+                        <div class="form-group">
+							<label>Password</label>
 							<input type="email" class="form-control" required>
 						</div>
 					</div>
@@ -138,7 +176,7 @@ session_start();
 			<div class="modal-content">
 				<form>
 					<div class="modal-header">						
-						<h4 class="modal-title">Delete Foto Artikel</h4>
+						<h4 class="modal-title">Delete User</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 					</div>
 					<div class="modal-body">					
@@ -154,7 +192,7 @@ session_start();
 		</div>
 	</div>
 
-	<script src="assets/js/main.js"></script>
-	<script src="assets/js/admin.js"></script>
+	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/admin.js"></script>
 </body>
 </html>

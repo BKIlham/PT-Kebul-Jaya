@@ -1,3 +1,8 @@
+<?php
+include '../koneksi.php';
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,22 +14,29 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="assets/css/admin.css" rel="stylesheet">
+<link href="../assets/css/admin.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 <body>
+
+	<a href="adminpageartikel.php" >artikel</a><br>
+	<a href="adminpagetopik.php" >topik</a><br>
+	<a href="adminpagefotoartikel.php" >foto artikel</a><br>
+	<a href="adminpagebalasan.php" >balasan</a><br>
+	<a href="adminpageuser.php" >user</a><br>
+
     <div class="container">
 		<div class="table-responsive">
 			<div class="table-wrapper">
 				<div class="table-title">
 					<div class="row">
 						<div class="col-xs-6">
-							<h2>Manage <b>Balasan</b></h2>
+							<h2>Manage <b>Artikel</b></h2>
 						</div>
 						<div class="col-xs-6">
-							<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Balasan</span></a>
+							<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Artikel</span></a>
 							<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>						
 						</div>
 					</div>
@@ -38,29 +50,47 @@
 									<label for="selectAll"></label>
 								</span>
 							</th>
-                            <th>Judul Topik</th>
-							<th>Name User</th>
-							<th>Isi Balasan</th>
+							<th>Judul</th>
+							<th>Kategori</th>
+							<th>Penulis/Pembuat</th>
+							<th>Isi</th>
 							<th>Waktu dibuat</th>
+                            <th>kehangatan</th>
                             <th>Action</th>
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<td>
-								<span class="custom-checkbox">
-									<input type="checkbox" id="checkbox1" name="options[]" value="1">
-									<label for="checkbox1"></label>
-								</span>
-							</td>
-                            <td>judul topik</td>
-							<td>user</td>
-                            <td>isi balasan</td>
-							<td>waktu dibuat</td>
-							<td>
-								<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-								<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-							</td>
+						<?php
+							$sql = "SELECT a.id_artikel, a.judul, a.kategori, u.username as penulis, a.isi, a.waktu_dibuat, a.kehangatan
+									FROM artikel a
+									INNER JOIN user u ON a.id_user = u.id_user";
+
+							$result = $conn->query($sql);
+
+							// Tampilkan data dalam tabel HTML
+							if ($result->num_rows > 0) {
+								while ($row = $result->fetch_assoc()) {
+									echo '<tr>';
+									echo '<td><span class="custom-checkbox"><input type="checkbox" id="checkbox1" name="options[]" value="' . $row['id_artikel'] . '"><label for="checkbox1"></label></span></td>';
+									echo '<td>' . $row['judul'] . '</td>';
+									echo '<td>' . $row['kategori'] . '</td>';
+									echo '<td>' . $row['penulis'] . '</td>';
+									echo '<td>' . $row['isi'] . '</td>';
+									echo '<td>' . $row['waktu_dibuat'] . '</td>';
+									echo '<td>' . $row['kehangatan'] . '</td>';
+									echo '<td>
+											<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+											<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+										</td>';
+									echo '</tr>';
+								}
+							} else {
+								echo '<tr><td colspan="8">Tidak ada data</td></tr>';
+							}
+
+							// Tutup koneksi
+							$conn->close();
+						?>
 					</tbody>
 				</table>
 			</div>
@@ -72,23 +102,31 @@
 			<div class="modal-content">
 				<form>
 					<div class="modal-header">						
-						<h4 class="modal-title">Add Balasan</h4>
+						<h4 class="modal-title">Add Artikel</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 					</div>
 					<div class="modal-body">					
 						<div class="form-group">
-							<label>Judul Topik</label>
+							<label>Judul Artikel</label>
 							<input type="text" class="form-control" required>
 						</div>
-                        <div class="form-group">
-							<label for="id_user">Name User:</label>
-							<select class="form-control" name="id_user" required>
-							</select>
+						<div class="form-group">
+							<label>Kategori</label>
+							<input type="email" class="form-control" required>
 						</div>
 						<div class="form-group">
-							<label>Isi Balasan</label>
+							<label>Isi</label>
 							<textarea class="form-control" required></textarea>
 						</div>
+						<div class="form-group">
+                            <label>Pelihat</label>
+                            <input type="text" class="form-control" name="kehangatan" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="id_user">Pilih Penulis:</label>
+                            <select class="form-control" name="id_user" required>
+                            </select>
+                        </div>
 					</div>
 					<div class="modal-footer">
 						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
@@ -104,19 +142,22 @@
 			<div class="modal-content">
 				<form>
 					<div class="modal-header">						
-						<h4 class="modal-title">Edit Balasan</h4>
+						<h4 class="modal-title">Edit Artikel</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 					</div>
 					<div class="modal-body">					
 						<div class="form-group">
-							<label>Judul Topik</label>
+							<label>Judul Artikel</label>
 							<input type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
-							<label>Isi Balasan</label>
+							<label>Kategori</label>
+							<input type="email" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Isi</label>
 							<textarea class="form-control" required></textarea>
-						</div>	
-                        	
+						</div>		
 					</div>
 					<div class="modal-footer">
 						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
@@ -132,7 +173,7 @@
 			<div class="modal-content">
 				<form>
 					<div class="modal-header">						
-						<h4 class="modal-title">Delete Balasan</h4>
+						<h4 class="modal-title">Delete Artikel</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 					</div>
 					<div class="modal-body">					
@@ -148,7 +189,7 @@
 		</div>
 	</div>
 
-	<script src="assets/js/main.js"></script>
-	<script src="assets/js/admin.js"></script>
+	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/admin.js"></script>
 </body>
 </html>
