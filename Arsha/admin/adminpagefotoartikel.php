@@ -50,8 +50,9 @@ session_start();
 									<label for="selectAll"></label>
 								</span>
 							</th>
-							<th>Name</th>
-							<th>Judul Artikel</th>
+							<th>Id Foto</th>
+							<th>Nama</th>
+							<th>Id Artikel</th>
                             <th>Action</th>
 						</tr>
 					</thead>
@@ -95,11 +96,15 @@ session_start();
 					</div>
 					<div class="modal-body">					
 						<div class="form-group">
-							<label>Name</label>
+							<label>Id foto</label>
 							<input type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
-							<label>Judul Artikel</label>
+							<label>Nama</label>
+							<input type="email" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Id Artikel</label>
 							<input type="email" class="form-control" required>
 						</div>
 					</div>
@@ -119,14 +124,18 @@ session_start();
 					<div class="modal-header">						
 						<h4 class="modal-title">Edit Foto Artikel</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					</div>
+						</div>
 					<div class="modal-body">					
 						<div class="form-group">
-							<label>Name</label>
+							<label>Id foto</label>
 							<input type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
-							<label>Judul Artikel</label>
+							<label>Nama</label>
+							<input type="email" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Id Artikel</label>
 							<input type="email" class="form-control" required>
 						</div>
 					</div>
