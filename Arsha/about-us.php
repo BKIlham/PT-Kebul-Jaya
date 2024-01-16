@@ -113,6 +113,23 @@ session_start();
             </ol>
             <br>
         </p>
+        <br>
+        <br>
+        <h1 style="text-align:center;">Aksi Kami</h1>
+        <img src="assets/img/about1.jpg" alt="">
+        <img src="assets/img/about2.jpg" alt="">
+        <p>Aksi relawan di masyarakat miskin mencakup rangkaian kegiatan yang melibatkan partisipasi aktif untuk memberikan dampak positif secara menyeluruh. Relawan tidak hanya berfokus pada pendekatan bantuan materi, tetapi juga pada upaya pemberdayaan komunitas dan perubahan sosial jangka panjang.</p>
+
+        <p>Dengan mendistribusikan bantuan pangan, memberikan pelatihan keterampilan, dan mendukung program pendidikan, relawan membantu meningkatkan akses masyarakat miskin terhadap sumber daya yang dapat meningkatkan kualitas hidup mereka. Mereka juga terlibat dalam kampanye kesehatan dan nutrisi, mendukung pembangunan ekonomi lokal melalui pelatihan bisnis dan dukungan keuangan mikro.</p>
+
+        <p>Aksi relawan tidak hanya terbatas pada penyediaan layanan fisik; mereka juga berperan sebagai agen perubahan sosial. Melalui kampanye kesadaran dan partisipasi dalam program pemerintah, relawan membantu merubah persepsi masyarakat terhadap kemiskinan dan mendorong tindakan kolektif.</p>
+
+        <p>Dengan melakukan kunjungan sosial yang berkesinambungan, relawan membangun hubungan pribadi dengan masyarakat miskin, memberikan dukungan psikososial, dan membantu dalam mengidentifikasi kebutuhan dan potensi komunitas. Ini menciptakan koneksi yang lebih mendalam, memperkuat kepercayaan, dan mendukung upaya pemberdayaan masyarakat.</p>
+
+        <p>Dalam konteks pembangunan infrastruktur sederhana, relawan berperan dalam meningkatkan aksesibilitas dan kualitas hidup masyarakat. Ini mencakup pembangunan sumur, toilet, dan perbaikan rumah, yang merupakan langkah-langkah konkret menuju peningkatan standar hidup.</p>
+
+        <p>Dengan demikian, aksi relawan tidak hanya memberikan solusi jangka pendek tetapi juga membantu menciptakan perubahan yang berkelanjutan dan memberdayakan masyarakat miskin untuk mengatasi tantangan kemiskinan secara holistik.</p>
+        
     </div>
 
     </div>

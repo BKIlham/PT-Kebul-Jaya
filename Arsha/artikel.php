@@ -96,6 +96,29 @@ session_start();
 
     <!-- Featured News Slider Start -->
     <div class="container-fluid pt-5 mb-3" style="margin-top: 90px;">
+    <div class="container mt-4">
+    <?php
+     if (isset($_SESSION['user_id'])) {
+                        $user_id = $_SESSION['user_id'];
+                    
+                        // Fetch user data from the database based on user ID
+                        $user_query = "SELECT * FROM user WHERE id_user = $user_id";
+                        $user_result = $conn->query($user_query);
+                    
+                        if ($user_result && $user_result->num_rows > 0) {
+                        ?>
+                        <div class="jumbotron" style="background-color:white">
+                          <h1 class="display-4">Punya Kisah Sukses?</h1>
+                          <p class="lead">Bagikan kisah sukses Anda dan inspirasi orang lain! Kirimkan cerita Anda dan biarkan dunia tahu perjalanan luar biasa Anda.</p>
+                          <hr class="my-4">
+                          <p>Ini adalah kesempatan untuk memotivasi dan memberikan inspirasi kepada orang lain. Yuk, bagikan kisah sukses Anda sekarang!</p>
+                          <a class="btn btn-primary btn-lg" href="UpKisahSukses.php" role="button">Submit Kisah Sukses</a>
+                        </div>
+                      </div>
+                        <?php
+                        }
+                    }
+    ?>
         <div class="container">
             <div class="section-title">
                 <h4 class="m-0 text-uppercase font-weight-bold">Rekomendasi Artikel</h4>
