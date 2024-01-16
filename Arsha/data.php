@@ -87,7 +87,7 @@ session_start();
   </header><!-- End Header -->
 
     <div style="margin-top:150px;">
-      <h1 style="text-align:center">Data Perkembangan Kemiskinan di Indonesia Berdasarkan Persentase</h1>
+      <h1 style="text-align:center;margin-bottom:20px;">Data Perkembangan Kemiskinan di Indonesia Berdasarkan Persentase</h1>
       <label for="provinsiSelect">Pilih Provinsi:</label>
       <select id="provinsiSelect"></select>
 
