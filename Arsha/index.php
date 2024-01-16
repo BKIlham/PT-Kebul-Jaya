@@ -91,7 +91,7 @@ session_start();
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+          <img src="assets/img/opening.png" class="img-fluid animated" alt="" width="450px">
         </div>
       </div>
     </div>
@@ -189,7 +189,7 @@ session_start();
 
           </div>
 
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/faktor.png");wid' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
         </div>
 
       </div>
