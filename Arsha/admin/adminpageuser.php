@@ -56,7 +56,7 @@ session_start();
 							<th>Last Name</th>
 							<th>Email</th>
 							<th>Password</th>
-							<th>Email</th>
+							<th>foto</th>
                             <th>Action</th>
 						</tr>
 					</thead>
@@ -77,6 +77,7 @@ session_start();
 									echo '<td>' . $row['last_name'] . '</td>';
 									echo '<td>' . $row['email'] . '</td>';
 									echo '<td>' . $row['password'] . '</td>';
+									echo '<td><img src="../img/user/' . $row['foto'] .'" alt="" width="100px"></td>';
 									echo '<td>
 											<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
 											<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
@@ -99,7 +100,7 @@ session_start();
 	<div id="addEmployeeModal" class="modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<form>
+				<form action="tambah_user.php" method="post">
 					<div class="modal-header">						
 						<h4 class="modal-title">Add User</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -107,36 +108,36 @@ session_start();
 					<div class="modal-body">					
 						<div class="form-group">
 							<label>Id User</label>
-							<input type="text" class="form-control" required>
+							<input type="text" class="form-control" name="id_user" >
 						</div>
 						<div class="form-group">
 							<label>Username</label>
-							<input type="text" class="form-control" required>
+							<input type="text" class="form-control" name="username" required>
 						</div>
 						<div class="form-group">
 							<label>First Name</label>
-							<input type="email" class="form-control" required>
+							<input type="email" class="form-control" name="first_name" required>
 						</div>
                         <div class="form-group">
 							<label>Last Name</label>
-							<input type="email" class="form-control" required>
+							<input type="email" class="form-control" name="last_name" required>
 						</div>
                         <div class="form-group">
 							<label>Email</label>
-							<input type="email" class="form-control" required>
+							<input type="email" class="form-control" name="email" required>
 						</div>
                         <div class="form-group">
 							<label>Password</label>
-							<input type="email" class="form-control" required>
+							<input type="email" class="form-control" name="password" required>
 						</div>
 						<div class="form-group">
 							<label>Foto</label>
-							<input type="text" class="form-control" required>
+							<input type="file" class="form-control-file" id="profile_picture" name="profile_picture">
 						</div>
 					</div>
 					<div class="modal-footer">
 						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-						<input type="submit" class="btn btn-success" value="Add">
+						<input type="submit" class="btn btn-success" value="Add" name="submit">
 					</div>
 				</form>
 			</div>
