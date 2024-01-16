@@ -100,7 +100,7 @@ session_start();
 	<div id="addEmployeeModal" class="modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<form action="tambah_user.php" method="post">
+				<form action="tambah_user.php" method="post" enctype="multipart/form-data">
 					<div class="modal-header">						
 						<h4 class="modal-title">Add User</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -116,11 +116,11 @@ session_start();
 						</div>
 						<div class="form-group">
 							<label>First Name</label>
-							<input type="email" class="form-control" name="first_name" required>
+							<input type="text" class="form-control" name="first_name" required>
 						</div>
                         <div class="form-group">
 							<label>Last Name</label>
-							<input type="email" class="form-control" name="last_name" required>
+							<input type="text" class="form-control" name="last_name" required>
 						</div>
                         <div class="form-group">
 							<label>Email</label>
@@ -128,11 +128,11 @@ session_start();
 						</div>
                         <div class="form-group">
 							<label>Password</label>
-							<input type="email" class="form-control" name="password" required>
+							<input type="password" class="form-control" name="password" required>
 						</div>
 						<div class="form-group">
 							<label>Foto</label>
-							<input type="file" class="form-control-file" id="profile_picture" name="profile_picture">
+							<input type="file" class="form-control-file" id="profile_picture" name="profile_picture" required>
 						</div>
 					</div>
 					<div class="modal-footer">
